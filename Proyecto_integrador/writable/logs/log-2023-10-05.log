@@ -1,0 +1,94 @@
+CRITICAL - 2023-10-05 12:40:12 --> syntax error, unexpected token "[", expecting identifier or variable or "{" or "$"
+#0 C:\Users\Moisés David\Desktop\estudiantec\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('alumno/editar/3...')
+#1 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('alumno/editar/3...')
+#2 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Moisés David\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Moisés David\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#6 {main}
+CRITICAL - 2023-10-05 12:40:15 --> syntax error, unexpected token "[", expecting identifier or variable or "{" or "$"
+#0 C:\Users\Moisés David\Desktop\estudiantec\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Mois\xC3\xA9...')
+#1 C:\Users\Moisés David\Desktop\estudiantec\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Moisés David\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Moisés David\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#8 {main}
+CRITICAL - 2023-10-05 19:55:24 --> Undefined variable $alumno
+#0 C:\Users\Moisés David\Desktop\estudiantec\app\Views\materia\mostrar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\Mois\xC3\xA9...', 21)
+#1 C:\Users\Moisés David\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\Mois\xC3\xA9...')
+#2 C:\Users\Moisés David\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Moisés David\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('materia/mostrar', Array, true)
+#4 C:\Users\Moisés David\Desktop\estudiantec\app\Controllers\MateriaController.php(20): view('materia/mostrar', Array)
+#5 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\MateriaController->mostrar()
+#6 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MateriaController))
+#7 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Moisés David\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Moisés David\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#10 {main}
+CRITICAL - 2023-10-05 19:55:57 --> Undefined property: stdClass::$id
+#0 C:\Users\Moisés David\Desktop\estudiantec\app\Views\materia\mostrar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\Mois\xC3\xA9...', 21)
+#1 C:\Users\Moisés David\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\Mois\xC3\xA9...')
+#2 C:\Users\Moisés David\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Moisés David\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('materia/mostrar', Array, true)
+#4 C:\Users\Moisés David\Desktop\estudiantec\app\Controllers\MateriaController.php(20): view('materia/mostrar', Array)
+#5 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\MateriaController->mostrar()
+#6 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MateriaController))
+#7 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Moisés David\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Moisés David\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#10 {main}
+CRITICAL - 2023-10-05 19:59:54 --> Undefined array key "sexo"
+#0 C:\Users\Moisés David\Desktop\estudiantec\app\Controllers\Alumno.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Mois\xC3\xA9...', 36)
+#1 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->insert()
+#2 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#3 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Moisés David\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Moisés David\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#6 {main}
+CRITICAL - 2023-10-05 20:01:13 --> Undefined array key "sexo"
+#0 C:\Users\Moisés David\Desktop\estudiantec\app\Controllers\Alumno.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Mois\xC3\xA9...', 36)
+#1 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->insert()
+#2 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#3 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Moisés David\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Moisés David\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#6 {main}
+CRITICAL - 2023-10-05 20:40:10 --> Undefined variable $materia
+#0 C:\Users\Moisés David\Desktop\estudiantec\app\Views\materia\editar.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\Mois\xC3\xA9...', 3)
+#1 C:\Users\Moisés David\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\Mois\xC3\xA9...')
+#2 C:\Users\Moisés David\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Moisés David\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('materia/editar', Array, true)
+#4 C:\Users\Moisés David\Desktop\estudiantec\app\Controllers\MateriaController.php(57): view('materia/editar', Array)
+#5 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\MateriaController->editar('2')
+#6 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MateriaController))
+#7 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Moisés David\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Moisés David\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#10 {main}
+CRITICAL - 2023-10-05 20:40:42 --> Undefined variable $materia
+#0 C:\Users\Moisés David\Desktop\estudiantec\app\Views\materia\editar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\Mois\xC3\xA9...', 8)
+#1 C:\Users\Moisés David\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\Mois\xC3\xA9...')
+#2 C:\Users\Moisés David\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Moisés David\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('materia/editar', Array, true)
+#4 C:\Users\Moisés David\Desktop\estudiantec\app\Controllers\MateriaController.php(57): view('materia/editar', Array)
+#5 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\MateriaController->editar('2')
+#6 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MateriaController))
+#7 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Moisés David\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Moisés David\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#10 {main}
+CRITICAL - 2023-10-05 20:40:43 --> Undefined variable $materia
+#0 C:\Users\Moisés David\Desktop\estudiantec\app\Views\materia\editar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\Mois\xC3\xA9...', 8)
+#1 C:\Users\Moisés David\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\Mois\xC3\xA9...')
+#2 C:\Users\Moisés David\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Moisés David\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('materia/editar', Array, true)
+#4 C:\Users\Moisés David\Desktop\estudiantec\app\Controllers\MateriaController.php(57): view('materia/editar', Array)
+#5 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\MateriaController->editar('2')
+#6 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MateriaController))
+#7 C:\Users\Moisés David\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Moisés David\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Moisés David\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#10 {main}

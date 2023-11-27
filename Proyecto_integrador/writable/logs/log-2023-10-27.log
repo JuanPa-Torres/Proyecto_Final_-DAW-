@@ -1,0 +1,52 @@
+CRITICAL - 2023-10-27 02:13:31 --> Unclosed '{' on line 8
+#0 C:\Users\juanp\Desktop\exa_adopciones\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\juanp\\...')
+#1 C:\Users\juanp\Desktop\exa_adopciones\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\juanp\Desktop\exa_adopciones\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\Users\juanp\Desktop\exa_adopciones\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\juanp\Desktop\exa_adopciones\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\exa_adopciones\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\exa_adopciones\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-10-27 02:13:49 --> Unclosed '{' on line 8
+#0 C:\Users\juanp\Desktop\exa_adopciones\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\juanp\\...')
+#1 C:\Users\juanp\Desktop\exa_adopciones\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\juanp\Desktop\exa_adopciones\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\Users\juanp\Desktop\exa_adopciones\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\juanp\Desktop\exa_adopciones\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\exa_adopciones\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\exa_adopciones\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+ERROR - 2023-10-27 10:18:06 --> Table 'adopciones.nombre' doesn't exist
+CRITICAL - 2023-10-27 10:18:06 --> Call to a member function getResult() on bool
+#0 C:\Users\juanp\Desktop\exa_adopciones\system\CodeIgniter.php(832): App\Controllers\Usuario->mostrar()
+#1 C:\Users\juanp\Desktop\exa_adopciones\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#2 C:\Users\juanp\Desktop\exa_adopciones\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\juanp\Desktop\exa_adopciones\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\juanp\Desktop\exa_adopciones\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#5 {main}
+ERROR - 2023-10-27 11:50:55 --> Table 'adopciones.nombre' doesn't exist
+CRITICAL - 2023-10-27 11:50:55 --> Call to a member function getResult() on bool
+#0 C:\Users\juanp\Desktop\exa_adopciones\system\CodeIgniter.php(832): App\Controllers\Usuario->mostrar()
+#1 C:\Users\juanp\Desktop\exa_adopciones\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#2 C:\Users\juanp\Desktop\exa_adopciones\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\juanp\Desktop\exa_adopciones\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\juanp\Desktop\exa_adopciones\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#5 {main}
+ERROR - 2023-10-27 11:51:40 --> Table 'adopciones.nombre' doesn't exist
+CRITICAL - 2023-10-27 11:51:40 --> Call to a member function getResult() on bool
+#0 C:\Users\juanp\Desktop\exa_adopciones\system\CodeIgniter.php(832): App\Controllers\Usuario->mostrar()
+#1 C:\Users\juanp\Desktop\exa_adopciones\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#2 C:\Users\juanp\Desktop\exa_adopciones\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\juanp\Desktop\exa_adopciones\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\juanp\Desktop\exa_adopciones\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#5 {main}
+ERROR - 2023-10-27 12:35:35 --> Table 'adopciones.nombre' doesn't exist
+CRITICAL - 2023-10-27 12:35:35 --> Call to a member function getResult() on bool
+#0 C:\Users\juanp\Desktop\exa_adopciones\system\CodeIgniter.php(832): App\Controllers\Usuario->mostrar()
+#1 C:\Users\juanp\Desktop\exa_adopciones\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#2 C:\Users\juanp\Desktop\exa_adopciones\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\juanp\Desktop\exa_adopciones\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\juanp\Desktop\exa_adopciones\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#5 {main}

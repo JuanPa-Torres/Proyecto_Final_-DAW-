@@ -1,0 +1,125 @@
+CRITICAL - 2023-10-06 14:01:03 --> Call to undefined function App\Controllers\insset()
+#0 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->buscar()
+#1 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#5 {main}
+CRITICAL - 2023-10-06 14:02:27 --> Undefined variable $alumnos
+#0 C:\Users\juanp\Desktop\estudiantec\app\Views\alumno\buscar.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 25)
+#1 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('alumno/buscar', Array, true)
+#4 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(93): view('alumno/buscar')
+#5 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->buscar()
+#6 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#7 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-10-06 14:04:11 --> Undefined variable $alumnos
+#0 C:\Users\juanp\Desktop\estudiantec\app\Views\alumno\buscar.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 25)
+#1 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('alumno/buscar', Array, true)
+#4 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(93): view('alumno/buscar', Array)
+#5 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->buscar()
+#6 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#7 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-10-06 14:04:12 --> Undefined variable $alumnos
+#0 C:\Users\juanp\Desktop\estudiantec\app\Views\alumno\buscar.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 25)
+#1 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('alumno/buscar', Array, true)
+#4 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(93): view('alumno/buscar', Array)
+#5 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->buscar()
+#6 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#7 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-10-06 14:05:10 --> Undefined variable $GET
+#0 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 81)
+#1 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->buscar()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#6 {main}
+ERROR - 2023-10-06 14:05:31 --> Unknown column 'nombreemmanuel' in 'where clause'
+CRITICAL - 2023-10-06 14:05:31 --> Call to a member function getResult() on bool
+#0 C:\Users\juanp\Desktop\estudiantec\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(82): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->buscar()
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#4 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#7 {main}
+CRITICAL - 2023-10-06 14:22:23 --> Undefined array key "sexo"
+#0 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\juanp\\...', 82)
+#1 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->buscar()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#6 {main}
+CRITICAL - 2023-10-06 14:24:09 --> Undefined array key "sexo"
+#0 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\juanp\\...', 82)
+#1 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->buscar()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#6 {main}
+CRITICAL - 2023-10-06 14:24:10 --> Undefined array key "sexo"
+#0 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\juanp\\...', 82)
+#1 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->buscar()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#6 {main}
+CRITICAL - 2023-10-06 14:25:35 --> Undefined array key "sexo"
+#0 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\juanp\\...', 82)
+#1 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->buscar()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#6 {main}
+CRITICAL - 2023-10-06 14:26:24 --> Undefined array key "sexo"
+#0 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\juanp\\...', 82)
+#1 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->buscar()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#6 {main}
+CRITICAL - 2023-10-06 14:26:25 --> Undefined array key "sexo"
+#0 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\juanp\\...', 82)
+#1 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->buscar()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#6 {main}
+CRITICAL - 2023-10-06 14:28:11 --> Undefined array key "sexo"
+#0 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\juanp\\...', 82)
+#1 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->buscar()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#6 {main}
+CRITICAL - 2023-10-06 14:28:12 --> Undefined array key "sexo"
+#0 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\juanp\\...', 82)
+#1 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->buscar()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#6 {main}

@@ -1,0 +1,247 @@
+CRITICAL - 2023-11-16 11:17:09 --> Invalid file: common/header.php
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('common/header.p...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('common/header', Array, true)
+#2 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Distribuidor.php(84): view('common/header', Array)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Distribuidor->editar('1')
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-16 11:17:22 --> Call to a member function find() on null
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->editar('1')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#5 {main}
+CRITICAL - 2023-11-16 11:40:44 --> Undefined variable $distribuidor
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\marca\mostrar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 21)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('marca/mostrar', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Marca.php(25): view('marca/mostrar', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Marca->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marca))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-16 11:41:13 --> Undefined variable $distribuidor
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\marca\mostrar.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 36)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('marca/mostrar', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Marca.php(25): view('marca/mostrar', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Marca->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marca))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-16 11:41:14 --> Undefined variable $distribuidor
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\marca\mostrar.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 36)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('marca/mostrar', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Marca.php(25): view('marca/mostrar', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Marca->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marca))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-16 11:41:55 --> Undefined variable $distribuidor
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\marca\mostrar.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 36)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('marca/mostrar', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Marca.php(25): view('marca/mostrar', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Marca->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marca))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-16 11:44:19 --> Undefined variable $distribuidor
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\marca\mostrar.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 36)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('marca/mostrar', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Marca.php(25): view('marca/mostrar', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Marca->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marca))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-16 11:47:01 --> Undefined property: stdClass::$id
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\marca\mostrar.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\juanp\\...', 36)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('marca/mostrar', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Marca.php(25): view('marca/mostrar', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Marca->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marca))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-16 11:47:42 --> Undefined property: stdClass::$id
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\marca\mostrar.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\juanp\\...', 36)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('marca/mostrar', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Marca.php(25): view('marca/mostrar', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Marca->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marca))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-16 11:47:43 --> Undefined property: stdClass::$id
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\marca\mostrar.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\juanp\\...', 36)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('marca/mostrar', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Marca.php(25): view('marca/mostrar', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Marca->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marca))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-16 11:48:52 --> Undefined property: stdClass::$id
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\marca\mostrar.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\juanp\\...', 36)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('marca/mostrar', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Marca.php(25): view('marca/mostrar', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Marca->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marca))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+ERROR - 2023-11-16 11:55:30 --> Cannot add or update a child row: a foreign key constraint fails (`proyecto_bd`.`marca`, CONSTRAINT `idDistribuidor` FOREIGN KEY (`Distribuidor`) REFERENCES `distribuidor` (`idDistribuidor`))
+CRITICAL - 2023-11-16 11:55:30 -->  route cannot be found while reverse-routing.
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(832): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Marca.php(64): redirect('Marca/mostrar')
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Marca->agregar()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marca))
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+ERROR - 2023-11-16 11:55:58 --> Cannot add or update a child row: a foreign key constraint fails (`proyecto_bd`.`marca`, CONSTRAINT `idDistribuidor` FOREIGN KEY (`Distribuidor`) REFERENCES `distribuidor` (`idDistribuidor`))
+CRITICAL - 2023-11-16 11:55:58 -->  route cannot be found while reverse-routing.
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(832): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Marca.php(64): redirect('Marca/mostrar')
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Marca->agregar()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marca))
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-16 11:57:07 --> syntax error, unexpected token ")"
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\juanp\\...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-16 11:57:37 --> syntax error, unexpected token "else", expecting "function" or "const"
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\juanp\\...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+ERROR - 2023-11-16 11:57:56 --> Cannot add or update a child row: a foreign key constraint fails (`proyecto_bd`.`marca`, CONSTRAINT `idDistribuidor` FOREIGN KEY (`Distribuidor`) REFERENCES `distribuidor` (`idDistribuidor`))
+ERROR - 2023-11-16 12:02:33 --> Cannot add or update a child row: a foreign key constraint fails (`proyecto_bd`.`marca`, CONSTRAINT `idDistribuidor` FOREIGN KEY (`Distribuidor`) REFERENCES `distribuidor` (`idDistribuidor`))
+ERROR - 2023-11-16 12:03:15 --> Cannot add or update a child row: a foreign key constraint fails (`proyecto_bd`.`marca`, CONSTRAINT `idDistribuidor` FOREIGN KEY (`Distribuidor`) REFERENCES `distribuidor` (`idDistribuidor`))
+ERROR - 2023-11-16 12:03:35 --> Unknown column 'id_Distribuidor' in 'field list'
+ERROR - 2023-11-16 12:04:13 --> Cannot add or update a child row: a foreign key constraint fails (`proyecto_bd`.`marca`, CONSTRAINT `idDistribuidor` FOREIGN KEY (`Distribuidor`) REFERENCES `distribuidor` (`idDistribuidor`))
+ERROR - 2023-11-16 12:05:21 --> Unknown column 'idDistribuidor' in 'field list'
+ERROR - 2023-11-16 12:08:21 --> Unknown column 'idDistribuidor' in 'field list'
+ERROR - 2023-11-16 12:14:36 --> Unknown column 'idDistribuidor' in 'field list'
+ERROR - 2023-11-16 12:17:33 --> Unknown column 'idDistribuidor' in 'field list'
+ERROR - 2023-11-16 12:19:08 --> Unknown column 'idDistribuidor' in 'field list'
+ERROR - 2023-11-16 12:20:25 --> Unknown column 'idDistribuidor' in 'field list'
+ERROR - 2023-11-16 12:27:47 --> Unknown column 'idDistribuidor' in 'field list'
+CRITICAL - 2023-11-16 12:28:02 --> Undefined variable $usuario
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\usuario\editar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 8)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('usuario/editar', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Usuario.php(112): view('usuario/editar', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->editar('20')
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-16 12:28:46 --> Undefined variable $adoptador
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\usuario\editar.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 43)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('usuario/editar', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Usuario.php(112): view('usuario/editar', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->editar('20')
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+ERROR - 2023-11-16 12:36:48 --> Unknown column 'idDistribuidor' in 'field list'
+ERROR - 2023-11-16 12:42:07 --> Unknown column 'idDistribuidor' in 'field list'
+CRITICAL - 2023-11-16 12:42:07 --> Unknown column 'idDistribuidor' in 'field list'
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Ma...', 0)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ma...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ma...')
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ma...', Array, false)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Marca.php(83): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Marca.php(63): App\Controllers\Marca->insert()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Marca->agregar()
+#10 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marca))
+#11 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#14 {main}
+ERROR - 2023-11-16 12:42:48 --> Unknown column 'idDistribuidor' in 'field list'
+CRITICAL - 2023-11-16 12:42:48 --> Unknown column 'idDistribuidor' in 'field list'
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Ma...', 0)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ma...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ma...')
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ma...', Array, false)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Marca.php(83): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Marca.php(63): App\Controllers\Marca->insert()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Marca->agregar()
+#10 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marca))
+#11 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#14 {main}
+CRITICAL - 2023-11-16 12:44:37 --> Undefined array key "idDistribuidor"
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Marca.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\juanp\\...', 81)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Marca.php(63): App\Controllers\Marca->insert()
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Marca->agregar()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marca))
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#7 {main}

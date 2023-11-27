@@ -1,0 +1,236 @@
+CRITICAL - 2023-11-10 13:01:15 --> Undefined property: stdClass::$Contrasena
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\usuario\mostrar.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\juanp\\...', 388)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('usuario/mostrar', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Usuario.php(20): view('usuario/mostrar', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-10 13:01:32 --> Undefined property: stdClass::$Contrasena
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\usuario\mostrar.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\juanp\\...', 388)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('usuario/mostrar', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Usuario.php(20): view('usuario/mostrar', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-10 13:01:34 --> Undefined property: stdClass::$Contrasena
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\usuario\mostrar.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\juanp\\...', 388)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('usuario/mostrar', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Usuario.php(20): view('usuario/mostrar', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-10 13:01:35 --> Undefined property: stdClass::$Contrasena
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\usuario\mostrar.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\juanp\\...', 388)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('usuario/mostrar', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Usuario.php(20): view('usuario/mostrar', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-10 13:01:36 --> Undefined property: stdClass::$Contrasena
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\usuario\mostrar.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\juanp\\...', 388)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('usuario/mostrar', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Usuario.php(20): view('usuario/mostrar', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-10 13:01:36 --> Undefined property: stdClass::$Contrasena
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\usuario\mostrar.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\juanp\\...', 388)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('usuario/mostrar', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Usuario.php(20): view('usuario/mostrar', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-10 13:02:04 --> Undefined variable $adoptador
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\usuario\mostrar.php(391): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 391)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('usuario/mostrar', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Usuario.php(20): view('usuario/mostrar', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-10 13:14:19 --> Call to a member function find() on null
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->editar('1')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#5 {main}
+CRITICAL - 2023-11-10 13:15:17 --> Call to a member function find() on null
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->editar('20')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#5 {main}
+CRITICAL - 2023-11-10 13:18:05 --> Invalid file: adoptador/agregar.php
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adoptador/agreg...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('adoptador/agreg...', Array, true)
+#2 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Usuario.php(32): view('adoptador/agreg...', Array)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->agregar()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-10 13:19:06 --> Cannot redeclare App\Controllers\Usuario::buscar()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-11-10 13:19:15 --> Cannot redeclare App\Controllers\Usuario::buscar()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-11-10 13:19:16 --> Cannot redeclare App\Controllers\Usuario::buscar()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-11-10 13:22:32 --> Invalid file: adoptador/agregar.php
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adoptador/agreg...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('adoptador/agreg...', Array, true)
+#2 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Usuario.php(32): view('adoptador/agreg...', Array)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->agregar()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-10 13:23:09 --> Invalid file: adoptador/agregar.php
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adoptador/agreg...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('adoptador/agreg...', Array, true)
+#2 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Usuario.php(32): view('adoptador/agreg...', Array)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->agregar()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+ERROR - 2023-11-10 13:25:27 --> Cannot add or update a child row: a foreign key constraint fails (`proyecto_bd`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`Perfil`) REFERENCES `perfiles` (`id`))
+ERROR - 2023-11-10 13:26:25 --> Cannot add or update a child row: a foreign key constraint fails (`proyecto_bd`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`Perfil`) REFERENCES `perfiles` (`id`))
+CRITICAL - 2023-11-10 13:27:26 --> syntax error, unexpected token "->", expecting identifier or variable or "{" or "$"
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\juanp\\...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-10 13:27:28 --> syntax error, unexpected token "->", expecting identifier or variable or "{" or "$"
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\juanp\\...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-10 13:28:33 --> Invalid file: usuarios/buscar.php
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/buscar...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('usuarios/buscar', Array, true)
+#2 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Usuario.php(149): view('usuarios/buscar', Array)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->buscar()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-10 13:28:49 --> Invalid file: usuarios/buscar.php
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/buscar...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('usuarios/buscar', Array, true)
+#2 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Usuario.php(149): view('usuarios/buscar', Array)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->buscar()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-10 13:29:10 --> Invalid file: usuarios/buscar.php
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/buscar...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('usuarios/buscar', Array, true)
+#2 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Usuario.php(149): view('usuarios/buscar', Array)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->buscar()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-10 13:31:30 --> Call to a member function find() on null
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->editar('20')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#5 {main}
+CRITICAL - 2023-11-10 13:32:09 --> Call to a member function find() on null
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->editar('18')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#5 {main}
+ERROR - 2023-11-10 13:33:40 --> Duplicate entry 'paquitoooo' for key 'Nombre'
+ERROR - 2023-11-10 13:34:03 --> Duplicate entry 'paquitoooo' for key 'Nombre'
+CRITICAL - 2023-11-10 13:35:27 --> syntax error, unexpected token "}"
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\juanp\\...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+ERROR - 2023-11-10 13:35:35 --> Duplicate entry 'paquitoooo' for key 'Nombre'
+ERROR - 2023-11-10 13:39:12 --> Duplicate entry 'paquitoooo' for key 'Nombre'
+CRITICAL - 2023-11-10 13:40:48 --> Call to a member function find() on null
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->editar('4')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#5 {main}
+ERROR - 2023-11-10 13:43:44 --> Duplicate entry 'paquitoooo' for key 'Nombre'
+ERROR - 2023-11-10 13:46:12 --> Duplicate entry 'paquitoooo' for key 'Nombre'
+CRITICAL - 2023-11-10 13:48:57 --> Call to a member function find() on null
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->editar('30')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#5 {main}
+ERROR - 2023-11-10 13:53:02 --> Duplicate entry 'paquitoooo' for key 'Nombre'
+ERROR - 2023-11-10 13:59:54 --> Duplicate entry 'paquitoooo' for key 'Nombre'
+ERROR - 2023-11-10 14:00:22 --> Duplicate entry 'paquitoooo' for key 'Nombre'

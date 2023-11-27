@@ -1,0 +1,191 @@
+CRITICAL - 2023-11-14 10:32:43 --> syntax error, unexpected single-quoted string "Correo", expecting "]"
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\juanp\\...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-14 10:33:57 --> Undefined variable $usuario
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\distribuidor\mostrar.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 28)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('distribuidor/mo...', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Distribuidor.php(20): view('distribuidor/mo...', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Distribuidor->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-14 10:34:02 --> Undefined variable $usuario
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\distribuidor\mostrar.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 28)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('distribuidor/mo...', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Distribuidor.php(20): view('distribuidor/mo...', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Distribuidor->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-14 10:34:04 --> Undefined variable $usuario
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\distribuidor\mostrar.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 28)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('distribuidor/mo...', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Distribuidor.php(20): view('distribuidor/mo...', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Distribuidor->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-14 10:34:08 --> Undefined property: stdClass::$idUsuario
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Views\distribuidor\mostrar.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\juanp\\...', 28)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('distribuidor/mo...', Array, true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Distribuidor.php(20): view('distribuidor/mo...', Array)
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Distribuidor->mostrar()
+#6 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-11-14 10:34:36 --> syntax error, unexpected token ";", expecting ")"
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('distribuidor/mo...', Array, true)
+#2 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Distribuidor.php(20): view('distribuidor/mo...', Array)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Distribuidor->mostrar()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-14 10:42:25 --> Invalid file: common/header.php
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('common/header.p...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('common/header', Array, true)
+#2 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Distribuidor.php(81): view('common/header', Array)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Distribuidor->editar('0')
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-14 10:42:40 --> Invalid file: common/header.php
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('common/header.p...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('common/header', Array, true)
+#2 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Distribuidor.php(81): view('common/header', Array)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Distribuidor->editar('0')
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-14 10:43:11 --> Call to a member function delete() on null
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Distribuidor->delete('0')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#5 {main}
+CRITICAL - 2023-11-14 10:43:39 --> syntax error, unexpected token "}"
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\juanp\\...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-14 10:43:41 --> syntax error, unexpected token "}"
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\juanp\\...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-14 10:43:43 --> syntax error, unexpected token "}"
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\juanp\\...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-14 10:45:20 --> Call to a member function find() on null
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Usuario->editar('2')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#5 {main}
+CRITICAL - 2023-11-14 10:46:31 --> Undefined variable $data
+#0 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Distribuidor.php(157): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 157)
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Distribuidor->buscar()
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#6 {main}
+CRITICAL - 2023-11-14 10:49:54 --> Invalid file: common/header.php
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('common/header.p...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('common/header', Array, true)
+#2 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Distribuidor.php(81): view('common/header', Array)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Distribuidor->editar('10')
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-14 10:50:05 --> Invalid file: common/header.php
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('common/header.p...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('common/header', Array, true)
+#2 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Distribuidor.php(81): view('common/header', Array)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Distribuidor->editar('0')
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-14 10:50:08 --> Call to a member function delete() on null
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Distribuidor->delete('0')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#2 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#5 {main}
+ERROR - 2023-11-14 10:50:57 --> Duplicate entry '0' for key 'PRIMARY'
+ERROR - 2023-11-14 10:51:18 --> Duplicate entry '0' for key 'PRIMARY'
+ERROR - 2023-11-14 10:55:29 --> Duplicate entry '0' for key 'PRIMARY'
+ERROR - 2023-11-14 10:56:40 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2023-11-14 10:57:01 --> Invalid file: common/header.php
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('common/header.p...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('common/header', Array, true)
+#2 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Distribuidor.php(84): view('common/header', Array)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Distribuidor->editar('0')
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}
+CRITICAL - 2023-11-14 13:52:22 --> Invalid file: common/header.php
+#0 C:\Users\juanp\Desktop\Proyecto_Final\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('common/header.p...')
+#1 C:\Users\juanp\Desktop\Proyecto_Final\system\Common.php(1089): CodeIgniter\View\View->render('common/header', Array, true)
+#2 C:\Users\juanp\Desktop\Proyecto_Final\app\Controllers\Distribuidor.php(84): view('common/header', Array)
+#3 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(832): App\Controllers\Distribuidor->editar('21')
+#4 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#5 C:\Users\juanp\Desktop\Proyecto_Final\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\juanp\Desktop\Proyecto_Final\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\juanp\Desktop\Proyecto_Final\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#8 {main}

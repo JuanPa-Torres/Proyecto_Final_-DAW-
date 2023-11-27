@@ -1,0 +1,263 @@
+CRITICAL - 2023-10-19 13:06:36 --> Call to undefined function App\Controllers\heper()
+#0 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#1 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#5 {main}
+ERROR - 2023-10-19 13:06:58 --> Table 'estudiantec.grados' doesn't exist
+CRITICAL - 2023-10-19 13:06:58 --> Call to a member function getResult() on bool
+#0 C:\Users\juanp\Desktop\estudiantec\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(29): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#4 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#7 {main}
+ERROR - 2023-10-19 13:08:25 --> Table 'estudiantec.grados' doesn't exist
+CRITICAL - 2023-10-19 13:08:25 --> Call to a member function getResult() on bool
+#0 C:\Users\juanp\Desktop\estudiantec\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#4 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#7 {main}
+ERROR - 2023-10-19 13:08:28 --> Table 'estudiantec.grados' doesn't exist
+CRITICAL - 2023-10-19 13:08:28 --> Call to a member function getResult() on bool
+#0 C:\Users\juanp\Desktop\estudiantec\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#4 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#7 {main}
+ERROR - 2023-10-19 13:08:29 --> Table 'estudiantec.grados' doesn't exist
+CRITICAL - 2023-10-19 13:08:29 --> Call to a member function getResult() on bool
+#0 C:\Users\juanp\Desktop\estudiantec\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#4 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#7 {main}
+ERROR - 2023-10-19 13:08:29 --> Table 'estudiantec.grados' doesn't exist
+CRITICAL - 2023-10-19 13:08:29 --> Call to a member function getResult() on bool
+#0 C:\Users\juanp\Desktop\estudiantec\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#4 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#7 {main}
+ERROR - 2023-10-19 13:08:33 --> Table 'estudiantec.grados' doesn't exist
+CRITICAL - 2023-10-19 13:08:33 --> Call to a member function getResult() on bool
+#0 C:\Users\juanp\Desktop\estudiantec\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#4 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#7 {main}
+ERROR - 2023-10-19 13:10:18 --> Table 'estudiantec.grados' doesn't exist
+CRITICAL - 2023-10-19 13:10:18 --> Call to a member function getResult() on bool
+#0 C:\Users\juanp\Desktop\estudiantec\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#4 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#7 {main}
+ERROR - 2023-10-19 13:10:19 --> Table 'estudiantec.grados' doesn't exist
+CRITICAL - 2023-10-19 13:10:19 --> Call to a member function getResult() on bool
+#0 C:\Users\juanp\Desktop\estudiantec\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#4 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#7 {main}
+ERROR - 2023-10-19 13:10:44 --> Table 'estudiantec.grados' doesn't exist
+CRITICAL - 2023-10-19 13:10:44 --> Call to a member function getResult() on bool
+#0 C:\Users\juanp\Desktop\estudiantec\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#4 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#7 {main}
+ERROR - 2023-10-19 13:19:32 --> Table 'estudiantec.grados' doesn't exist
+CRITICAL - 2023-10-19 13:19:32 --> Call to a member function getResult() on bool
+#0 C:\Users\juanp\Desktop\estudiantec\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#4 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#7 {main}
+ERROR - 2023-10-19 13:19:32 --> Table 'estudiantec.grados' doesn't exist
+CRITICAL - 2023-10-19 13:19:32 --> Call to a member function getResult() on bool
+#0 C:\Users\juanp\Desktop\estudiantec\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#3 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#4 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#7 {main}
+CRITICAL - 2023-10-19 13:26:35 --> Undefined variable $grado
+#0 C:\Users\juanp\Desktop\estudiantec\app\Views\alumno\agregar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 39)
+#1 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('alumno/agregar', Array, true)
+#4 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(39): view('alumno/agregar', Array)
+#5 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#6 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#7 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-10-19 13:26:36 --> Undefined variable $grado
+#0 C:\Users\juanp\Desktop\estudiantec\app\Views\alumno\agregar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 39)
+#1 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('alumno/agregar', Array, true)
+#4 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(39): view('alumno/agregar', Array)
+#5 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#6 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#7 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-10-19 13:27:51 --> Undefined variable $grado
+#0 C:\Users\juanp\Desktop\estudiantec\app\Views\alumno\agregar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 39)
+#1 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('alumno/agregar', Array, true)
+#4 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(39): view('alumno/agregar', Array)
+#5 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#6 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#7 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-10-19 13:27:52 --> Undefined variable $grado
+#0 C:\Users\juanp\Desktop\estudiantec\app\Views\alumno\agregar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 39)
+#1 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('alumno/agregar', Array, true)
+#4 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(39): view('alumno/agregar', Array)
+#5 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#6 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#7 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-10-19 13:27:53 --> Undefined variable $grado
+#0 C:\Users\juanp\Desktop\estudiantec\app\Views\alumno\agregar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 39)
+#1 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('alumno/agregar', Array, true)
+#4 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(39): view('alumno/agregar', Array)
+#5 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#6 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#7 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-10-19 13:27:53 --> Undefined variable $grado
+#0 C:\Users\juanp\Desktop\estudiantec\app\Views\alumno\agregar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 39)
+#1 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('alumno/agregar', Array, true)
+#4 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(39): view('alumno/agregar', Array)
+#5 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#6 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#7 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-10-19 13:27:54 --> Undefined variable $grado
+#0 C:\Users\juanp\Desktop\estudiantec\app\Views\alumno\agregar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 39)
+#1 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('alumno/agregar', Array, true)
+#4 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(39): view('alumno/agregar', Array)
+#5 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#6 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#7 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-10-19 13:28:17 --> Undefined variable $grado
+#0 C:\Users\juanp\Desktop\estudiantec\app\Views\alumno\agregar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 39)
+#1 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('alumno/agregar', Array, true)
+#4 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(39): view('alumno/agregar', Array)
+#5 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#6 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#7 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-10-19 13:28:21 --> Undefined variable $grado
+#0 C:\Users\juanp\Desktop\estudiantec\app\Views\alumno\agregar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 39)
+#1 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('alumno/agregar', Array, true)
+#4 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(39): view('alumno/agregar', Array)
+#5 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#6 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#7 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-10-19 13:29:14 --> Undefined variable $grado
+#0 C:\Users\juanp\Desktop\estudiantec\app\Views\alumno\agregar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 39)
+#1 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('alumno/agregar', Array, true)
+#4 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(39): view('alumno/agregar', Array)
+#5 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#6 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#7 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-10-19 13:29:15 --> Undefined variable $grado
+#0 C:\Users\juanp\Desktop\estudiantec\app\Views\alumno\agregar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 39)
+#1 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('alumno/agregar', Array, true)
+#4 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(39): view('alumno/agregar', Array)
+#5 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#6 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#7 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+CRITICAL - 2023-10-19 13:30:04 --> Undefined variable $grado
+#0 C:\Users\juanp\Desktop\estudiantec\app\Views\alumno\agregar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\juanp\\...', 39)
+#1 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(210): include('C:\\Users\\juanp\\...')
+#2 C:\Users\juanp\Desktop\estudiantec\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\juanp\Desktop\estudiantec\system\Common.php(1089): CodeIgniter\View\View->render('alumno/agregar', Array, true)
+#4 C:\Users\juanp\Desktop\estudiantec\app\Controllers\Alumno.php(39): view('alumno/agregar', Array)
+#5 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(832): App\Controllers\Alumno->agregar()
+#6 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumno))
+#7 C:\Users\juanp\Desktop\estudiantec\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\juanp\Desktop\estudiantec\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\juanp\Desktop\estudiantec\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\juanp\\...')
+#10 {main}
+ERROR - 2023-10-19 13:37:22 --> Unknown column 'idGrado' in 'field list'
+ERROR - 2023-10-19 13:39:17 --> Unknown column 'idGrado' in 'field list'
