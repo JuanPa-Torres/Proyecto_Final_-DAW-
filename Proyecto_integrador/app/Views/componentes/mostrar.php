@@ -1,28 +1,48 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h2>Raza</h2>
+            <h2>Componentes</h2>
             <table class=" table table-bordered-stripped border-primary">
                 <thead>
-                    <th>Nombre</th>
-                    <th>Descripcion</th>
-                    <th>Origen</th>
-                   
+                    <th>ID</th>
+                    <th>Parte delantera</th>
+                    <th>Parte Trasera</th>
+                    <th>Otros componentes</th>
+                    <th colspan="2"></th>                   
 
                 </thead>
                 <tbody>
-                <?php foreach($razas as $raza): ?>
-                    <tr>
-                        <td><?=$raza->nombre ?></td>
-                        <td><?=$raza->descripcion?></td>
-                        <td><?=$raza->origen ?></td>
-                        
-                        
-                        <td>    
-                            <a href="<?=base_url('index.php/raza/delete/'.$raza->idRaza);?>">Eliminar</a>
-                            <a href="<?=base_url('index.php/raza/editar/'.$raza->idRaza);?>">Editar</a>
+                <?php foreach ($componentes as $componente): ?>
+                        <tr>
+                        <td><?= $componente->idComponentes ?></td>
+                        <td>
+                            <ul>
+                                <li><?= $componente->Ruedas_Delanteras ?></li>
+                                <li><?= $componente->Cambio_Delantero ?></li>
+                            </ul> 
                         </td>
-                    </tr>
+                        <td>
+                            <ul>
+                                <li><?= $componente->Ruedas_Traseras ?></li>
+                                <li><?= $componente->Cambio_Trasero ?></li>
+                            </ul> 
+                        </td>
+                        <td>
+                            <ul>
+                                <li><?= $componente->Tija ?></li>
+                                <li><?= $componente->Amortiguador ?></li>
+                                <li><?= $componente->Llantas ?></li>
+                                <li><?= $componente->Casstte ?></li>
+                                <li><?= $componente->Casstte ?></li>
+                                <li><?= $componente->Frenos ?> con <?= $componente->Rotores_Frenos ?></li>
+                            </ul> 
+                        </td>
+                       
+                            <td>    
+                                <a href="<?= base_url('index.php/raza/delete/' . $componente->idComponentes); ?>">Eliminar</a>
+                                <a href="<?= base_url('index.php/raza/editar/' . $componente->idComponentes); ?>">Editar</a>
+                            </td>
+                        </tr>
                     <?php endforeach ?>
                 </tbody>
             </table>

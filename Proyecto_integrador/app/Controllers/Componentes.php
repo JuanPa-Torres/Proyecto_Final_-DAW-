@@ -12,14 +12,15 @@ class Componentes extends BaseController
     }
 
     public function mostrar(){
-        $historial_MedicoModel = model('Historial_MedicoModel');
-        $data['historiales_Medicos'] = $historial_MedicoModel->findAll();
+        $componentesModel = model('ComponentesModel');
+        $data['componentes'] = $componentesModel->findAll();
         return 
         view('common/head') .
         view('common/menu') .
-        view('historial_Medico/mostrar',$data) .
+        view('componentes/mostrar',$data) .
         view('common/footer');
     }
+    
     public function agregar(){
         helper(['form','url']);
 

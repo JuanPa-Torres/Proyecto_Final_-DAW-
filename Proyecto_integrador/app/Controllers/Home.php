@@ -8,4 +8,12 @@ class Home extends BaseController
     {
         return view('home/home');
     }
+
+    public function Administrador()
+    {
+        return view('common/head').
+        view('common/menu').
+        view('administrador/opciones.html').
+        view('common/footer');
+    }
 }

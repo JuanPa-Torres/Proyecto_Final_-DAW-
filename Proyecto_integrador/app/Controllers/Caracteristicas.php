@@ -12,12 +12,12 @@ class Caracteristicas extends BaseController
     }
 
     public function mostrar(){
-        $razaModel = model('RazaModel');
-        $data['razas'] = $razaModel->findAll();
+        $caracteristicasModel = model('CaracteristicasModel');
+        $data['caracteristicas'] = $caracteristicasModel->findAll();
         return 
         view('common/head') .
         view('common/menu') .
-        view('raza/mostrar',$data) .
+        view('caracteristicas/mostrar',$data) .
         view('common/footer');
     }
     public function agregar(){

@@ -12,14 +12,28 @@ class Bicicleta extends BaseController
     }
 
     public function mostrar(){
-        $mascotaModel = model('MascotaModel');
-        $data['mascotas'] = $mascotaModel->findAll();
+        $bicicletaModel = model('BicicletaModel');
+        $data['bicicletas'] = $bicicletaModel->findAll();
+
+        $marcaModel = model('MarcaModel');
+        $data['marcas'] = $marcaModel->findAll();
+
+        $modeloModel = model('ModeloModel');
+        $data['modelos'] = $modeloModel->findAll();
+
+        $componentesModel = model('ComponentesModel');
+        $data['componentes'] = $componentesModel->findAll();
+
+        $caracteristicasModel = model('CaracteristicasModel');
+        $data['caracteristicas'] = $caracteristicasModel->findAll();
+
         return 
         view('common/head') .
         view('common/menu') .
-        view('mascota/mostrar',$data) .
+        view('bicicleta/mostrar',$data) .
         view('common/footer');
     }
+
     public function agregar(){
         helper(['form','url']);
 

@@ -32,76 +32,88 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->get('/administrador', 'Home::Administrador');
+$routes->get('/cliente', 'Home::Cliente');
+
 
 //----------------------Tabla Usuario -----------------------------------------------------------------------------------------------
 
-$routes->get('/usuario', 'Usuario::mostrar');
-$routes->get('/usuario/mostrar', 'Usuario::mostrar');
+$routes->get('/administrador/usuario', 'Usuario::mostrar');
 //----------
-$routes->get('/usuario/agregar', 'Usuario::agregar');
-$routes->post('/usuario/agregar', 'Usuario::agregar');
+$routes->get('/administrador/usuario/agregar', 'Usuario::agregar');
+$routes->post('/administrador/usuario/agregar', 'Usuario::agregar');
 //----------
-$routes->get('/usuario/editar/(:num)', 'Usuario::editar/$1');
-$routes->get('/usuario/delete/(:num)', 'Usuario::delete/$1');
+$routes->get('/administrador/usuario/editar/(:num)', 'Usuario::editar/$1');
+$routes->get('/administrador/usuario/delete/(:num)', 'Usuario::delete/$1');
 
-$routes->post('/usuario/insert', 'Usuario::insert');
-$routes->post('/usuario/update', 'Usuario::update');
+$routes->post('/administrador/usuario/insert', 'Usuario::insert');
+$routes->post('/administrador/usuario/update', 'Usuario::update');
 
-$routes->get('/usuario/buscar', 'Usuario::buscar');
+$routes->get('/administrador/usuario/buscar', 'Usuario::buscar');
 
 
 
 
 //----------------------Tabla Distribuidor -----------------------------------------------------------------------------------------------
 
-$routes->get('/distribuidor', 'Distribuidor::mostrar');
-$routes->get('/distribuidor/mostrar', 'Distribuidor::mostrar');
+$routes->get('/administrador/distribuidor', 'Distribuidor::mostrar');
 //----------
-$routes->get('/distribuidor/agregar', 'Distribuidor::agregar');
-$routes->post('/distribuidor/agregar', 'Distribuidor::agregar');
+$routes->get('/administrador/distribuidor/agregar', 'Distribuidor::agregar');
+$routes->post('/administrador/distribuidor/agregar', 'Distribuidor::agregar');
 //----------
-$routes->get('/distribuidor/editar/(:num)', 'Distribuidor::editar/$1');
-$routes->post('/distribuidor/editar/(:num)', 'Distribuidor::editar/$1');
-$routes->get('/distribuidor/delete/(:num)', 'Distribuidor::delete/$1');
+$routes->get('/administrador/distribuidor/editar/(:num)', 'Distribuidor::editar/$1');
+$routes->post('/administrador/distribuidor/editar/(:num)', 'Distribuidor::editar/$1');
+$routes->get('/administrador/distribuidor/delete/(:num)', 'Distribuidor::delete/$1');
 
-$routes->post('/distribuidor/insert', 'Distribuidor::insert');
-$routes->post('/distribuidor/update', 'Distribuidor::update');
+$routes->post('/administrador/distribuidor/insert', 'Distribuidor::insert');
+$routes->post('/administrador/distribuidor/update', 'Distribuidor::update');
 
-$routes->get('/distribuidor/buscar', 'Distribuidor::buscar');
+$routes->get('/administrador/distribuidor/buscar', 'Distribuidor::buscar');
 
 
 
 //----------------------Tabla Marca -----------------------------------------------------------------------------------------------
 
-$routes->get('/marca', 'Marca::mostrar');
-$routes->get('/marca/mostrar', 'Marca::mostrar');
+$routes->get('/administrador/marca', 'Marca::mostrar');
 //----------
-$routes->get('/marca/agregar', 'Marca::agregar');
-$routes->post('/marca/agregar', 'Marca::agregar');
+$routes->get('/administrador/marca/agregar', 'Marca::agregar');
+$routes->post('/administrador/marca/agregar', 'Marca::agregar');
 //----------
-$routes->get('/marca/editar/(:num)', 'Marca::editar/$1');
-$routes->post('/marca/editar/(:num)', 'Marca::editar/$1');
-$routes->get('/marca/delete/(:num)', 'Marca::delete/$1');
+$routes->get('/administrador/marca/editar/(:num)', 'Marca::editar/$1');
+$routes->post('/administrador/marca/editar/(:num)', 'Marca::editar/$1');
+$routes->get('/administrador/marca/delete/(:num)', 'Marca::delete/$1');
 
-$routes->post('/marca/insert', 'Marca::insert');
-$routes->post('/marca/update', 'Marca::update');
+$routes->post('/administrador/marca/insert', 'Marca::insert');
+$routes->post('/administrador/marca/update', 'Marca::update');
 
-$routes->get('/marca/buscar', 'Marca::buscar');
-/*
-/*
-$routes->get('/alumno/mostrar/(:int)/(:int)', 'Alumno::mostrar/$1/$2');
-$routes->get('/alumno/subirimagen', 'Alumno::subirImagen');
-$routes->post('/alumno/upload', 'Alumno::upload');
+$routes->get('/administrador/marca/buscar', 'Marca::buscar');
 
-$routes->get('/carrera/mostrar', 'Carrera::mostrar');
 
-$routes->get('/alumno/editar/(:any)', 'Alumno::editar/$1');
+//----------------------Tabla Modelo -----------------------------------------------------------------------------------------------
+$routes->get('/administrador/modelo', 'Modelo::mostrar');
 
-$routes->post('/alumno/insert', 'Alumno::insert');
-$routes->post('/alumno/update/(:any)', 'Alumno::update/$1');
 
-$routes->get('/css/*',"");
-*/
+
+
+//----------------------Tabla Componentes -----------------------------------------------------------------------------------------------
+$routes->get('/administrador/componentes', 'Componentes::mostrar');
+
+
+
+
+//----------------------Tabla Catacterísticas -----------------------------------------------------------------------------------------------
+$routes->get('/administrador/caracteristicas', 'Caracteristicas::mostrar');
+
+
+
+//----------------------Tabla Bicicletas -----------------------------------------------------------------------------------------------
+$routes->get('/administrador/bicicletas', 'Bicicleta::mostrar');
+
+
+
+
+
+
 
 
 /*

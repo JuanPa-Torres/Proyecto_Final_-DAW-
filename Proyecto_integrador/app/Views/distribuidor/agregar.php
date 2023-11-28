@@ -7,8 +7,11 @@
         ?>
 
         <div class="col-8">
-            <form action="<?= base_url('distribuidor/agregar'); ?>" method="POST">
+            <form action="<?= base_url('/administrador/distribuidor/update'); ?>" method="POST">
                 <?= csrf_field() ?>
+                <div class="mb-3">
+                    <h1>Agregar distribuidor</h1>
+                </div>
                 <div class="mb-3">
                     <label for="Nombre" class="form-label">Nombre(s)</label>
                     <input type="text" class="form-control" name="Nombre" id="Nombre">

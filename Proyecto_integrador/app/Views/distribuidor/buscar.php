@@ -25,13 +25,14 @@
 
     <div class="row">
         <div class="col-12">
-            <h2>Dieta</h2>
+            <h2>Distribuidores</h2>
             <table class=" table table-bordered-stripped border-primary">
                 <thead>
                     <th>Nombre</th>
                     <th>Ciudad</th>
                     <th>Teléfono</th>
                     <th>Correo</th>
+                    <th colspan="2"></th>
                 </thead>
                 <tbody>
                     <?php foreach ($distribuidores as $distribuidor): ?>
