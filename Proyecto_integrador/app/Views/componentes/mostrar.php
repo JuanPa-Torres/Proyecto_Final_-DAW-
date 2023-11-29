@@ -39,8 +39,8 @@
                         </td>
                        
                             <td>    
-                                <a href="<?= base_url('index.php/raza/delete/' . $componente->idComponentes); ?>">Eliminar</a>
-                                <a href="<?= base_url('index.php/raza/editar/' . $componente->idComponentes); ?>">Editar</a>
+                                <a href="<?= base_url('administrador/componentes/eliminar/' . $componente->idComponentes); ?>">Eliminar</a>
+                                <a href="<?= base_url('administrador/componentes/editar/' . $componente->idComponentes); ?>">Editar</a>
                             </td>
                         </tr>
                     <?php endforeach ?>

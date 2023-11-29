@@ -1,48 +1,68 @@
 <div class="container">
     <div class="row">
-    <?php 
-        if(isset($validation)){
-                print $validation->listErrors();
+        <?php
+        if (isset($validation)) {
+            print $validation->listErrors();
         }
-     ?>
-       
-        <div class="col-8">
-            <form action="<?= base_url('mascota/agregar'); ?>" method="POST">
-            <?= csrf_field() ?>
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre(s)</label>
-                    <input type="text" class="form-control" name="nombre" id="nombre" >
-                    <!--minlength="1" maxlength = "30"required pattern="[a-z - A-Z \s]{1,15}"-->
-                </div>
-                
-                <div class="mb-3">
-                    <label for="especie" class="form-label">Especie</label>
-                    <input type="text" class="form-control" name="especie" id="especie" >
-                    <!--minlength="1" maxlength = "30"required pattern="[a-z - A-Z \s]{1,15}"-->
-                </div>
+        ?>
 
+        <div class="col-8">
+            <form action="<?= base_url('/bicicleta/agregar'); ?>" method="POST">
+                <?= csrf_field() ?>
                 <div class="mb-3">
-                    <label for="sexo">Sexo</label>
-                    <select name="sexo" id="sexo" class="form-control"> <!--required-->
-                        <option value="macho">Macho</option>
-                        <option value="hembra">Hembra</option>
+                    <label for="Marca" class="form-label" style="font-size:x-large;">Marca</label>
+                    <select class="col-12" name="Marca">
+                        <?php foreach ($marcas as $marca): ?>
+                            <option value="<?= $marca->idMarca ?>">
+                                <?= $marca->Nombre ?>
+                            </option>
+                        <?php endforeach; ?>
                     </select>
                 </div>
 
                 <div class="mb-3">
-                    <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
-                    <input type="date" class="form-control" name="fechaNacimiento" id="fechaNacimiento" >
-                    <!--minlength="1" maxlength = "30"required pattern="[a-z - A-Z \s]{1,15}"-->
+                    <label for="Modelo" class="form-label" style="font-size:x-large;">Modelo</label>
+                    <select class="col-12" name="Modelo">
+                        <?php foreach ($modelos as $modelo): ?>
+                            <option value="<?= $modelo->idModelo ?>">
+                                <?= $modelo->Nombre ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
                 </div>
 
+                <div class="mb-3">
+                    <label for="Caracteristicas" class="form-label" style="font-size:x-large;">Características</label>
+                    <select class="col-12" name="Caracteristicas">
+                        <?php foreach ($caracteristicas as $caracteristica): ?>
+                            <option value="<?= $caracteristica->idCaracteristicas ?>">
+                                <?= $caracteristica->Talla_Cuadro . ", " . $caracteristica->Material . ", " . $caracteristica->Colores_Disponibles . ", " . $caracteristica->Geometrias . ", " . $caracteristica->Peso . ", " . $caracteristica->Limite_Peso . ", " . $caracteristica->Garantia ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="Componentes" class="form-label" style="font-size:x-large;">Componentes</label>
+                    <select class="col-12" name="Componentes">
+                        <?php foreach ($componentes as $componente): ?>
+                            <option value="14">
+                                <?= $componente->Tija . ", " . $componente->Amortiguador . ", " . $componente->Llantas . ", " . $componente->Cambio_Delantero . ", " . $componente->Cambio_Trasero . ", " . $componente->Casstte . ", " . $componente->Frenos . ", " . $componente->Rotores_Frenos ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="Precio" class="form-label" style="font-size:x-large;">Precio</label>
+                    <input type="text" class="col-12" name="Precio">
+                </div>
 
-
-
+                <div class="mb-3">
+                <label for="Foto" class="form-label" style="font-size:x-large;">Fotografía</label>
+                <input type="text"name="Foto" class="col-12">
+                </div>
                 <div class="mb-3">
                     <input type="submit" class="btn btn-success">
                 </div>
-
-                
 
             </form>
 

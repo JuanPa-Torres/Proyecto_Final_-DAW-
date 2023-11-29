@@ -43,14 +43,11 @@ $routes->get('/administrador/usuario', 'Usuario::mostrar');
 $routes->get('/administrador/usuario/agregar', 'Usuario::agregar');
 $routes->post('/administrador/usuario/agregar', 'Usuario::agregar');
 //----------
-$routes->get('/administrador/usuario/editar/(:num)', 'Usuario::editar/$1');
+$routes->get('/usuario/editar/(:num)', 'Usuario::editar/$1');
 $routes->get('/administrador/usuario/delete/(:num)', 'Usuario::delete/$1');
-
 $routes->post('/administrador/usuario/insert', 'Usuario::insert');
 $routes->post('/administrador/usuario/update', 'Usuario::update');
-
 $routes->get('/administrador/usuario/buscar', 'Usuario::buscar');
-
 
 
 
@@ -98,6 +95,14 @@ $routes->get('/administrador/modelo', 'Modelo::mostrar');
 //----------------------Tabla Componentes -----------------------------------------------------------------------------------------------
 $routes->get('/administrador/componentes', 'Componentes::mostrar');
 
+$routes->get('/administrador/componentes/agregar', 'Componentes::agregar');
+$routes->post('/administrador/agregar', 'Componentes::agregar');
+
+$routes->get('/administrador/componentes/editar/(:num)', 'Componentes::editar/$1');
+$routes->post('/administrador/componentes/editar/(:num)', 'Componentes::editar/$1');
+$routes->post('/administrador/componentes/update', 'Componentes::update');
+
+
 
 
 
@@ -108,6 +113,15 @@ $routes->get('/administrador/caracteristicas', 'Caracteristicas::mostrar');
 
 //----------------------Tabla Bicicletas -----------------------------------------------------------------------------------------------
 $routes->get('/administrador/bicicletas', 'Bicicleta::mostrar');
+$routes->get('/administrador/bicicletas/agregar', 'Bicicleta::agregar');
+$routes->post('/administrador/bicicletas/agregar', 'Bicicleta::agregar');
+//----------
+$routes->get('/bicicletas/editar/(:num)', 'Bicicleta::editar/$1');
+$routes->get('/bicicletas/delete/(:num)', 'Bicicleta::delete/$1');
+$routes->post('/administrador/bicicletas/insert', 'Bicicleta::insert');
+$routes->post('/administrador/bicicletas/update', 'Bicicleta::update');
+$routes->get('/administrador/bicicletas/buscar', 'Bicicleta::buscar');
+
 
 
 

@@ -37,21 +37,29 @@ class Bicicleta extends BaseController
     public function agregar(){
         helper(['form','url']);
 
-
-        $data['title']="Agregar Mascota";   
+        $marca = model('MarcaModel');
+        $modelo = model('ModeloModel');
+        $componentes = model('ComponentesModel');
+        $caracteristicas = model('CaracteristicasModel');
+        $data['marcas'] = $marca->findAll();
+        $data['modelos'] = $modelo->findAll();
+        $data['componentes'] = $componentes->findAll();
+        $data['caracteristicas'] = $caracteristicas->findAll();
+        $data['title']="Agregar Bicicleta";   
         $validation =  \Config\Services::validation();
             if (strtolower($this->request->getMethod()) === 'get'){
                 return view('common/head')
                 .  view('common/menu')
-                .  view('mascota/agregar',$data)
+                .  view('bicicleta/agregar',$data)
                 .  view('common/footer');
             }
 
             $rules = [
-                'nombre' => 'required|max_length[30]|min_length[3]',
-                'especie'=>'required',
-                'sexo'=>'required',
-                'fechaNacimiento'=>'required'
+                'Marca' => 'required',
+                'Modelo'=>'required',
+                'Componentes'=>'required',
+                'Caracteristicas'=>'required',
+                'Precio' =>'required'
             ];
 
             if (! $this->validate($rules)) {
@@ -62,21 +70,22 @@ class Bicicleta extends BaseController
             }
             else{
                 if($this->insert()){
-                    return redirect('mascota/mostrar');
+                    return redirect('administrador/usuario');
                 }
             }
 
     }
 
     public function insert(){
-        $mascotaModel = model('MascotaModel');
+        $bici = model('BicicletaModel');
         $data = [
-            "nombre" => $_POST['nombre'],
-            "especie" => $_POST['especie'],
-            "sexo" => $_POST['sexo'],
-            "fechaNacimiento" => $_POST['fechaNacimiento']
+            "Marca" => $_POST['Marca'],
+            "Modelo" => $_POST['Modelo'],
+            "Caracteristicas" => $_POST['Componentes'],
+            "Precio" => $_POST['Precio'],
+            "Foto" => $_POST['Foto']
         ];
-        $mascotaModel->insert($data, false);
+        $bici->insert($data, false);
         return true;
     }
 

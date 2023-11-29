@@ -26,7 +26,7 @@
 
                 <div class="mb-3">
                     <label for="Correo_Elec" class="form-label">Correo electrónico</label>
-                    <input type="text" class="form-control" name="Correo_Elec" id="Correo_Elec">
+                    <input type="text" class="form-control" name="Correo_Elec">
                 </div>
 
                 <div class="mb-3">

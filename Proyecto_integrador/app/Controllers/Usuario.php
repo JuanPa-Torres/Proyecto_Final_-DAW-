@@ -35,8 +35,6 @@ class Usuario extends BaseController
     */
     public function agregar()
     {
-
-
         $data['title'] = "Agregar Usuario";
         $validation = \Config\Services::validation();
         if (strtolower($this->request->getMethod()) === 'get') {
@@ -60,7 +58,7 @@ class Usuario extends BaseController
                 . view('common/footer');
         } else {
             if ($this->insert()) {
-                return redirect('usuario/mostrar');
+                return redirect('administrador/usuario');
             }
         }
 

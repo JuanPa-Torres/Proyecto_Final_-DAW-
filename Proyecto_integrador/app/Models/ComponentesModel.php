@@ -13,7 +13,7 @@ class ComponentesModel extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = true;
     protected $protectFields    = false;
-    protected $allowedFields    = ['idComponentes','Tija','Amortiguador','Ruedas_Delanteras','Ruedas_Traseras',
+    protected $allowedFields    = ['Tija','Amortiguador','Ruedas_Delanteras','Ruedas_Traseras',
                                     'Llantas','Cambio_Delantero','Cambio_Trasero','Casstte','Bielas','Frenos','Rotores_Frenos'];
 
     // Dates
@@ -40,4 +40,3 @@ class ComponentesModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 }
-
