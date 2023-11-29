@@ -1,24 +1,28 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <form action="<?= base_url('index.php/historial_Medico/buscar/'); ?>" method="GET">
-                <label for="estadoSalud">Estado de Salud</label>
-                <input type="text" class="form-control" name="estadoSalud"
-                minlength="1" maxlength ="30"pattern="[a-z - A-Z \s]{1,15}">
+            <h1 align="center">Buscar modelos</h1>
 
-                <label for="alergias">Alergias</label>
-                <input type="text" class="form-control" name="alergias"
-                minlength="1" maxlength ="30" pattern="[a-z - A-Z \s]{1,100">
+            <form action="<?= base_url('/administrador/modelo/buscar'); ?>" method="GET">
 
-                <label for="vacunas">Vacunas</label>
-                <input type="text" class="form-control" name="vacunas"
-                minlength="1" maxlength ="30"pattern="[a-z - A-Z \s]{1,100}">
+                <div class="col-5">
+                    <label for="Campo">Buscar por: </label>
+                    <select name="Campo" class="form-control">
+                        <option value="Todo">Mostrar todo</option>
+                        <option value="Nombre">Nombre </option>
+                        <option value="Modalidad">Modalidad</option>
+                        <option value="Gama">Gama</option>
+                        <option value="Año">Año</option>
+                    </select>
+                </div>
 
-                <label for="tratamientos">Tratamientos</label>
-                <input type="text" class="form-control" name="tratamientos"
-                minlength="1" maxlength ="30"pattern="[a-z - A-Z \s]{1,100}">
-               
-               
+
+                <div class="col-5">
+                    <label for="Valor">Parecido a:</label>
+                    <input type="text" class="form-control" name="Valor" maxlength="30"
+                        pattern="[a-z - A-Z 0-9 \s]{1,15}">
+                </div>
+
                 <input type="submit" class="btn btn-outline-success" value="Buscar">
 
             </form>
@@ -27,27 +31,36 @@
 
     <div class="row">
         <div class="col-12">
-            <table class="table">
+            <h2>Modelos</h2>
+            <table class=" table table-bordered-stripped border-primary">
                 <thead>
-
-                    <th>Estado de Salud</th>
-                    <th>Alergias</th>
-                    <th>Vacunas</th>
-                    <th>Tratamientos</th>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Modalidad</th>
+                    <th>Año</th>
+                    <th>Gama</th>
+                   <th colspan="2"></th>
 
                 </thead>
                 <tbody>
-                    <?php foreach ($historiales_Medicos as $historial_Medico): ?>
-                        <tr>
-                        <td><?=$historial_Medico->estadoSalud ?></td>
-                        <td><?=$historial_Medico->alergias ?></td>
-                        <td><?=$historial_Medico->vacunas ?></td>
-                        <td><?=$historial_Medico->tratamientos ?></td>
-
-                        </tr>
+                <?php foreach($modelos as $modelo): ?>
+                    <tr>
+                        <td><?=$modelo->idModelo ?></td>
+                        <td><?=$modelo->Nombre ?></td>
+                        <td><?=$modelo->Modalidad ?></td>
+                        <td><?=$modelo->Año ?></td>
+                        <td><?=$modelo->Gama ?></td>
+                        <td>    
+                            <a href="<?=base_url('index.php/modelo/delete/'.$modelo->idModelo);?>">Eliminar</a>
+                            <a href="<?=base_url('index.php/modelo/editar/'.$modelo->idModelo);?>">Editar</a>
+                        </td>
+                    </tr>
                     <?php endforeach ?>
                 </tbody>
             </table>
+
+
         </div>
-        
     </div>
+
+</div>

@@ -96,6 +96,10 @@ $routes->get('/administrador/modelo/editar/(:num)', 'Modelo::editar/$1');
 $routes->post('/administrador/modelo/editar/(:num)', 'Modelo::editar/$1');
 $routes->post('/administrador/modelo/update', 'Modelo::update');
 
+$routes->get('/administrador/modelo/delete/(:num)', 'Modelo::delete/$1');
+
+$routes->get('/administrador/modelo/buscar', 'Modelo::buscar');
+
 
 //----------------------Tabla Componentes -----------------------------------------------------------------------------------------------
 $routes->get('/administrador/componentes', 'Componentes::mostrar');
@@ -107,7 +111,9 @@ $routes->get('/administrador/componentes/editar/(:num)', 'Componentes::editar/$1
 $routes->post('/administrador/componentes/editar/(:num)', 'Componentes::editar/$1');
 $routes->post('/administrador/componentes/update', 'Componentes::update');
 
+$routes->get('/administrador/componentes/delete/(:num)', 'Componentes::delete/$1');
 
+$routes->get('/administrador/componentes/buscar', 'Componentes::buscar');
 
 
 
@@ -121,6 +127,10 @@ $routes->get('/administrador/caracteristicas/editar/(:num)', 'Caracteristicas::e
 $routes->post('/administrador/caracteristicas/editar/(:num)', 'Caracteristicas::editar/$1');
 $routes->post('/administrador/caracteristicas/update', 'Caracteristicas::update');
 
+$routes->get('/administrador/caracteristicas/delete/(:num)', 'Caracteristicas::delete/$1');
+
+$routes->get('/administrador/caracteristicas/buscar', 'Caracteristicas::buscar');
+
 
 
 //----------------------Tabla Bicicletas -----------------------------------------------------------------------------------------------
@@ -132,6 +142,9 @@ $routes->get('/bicicletas/editar/(:num)', 'Bicicleta::editar/$1');
 $routes->get('/bicicletas/delete/(:num)', 'Bicicleta::delete/$1');
 $routes->post('/administrador/bicicletas/insert', 'Bicicleta::insert');
 $routes->post('/administrador/bicicletas/update', 'Bicicleta::update');
+
+$routes->get('/administrador/bicicletas/delete/(:num)', 'Bicicleta::delete/$1');
+
 $routes->get('/administrador/bicicletas/buscar', 'Bicicleta::buscar');
 
 

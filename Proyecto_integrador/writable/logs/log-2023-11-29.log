@@ -116,3 +116,203 @@ CRITICAL - 2023-11-29 00:19:33 -->  is not a valid rule.
 #7 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
 #9 {main}
+CRITICAL - 2023-11-29 08:07:42 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Bicicleta->buscar()
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bicicleta))
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-11-29 08:48:22 --> Undefined variable $bicicletas
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Views\bicicleta\buscar.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 37)
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Common.php(1089): CodeIgniter\View\View->render('bicicleta/busca...', Array, true)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Controllers\Bicicleta.php(200): view('bicicleta/busca...', Array)
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Bicicleta->buscar()
+#6 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bicicleta))
+#7 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-11-29 08:50:24 --> Undefined property: stdClass::$id
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Controllers\Bicicleta.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 181)
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Bicicleta->buscar()
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bicicleta))
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-11-29 08:50:55 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-11-29 09:00:29 --> Undefined property: stdClass::$Marca
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Controllers\Bicicleta.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Bicicleta->buscar()
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bicicleta))
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-11-29 09:02:50 --> Attempt to read property "idModelo" on string
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Views\bicicleta\buscar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 47)
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Common.php(1089): CodeIgniter\View\View->render('bicicleta/busca...', Array, true)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Controllers\Bicicleta.php(202): view('bicicleta/busca...', Array)
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Bicicleta->buscar()
+#6 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bicicleta))
+#7 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2023-11-29 09:04:25 --> Unknown column 'idComponente' in 'where clause'
+CRITICAL - 2023-11-29 09:04:25 --> Unknown column 'idComponente' in 'where clause'
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Controllers\Bicicleta.php(183): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Bicicleta->buscar()
+#8 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bicicleta))
+#9 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2023-11-29 09:04:33 --> Unknown column 'idCaracteristica' in 'where clause'
+CRITICAL - 2023-11-29 09:04:33 --> Unknown column 'idCaracteristica' in 'where clause'
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Controllers\Bicicleta.php(184): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Bicicleta->buscar()
+#8 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bicicleta))
+#9 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-11-29 09:04:54 --> Undefined array key 0
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Controllers\Bicicleta.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 181)
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Bicicleta->buscar()
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bicicleta))
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-11-29 09:05:09 --> Undefined array key 0
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Controllers\Bicicleta.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 181)
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Bicicleta->buscar()
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bicicleta))
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-11-29 09:08:49 --> Undefined array key 0
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Controllers\Bicicleta.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 181)
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Bicicleta->buscar()
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bicicleta))
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-11-29 09:11:02 --> Undefined array key "marcas"
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Controllers\Bicicleta.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 196)
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Bicicleta->buscar()
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bicicleta))
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-11-29 09:19:53 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Caracteristicas->buscar()
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caracteristicas))
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-11-29 09:25:07 --> Undefined variable $caracteristicas
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Views\caracteristicas\buscar.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 46)
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Common.php(1089): CodeIgniter\View\View->render('caracteristicas...', Array, true)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Controllers\Caracteristicas.php(164): view('caracteristicas...', Array)
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Caracteristicas->buscar()
+#6 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caracteristicas))
+#7 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-11-29 09:25:17 --> Undefined variable $caracteristicas
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Views\caracteristicas\buscar.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 46)
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Common.php(1089): CodeIgniter\View\View->render('caracteristicas...', Array, true)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Controllers\Caracteristicas.php(164): view('caracteristicas...', Array)
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Caracteristicas->buscar()
+#6 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caracteristicas))
+#7 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-11-29 09:25:54 --> Undefined array key "campo"
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Controllers\Caracteristicas.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Caracteristicas->buscar()
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caracteristicas))
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-11-29 09:45:21 --> Undefined variable $data
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Controllers\Modelo.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 172)
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Modelo->buscar()
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Modelo))
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-11-29 09:45:32 --> Undefined variable $data
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Controllers\Modelo.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 172)
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Modelo->buscar()
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Modelo))
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-11-29 09:46:57 --> Undefined property: stdClass::$Biela
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Views\componentes\buscar.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 63)
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Common.php(1089): CodeIgniter\View\View->render('componentes/bus...', Array, true)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Controllers\Componentes.php(203): view('componentes/bus...', Array)
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Componentes->buscar()
+#6 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Componentes))
+#7 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-11-29 09:56:28 --> Call to a member function delete() on null
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Caracteristicas->delete('5')
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caracteristicas))
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-11-29 09:58:00 --> Call to a member function delete() on null
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Bicicleta->delete('5')
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bicicleta))
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}

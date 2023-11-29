@@ -92,11 +92,11 @@ class Bicicleta extends BaseController
         return true;
     }
 
-    public function delete($idMascota)
+    public function delete($idBicicleta)
     {
-        $mascotaModel = model('MascotaModel');
-        $mascotaModel->delete($idMascota);
-        return redirect('mascota/mostrar');
+        $bicicleta = model('BicicletaModel');
+        $bicicleta->delete($idBicicleta);
+        return redirect('administrador/bicicletas');
     }
 
     public function editar($id)
@@ -164,27 +164,77 @@ class Bicicleta extends BaseController
 
     public function buscar()
     {
-        $mascotaModel = model('MascotaModel');
-        if (isset($_GET['nombre'])) {
-            $nombre = $_GET['nombre'];
-            $especie = $_GET['especie'];
-            $sexo = $_GET['sexo'];
-            $fechaNacimiento = $_GET['fechaNacimiento'];
+        $bicicletaModel = model('BicicletaModel');
+        $marcaModel = model('MarcaModel');
+        $modeloModel = model('ModeloModel');
+        $componentesModel = model('ComponentesModel');
+        $caracteristicasModel = model('CaracteristicasModel');
+
+        if (isset($_GET['Campo']) && isset($_GET['Valor'])) {
+            $campo = $_GET['Campo'];
+            $valor = $_GET['Valor'];
 
 
-            $data['mascotas'] = $mascotaModel->like('nombre', $nombre)
-                ->like('especie', $especie)->like('sexo', $sexo)->like('fechaNacimiento', $fechaNacimiento)
+            if ($campo == 'Marca') {
+                $data['marcas'] = $marcaModel->like('Nombre', $valor)
                 ->findAll();
+                if (isset($data['marcas'][0])) {
+                    $data['bicicletas'] = $bicicletaModel->where('Marca',($data['marcas'][0]->idMarca))->findAll();    
+                    $data['modelos'] = $modeloModel->where('idModelo',($data['bicicletas'][0]->Modelo))->findAll();
+                    $data['componentes'] = $componentesModel->where('idComponentes',($data['bicicletas'][0]->Componentes))->findAll();
+                    $data['caracteristicas'] = $caracteristicasModel->where('idCaracteristicas',($data['bicicletas'][0]->Caracteristicas))->findAll();
+                }
+                else{
+                    $campo = 'Todo';
+                }
+            }
+
+            if ($campo == 'Modelo') {
+                $data['modelos'] = $modeloModel->like('Nombre', $valor)
+                ->findAll();
+                if (isset($data['modelos'][0])) {
+                    $data['bicicletas'] = $bicicletaModel->where('Modelo',($data['modelos'][0]->idModelo))->findAll();    
+                    $data['marcas'] = $marcaModel->where('idMarca',($data['bicicletas'][0]->Marca))->findAll();
+                    $data['componentes'] = $componentesModel->where('idComponentes',($data['bicicletas'][0]->Componentes))->findAll();
+                    $data['caracteristicas'] = $caracteristicasModel->where('idCaracteristicas',($data['bicicletas'][0]->Caracteristicas))->findAll();
+                }
+                else{
+                    $campo = 'Todo';
+                }
+            }
+
+            if ($campo == 'Precio') {
+                $data['bicicletas'] = $bicicletaModel->where('Precio',$valor)->findAll();    
+                $data['marcas'] = $marcaModel->find();
+                $data['modelos'] = $modeloModel->findAll();
+                $data['componentes'] = $componentesModel->findAll();
+                $data['caracteristicas'] = $caracteristicasModel->findAll();
+            }
+
+            if ($campo == 'Todo') {
+                $data['bicicletas'] = $bicicletaModel->findAll();    
+                $data['marcas'] = $marcaModel->find();
+                $data['modelos'] = $modeloModel->findAll();
+                $data['componentes'] = $componentesModel->findAll();
+                $data['caracteristicas'] = $caracteristicasModel->findAll();
+            }
+            
 
         } else {
-            $nombre = "";
-            $data['mascotas'] = $mascotaModel->findAll();
+            $campo =
+            $valor =
 
+            $data['bicicletas'] = $bicicletaModel->findAll();    
+            $data['marcas'] = $marcaModel->find();
+            $data['modelos'] = $modeloModel->findAll();
+            $data['componentes'] = $componentesModel->findAll();
+            $data['caracteristicas'] = $caracteristicasModel->findAll();
         }
         return
             view('common/head') .
             view('common/menu') .
-            view('mascota/buscar', $data) .
+            view('bicicleta/buscar', $data) .
             view('common/footer');
     }
+
 }

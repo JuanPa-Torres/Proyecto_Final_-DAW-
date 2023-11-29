@@ -66,10 +66,10 @@ class Modelo extends BaseController
         return true;
     }
 
-    public function delete($idRaza){
-        $razaModel = model('RazaModel');
-        $razaModel->delete($idRaza);
-        return redirect('raza/mostrar');
+    public function delete($idModelo){
+        $modelo = model('ModeloModel');
+        $modelo->delete($idModelo);
+        return redirect('administrador/modelo');
     }
 
     public function editar($id)
@@ -124,29 +124,52 @@ class Modelo extends BaseController
         return true;
     }
 
+
     public function buscar(){
-    $razaModel = model('RazaModel');
-    if(isset($_GET['nombre'])){
-        $nombre =$_GET['nombre']; 
-        $descripcion =$_GET['descripcion'];
-        $origen =$_GET['origen'];
+
+        $modeloModel = model('ModeloModel');
+
+        if(isset($_GET['Campo']) && isset($_GET['Valor'])){
+        $campo =$_GET['Campo']; 
+        $valor =$_GET['Valor'];
         
         
+        if($campo == 'Nombre'){
+            $data['modelos']=$modeloModel->like('Nombre',$valor)
+            ->findAll();
+        }
 
-        $data['razas']=$razaModel->like('nombre',$nombre)
-       ->like('descripcion', $descripcion)->like('origen', $origen)
-        ->findAll();
+        if($campo == 'Gama'){
+            $data['modelos']=$modeloModel->like('Gama',$valor)
+            ->findAll();
+        }
 
+        if($campo == 'Año'){
+            $data['modelos']=$modeloModel->like('Año',$valor)
+            ->findAll();
+        }
+
+        if($campo == 'Modalidad'){
+            $data['modelos']=$modeloModel->like('Modalidad',$valor)
+            ->findAll();
+        }
+
+        if($campo == 'Todo'){
+            $data ['modelos']=$modeloModel->findAll();
+        }
+
+       
     }
     else{
-        $nombre = "";
-        $data ['razas']=$razaModel->findAll();
+        $campo = "";
+        $valor = "";
+        $data ['modelos']=$modeloModel->findAll();
         
     }
         return 
         view('common/head') .
         view('common/menu') .
-        view('raza/buscar',$data) .
+        view('modelo/buscar',$data) .
         view('common/footer');
     }
 }

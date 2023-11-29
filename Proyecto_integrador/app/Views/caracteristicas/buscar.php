@@ -1,30 +1,28 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <form action="<?= base_url('index.php/direccion/buscar/'); ?>" method="GET">
-                <label for="estado">Estado</label>
-                <input type="text" class="form-control" name="estado"
-                minlength="1" maxlength ="30" pattern="[a-z - A-Z \s]{1,15}">
-               
-                <label for="ciudad">Ciudad</label>
-                <input type="text" class="form-control" name="ciudad"
-                minlength="1" maxlength ="30" pattern="[a-z - A-Z \s]{1,15}">
+            <h1 align="center">Buscar características</h1>
 
-                <label for="calle">Calle</label>
-                <input type="text" class="form-control" name="calle"
-                minlength="1" maxlength ="30" pattern="[a-z - A-Z \s]{1,15}">
+            <form action="<?= base_url('/administrador/caracteristicas/buscar'); ?>" method="GET">
 
-                <label for="noExterior">Numero Exterior</label>
-                <input type="text" class="form-control" name="noExterior"
-                minlength="1" maxlength ="30" pattern="[0-9 \s]{1,80}">
+                <div class="col-5">
+                    <label for="Campo">Buscar por: </label>
+                    <select name="Campo" class="form-control">
+                        <option value="Todo">Mostrar todo</option>
+                        <option value="Material">Material</option>
+                        <option value="Limite_Peso">Límite de peso</option>
+                        <option value="Talla_Cuadro">Talla de cuadro</option>
+                        <option value="Geometrias">Geometrías</option>
+                    </select>
+                </div>
 
-                <label for="cp">CP</label>
-                <input type="text" class="form-control" name="cp"
-                minlength="1" maxlength ="30" pattern="[0-9 \s]{1,5}">
 
-               
+                <div class="col-5">
+                    <label for="Valor">Parecido a:</label>
+                    <input type="text" class="form-control" name="Valor" maxlength="30"
+                        pattern="[a-z - A-Z 0-9 \s]{1,15}">
+                </div>
 
-                
                 <input type="submit" class="btn btn-outline-success" value="Buscar">
 
             </form>
@@ -33,27 +31,41 @@
 
     <div class="row">
         <div class="col-12">
-            <table class="table">
+            <h2>Características</h2>
+            <table class=" table table-bordered-stripped border-primary">
                 <thead>
-                <th>Estado</th>
-                    <th>Ciudad</th>
-                    <th>Calle</th>
-                    <th>Numero Exterior</th>
-                    <th>CP</th>
+                    <th>ID</th>
+                    <th>Cuadro</th>
+                    <th>Material</th>
+                    <th>Límite de peso</th>
+                    <th>Colores disponibles</th>
+                    <th>Garantia</th>
+                    <th colspan="2"></th>
                 </thead>
                 <tbody>
-                    <?php foreach ($direcciones as $direccion): ?>
+                    <?php foreach ($caracteristicas as $caracteristica): ?>
                         <tr>
-                        <td><?=$direccion->estado ?></td>
-                        <td><?=$direccion->ciudad?></td>
-                        <td><?=$direccion->calle ?></td>
-                        <td><?=$direccion->noExterior ?></td>
-                        <td><?=$direccion->cp ?></td>
+                            <td><?= $caracteristica->idCaracteristicas ?></td>
+                            <td>Talla "<?= $caracteristica->Talla_Cuadro ?>" con geometría "<?= $caracteristica->Geometrias ?>"
+                            </td>
+                            <td><?= $caracteristica->Material ?></td>
+                            <td><?= $caracteristica->Limite_Peso ?></td>
+                            <td><?= $caracteristica->Colores_Disponibles ?></td>
+                            <td><?= $caracteristica->Garantia ?></td>
 
+                            <td>
+                                <a
+                                    href="<?= base_url('index.php/caracteristicas/delete/' . $caracteristica->idCaracteristicas); ?>">Eliminar</a>
+                                <a
+                                    href="<?= base_url('index.php/caracteristicas/editar/' . $caracteristica->idCaracteristicas); ?>">Editar</a>
+                            </td>
                         </tr>
                     <?php endforeach ?>
                 </tbody>
             </table>
+
+
         </div>
-        
     </div>
+
+</div>

@@ -72,10 +72,10 @@ class Caracteristicas extends BaseController
         return true;
     }
 
-    public function delete($idRaza){
-        $razaModel = model('RazaModel');
-        $razaModel->delete($idRaza);
-        return redirect('raza/mostrar');
+    public function delete($idCaracteristica){
+        $caracteristicas = model('CaracteristicasModel');
+        $caracteristicas->delete($idCaracteristica);
+        return redirect('administrador/caracteristicas');
     }
 
     public function editar($id)
@@ -137,28 +137,50 @@ class Caracteristicas extends BaseController
     }
 
     public function buscar(){
-    $razaModel = model('RazaModel');
-    if(isset($_GET['nombre'])){
-        $nombre =$_GET['nombre']; 
-        $descripcion =$_GET['descripcion'];
-        $origen =$_GET['origen'];
+
+        $caracteristicasModel = model('CaracteristicasModel');
+
+        if(isset($_GET['Campo']) && isset($_GET['Valor'])){
+        $campo =$_GET['Campo']; 
+        $valor =$_GET['Valor'];
         
         
+        if($campo == 'Material'){
+            $data['caracteristicas']=$caracteristicasModel->like('Material',$valor)
+            ->findAll();
+        }
 
-        $data['razas']=$razaModel->like('nombre',$nombre)
-       ->like('descripcion', $descripcion)->like('origen', $origen)
-        ->findAll();
+        if($campo == 'Limite_Peso'){
+            $data['caracteristicas']=$caracteristicasModel->like('Limite_Peso',$valor)
+            ->findAll();
+        }
 
+        if($campo == 'Talla_Cuadro'){
+            $data['caracteristicas']=$caracteristicasModel->like('Talla_Cuadro',$valor)
+            ->findAll();
+        }
+
+        if($campo == 'Geometrias'){
+            $data['caracteristicas']=$caracteristicasModel->like('Geometrias',$valor)
+            ->findAll();
+        }
+
+        if($campo == 'Todo'){
+            $data ['caracteristicas']=$caracteristicasModel->findAll();
+        }
+
+       
     }
     else{
-        $nombre = "";
-        $data ['razas']=$razaModel->findAll();
+        $campo = "";
+        $valor = "";
+        $data ['caracteristicas']=$caracteristicasModel->findAll();
         
     }
         return 
         view('common/head') .
         view('common/menu') .
-        view('raza/buscar',$data) .
+        view('caracteristicas/buscar',$data) .
         view('common/footer');
     }
 }

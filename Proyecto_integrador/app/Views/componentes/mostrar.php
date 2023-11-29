@@ -31,6 +31,7 @@
                             <ul>
                                 <li><?= $componente->Tija ?></li>
                                 <li><?= $componente->Amortiguador ?></li>
+                                <li><?= $componente->Bielas ?></li>
                                 <li><?= $componente->Llantas ?></li>
                                 <li><?= $componente->Casstte ?></li>
                                 <li><?= $componente->Casstte ?></li>
@@ -39,7 +40,7 @@
                         </td>
                        
                             <td>    
-                                <a href="<?= base_url('administrador/componentes/eliminar/' . $componente->idComponentes); ?>">Eliminar</a>
+                                <a href="<?= base_url('administrador/componentes/delete/' . $componente->idComponentes); ?>">Eliminar</a>
                                 <a href="<?= base_url('administrador/componentes/editar/' . $componente->idComponentes); ?>">Editar</a>
                             </td>
                         </tr>

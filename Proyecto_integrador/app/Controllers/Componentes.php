@@ -82,11 +82,11 @@ class Componentes extends BaseController
         return true;
     }
 
-    public function delete($idHistorial_Medico)
+    public function delete($idComponente)
     {
-        $historial_MedicoModel = model('Historial_MedicoModel');
-        $historial_MedicoModel->delete($idHistorial_Medico);
-        return redirect('historial_Medico/mostrar');
+        $componentes = model('ComponentesModel');
+        $componentes->delete($idComponente);
+        return redirect('administrador/componentes');
     }
 
     public function editar($id)
@@ -154,30 +154,53 @@ class Componentes extends BaseController
         return true;
     }
 
-    public function buscar()
-    {
-        $historial_MedicoModel = model('Historial_MedicoModel');
-        if (isset($_GET['nombre'])) {
-            $estadoSalud = $_GET['estadoSalud'];
-            $alergias = $_GET['alergias'];
-            $vacunas = $_GET['vacunas'];
-            $tratamientos = $_GET['tratamientos'];
+    public function buscar(){
 
+        $componentes = model('ComponentesModel');
 
-
-            $data['historiales_Medicos'] = $historial_MedicoModel->like('estadoSalud', $estadoSalud)
-                ->like('alergias', $alergias)->like('vacunas', $vacunas)->like('tratamientos', $tratamientos)
-                ->findAll();
-
-        } else {
-            $nombre = "";
-            $data['historiales_Medicos'] = $historial_MedicoModel->findAll();
-
+        if(isset($_GET['Campo']) && isset($_GET['Valor'])){
+        $campo =$_GET['Campo']; 
+        $valor =$_GET['Valor'];
+        
+        
+        if($campo == 'Casstte'){
+            $data['componentes']=$componentes->like('Casstte',$valor)
+            ->findAll();
         }
-        return
-            view('common/head') .
-            view('common/menu') .
-            view('historial_Medico/buscar', $data) .
-            view('common/footer');
+
+        if($campo == 'Bielas'){
+            $data['componentes']=$componentes->like('Bielas',$valor)
+            ->findAll();
+        }
+
+        if($campo == 'Cambio'){
+            $data['componentes']=$componentes->like('Cambio_Delantero',$valor)
+            ->orlike('Cambio_Trasero',$valor)
+            ->findAll();
+        }
+
+        if($campo == 'Ruedas'){
+            $data['componentes']=$componentes->like('Ruedas_Delanteras',$valor)
+            ->orlike('Ruedas_Traseras',$valor)
+            ->findAll();
+        }
+
+        if($campo == 'Todo'){
+            $data ['componentes']=$componentes->findAll();
+        }
+
+       
+    }
+    else{
+        $campo = "";
+        $valor = "";
+        $data ['componentes']=$componentes->findAll();
+        
+    }
+        return 
+        view('common/head') .
+        view('common/menu') .
+        view('componentes/buscar',$data) .
+        view('common/footer');
     }
 }
