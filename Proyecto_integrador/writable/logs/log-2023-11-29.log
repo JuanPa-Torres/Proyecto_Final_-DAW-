@@ -2,3 +2,117 @@ CRITICAL - 2023-11-29 04:35:17 --> Call to undefined function CodeIgniter\locale
 #0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
 #1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\spark(45): require('C:\\Users\\Mois\xC3\xA9...')
 #2 {main}
+CRITICAL - 2023-11-29 00:01:46 --> Undefined array key "idDistribuidor"
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Distribuidor.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Mois\xC3\xA9...', 149)
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Distribuidor->update()
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#6 {main}
+CRITICAL - 2023-11-29 00:09:09 --> Undefined array key "idDistribuidor"
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Distribuidor.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Mois\xC3\xA9...', 149)
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Distribuidor->update()
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#6 {main}
+CRITICAL - 2023-11-29 00:09:28 -->  route cannot be found while reverse-routing.
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Common.php(832): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Distribuidor.php(62): redirect('distribuidor/mo...')
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Distribuidor->agregar()
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#8 {main}
+CRITICAL - 2023-11-29 00:12:47 --> rmyuired is not a valid rule.
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('rmyuired')
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('Telefono', 'Telefono', '', Array, Array)
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Distribuidor.php(122): CodeIgniter\Controller->validate(Array)
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Distribuidor->editar('25')
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#6 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#9 {main}
+CRITICAL - 2023-11-29 00:14:00 --> rmyuired is not a valid rule.
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('rmyuired')
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('Telefono', 'Telefono', '123', Array, Array)
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Distribuidor.php(122): CodeIgniter\Controller->validate(Array)
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Distribuidor->editar('25')
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#6 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#9 {main}
+CRITICAL - 2023-11-29 00:14:12 --> rmyuired is not a valid rule.
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('rmyuired')
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('Telefono', 'Telefono', '12345', Array, Array)
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Distribuidor.php(122): CodeIgniter\Controller->validate(Array)
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Distribuidor->editar('25')
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#6 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#9 {main}
+CRITICAL - 2023-11-29 00:14:25 --> rmyuired is not a valid rule.
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('rmyuired')
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('Telefono', 'Telefono', '567890', Array, Array)
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Distribuidor.php(122): CodeIgniter\Controller->validate(Array)
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Distribuidor->editar('25')
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#6 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#9 {main}
+CRITICAL - 2023-11-29 00:14:34 --> rmyuired is not a valid rule.
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('rmyuired')
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('Telefono', 'Telefono', '567890', Array, Array)
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Distribuidor.php(122): CodeIgniter\Controller->validate(Array)
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Distribuidor->editar('25')
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#6 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#9 {main}
+CRITICAL - 2023-11-29 00:16:38 --> 0-9 is not a valid rule.
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('0-9')
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('Telefono', 'Telefono', 'cf', Array, Array)
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Distribuidor.php(122): CodeIgniter\Controller->validate(Array)
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Distribuidor->editar('25')
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#6 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#9 {main}
+CRITICAL - 2023-11-29 00:19:00 --> regex:/^ is not a valid rule.
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('regex:/^')
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('Telefono', 'Telefono', 'sdfg', Array, Array)
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Distribuidor.php(122): CodeIgniter\Controller->validate(Array)
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Distribuidor->editar('25')
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#6 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#9 {main}
+CRITICAL - 2023-11-29 00:19:33 -->  is not a valid rule.
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('Telefono', 'Telefono', '345678', Array, Array)
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Distribuidor.php(122): CodeIgniter\Controller->validate(Array)
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Distribuidor->editar('25')
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Distribuidor))
+#6 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#9 {main}

@@ -7,7 +7,7 @@
         ?>
 
         <div class="col-8">
-            <form action="<?= base_url('/administrador/distribuidor/update'); ?>" method="POST">
+            <form action="<?= base_url('/administrador/distribuidor/agregar'); ?>" method="POST">
                 <?= csrf_field() ?>
                 <div class="mb-3">
                     <h1>Agregar distribuidor</h1>

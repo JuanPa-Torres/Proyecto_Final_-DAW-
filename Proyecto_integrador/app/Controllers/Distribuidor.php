@@ -59,7 +59,7 @@ class Distribuidor extends BaseController
                 . view('common/footer');
         } else {
             if ($this->insert()) {
-                return redirect('distribuidor/mostrar');
+                return redirect('administrador/distribuidor');
             }
         }
     }
@@ -97,10 +97,10 @@ class Distribuidor extends BaseController
     Función que recupera una inserción del modelo de los distribuidores para luego 
     editar sus campos en una vista que contiene un formulario
     */
-    public function editar($idDistribuidor)
+    public function editar($id)
     {
         $distribuidor = model('DistribuidorModel');
-        $data['distribuidor'] = $distribuidor->find($idDistribuidor);
+        $data['distribuidor'] = $distribuidor->find($id);
 
         $validation = \Config\Services::validation();
 
@@ -115,7 +115,7 @@ class Distribuidor extends BaseController
         $rules = [
             'Nombre' => 'required',
             'Ciudad' => 'required',
-            'Telefono' => 'required' | '0-9',
+            'Telefono' => 'required',
             'Correo' => 'required'
         ];
 
@@ -127,7 +127,7 @@ class Distribuidor extends BaseController
                 view('common/footer');
         } else {
             if ($this->update()) {
-                return redirect('distribuidor/mostrar');
+                return redirect('administrador/distribuidor');
             }
         }
     }

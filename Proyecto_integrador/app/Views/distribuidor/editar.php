@@ -7,27 +7,27 @@
         ?>
 
         <div class="col-8">
-            <form action="<?= base_url('distribuidor/update'); ?>" method="POST">
+            <form action="<?= base_url('distribuidor/editar/'.$distribuidor->idDistribuidor); ?>" method="POST">
                 <?= csrf_field() ?>
                 <input type="hidden" name="idDistribuidor" value="<?= $distribuidor->idDistribuidor; ?>" />
                 <div class="mb-3">
-                    <label for="Nombre" class="form-label" value="<?= $distribuidor->Nombre?>">Nombre(s)</label>
-                    <input type="text" class="form-control" name="Nombre" id="Nombre">
+                    <label for="Nombre" class="form-label">Nombre(s)</label>
+                    <input type="text" class="form-control" name="Nombre" id="Nombre" value="<?= $distribuidor->Nombre?>">
                 </div>
 
                 <div class="mb-3">
-                    <label for="Ciudad" class="form-label"value="<?= $distribuidor->Ciudad?>">Ciudad</label>
-                    <input type="text" class="form-control" name="Ciudad" id="Ciudad">
+                    <label for="Ciudad" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" name="Ciudad" id="Ciudad" value="<?= $distribuidor->Ciudad?>">
                 </div>
 
                 <div class="mb-3">
-                    <label for="Telefono" class="form-label" value="<?= $distribuidor->Telefono?>">Telefono </label>
-                    <input type="number" class="form-control" name="Telefono" id="Telefono">
+                    <label for="Telefono" class="form-label">Telefono </label>
+                    <input type="text" class="form-control" name="Telefono" id="Telefono" value="<?= $distribuidor->Telefono?>">
                 </div>
 
                 <div class="mb-3">
-                    <label for="Correo" class="form-label"value="<?= $distribuidor->Correo?>">Correo electrónico</label>
-                    <input type="text" class="form-control" name="Correo" id="Correo">
+                    <label for="Correo" class="form-label">Correo electrónico</label>
+                    <input type="text" class="form-control" name="Correo" id="Correo"value="<?= $distribuidor->Correo?>">
                 </div>
 
                 <div class="mb-3">
