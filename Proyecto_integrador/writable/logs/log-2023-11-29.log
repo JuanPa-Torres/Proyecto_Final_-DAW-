@@ -316,3 +316,32 @@ CRITICAL - 2023-11-29 09:58:00 --> Call to a member function delete() on null
 #3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #5 {main}
+ERROR - 2023-11-29 12:01:24 --> Unknown column 'Talla_Cuadro' in 'field list'
+CRITICAL - 2023-11-29 12:01:24 --> Unknown column 'Talla_Cuadro' in 'field list'
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Co...', 0)
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Co...')
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Co...')
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Co...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Componentes.php(66): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Componentes.php(48): App\Controllers\Componentes->insert()
+#9 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Componentes->agregar()
+#10 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Componentes))
+#11 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#14 {main}
+CRITICAL - 2023-11-29 12:05:12 --> Attempt to read property "idComponentes" on null
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Views\componentes\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\Users\\Mois\xC3\xA9...', 10)
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\View\View.php(210): include('C:\\Users\\Mois\xC3\xA9...')
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Common.php(1089): CodeIgniter\View\View->render('componentes/edi...', Array, true)
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Componentes.php(125): view('componentes/edi...', Array, Array)
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Componentes->editar('22')
+#6 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Componentes))
+#7 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#10 {main}

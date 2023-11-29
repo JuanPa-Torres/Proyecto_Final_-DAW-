@@ -138,8 +138,9 @@ $routes->get('/administrador/bicicletas', 'Bicicleta::mostrar');
 $routes->get('/administrador/bicicletas/agregar', 'Bicicleta::agregar');
 $routes->post('/administrador/bicicletas/agregar', 'Bicicleta::agregar');
 //----------
-$routes->get('/bicicletas/editar/(:num)', 'Bicicleta::editar/$1');
-$routes->get('/bicicletas/delete/(:num)', 'Bicicleta::delete/$1');
+$routes->get('/administrador/bicicletas/editar/(:num)', 'Bicicleta::editar/$1');
+$routes->post('/administrador/bicicletas/editar/(:num)', 'Bicicleta::editar/$1');
+$routes->get('/administrador/bicicletas/delete/(:num)', 'Bicicleta::delete/$1');
 $routes->post('/administrador/bicicletas/insert', 'Bicicleta::insert');
 $routes->post('/administrador/bicicletas/update', 'Bicicleta::update');
 

@@ -7,7 +7,7 @@
      ?>
        
         <div class="col-8">
-            <form action="<?= base_url('/administrador/componentes/editar/'.$caracteristicas->idCaracteristicas ); ?>" method="POST">
+            <form action="<?= base_url('/administrador/caracteristicas/editar/'.$caracteristicas->idCaracteristicas ); ?>" method="POST">
             <?= csrf_field() ?>
             <input type="hidden" value="<?= $caracteristicas->idCaracteristicas ?>" name="idCaracteristicas">
                 <div class="mb-3">

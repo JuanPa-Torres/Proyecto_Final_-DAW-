@@ -7,7 +7,7 @@
      ?>
        
         <div class="col-8">
-            <form action="<?= base_url('/administrador/componentes/agregar'); ?>" method="POST">
+            <form action="<?= base_url('/administrador/caracteristicas/agregar'); ?>" method="POST">
             <?= csrf_field() ?>
                 <div class="mb-3">
                     <label for="Talla_Cuadro" class="form-label">Talla del cuadro</label>
