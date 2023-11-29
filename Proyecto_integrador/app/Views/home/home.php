@@ -4,343 +4,233 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
   <style>
-    .form {
-  position: relative;
-  display: block;
-  padding: 2.2rem;
+.container {
   max-width: 350px;
-  background: linear-gradient(14deg, rgba(2,0,36, 0.8) 0%, rgba(24, 24, 65, 0.7) 66%, 
-            rgb(20, 76, 99) 100%), radial-gradient(circle, rgba(2,0,36, 0.5) 0%, 
-            rgba(32, 15, 53, 0.2) 65%, rgba(14, 29, 28, 0.9) 100%);
-  border: 2px solid #fff;
-  -webkit-box-shadow: rgba(0,212,255) 0px 0px 50px -15px;
-  box-shadow: rgba(0,212,255) 0px 0px 50px -15px;
-  overflow: hidden;
-  z-index: +1;
+  background: #f8f9fd;
+  background: linear-gradient(
+    0deg,
+    rgb(255, 255, 255) 0%,
+    rgb(244, 247, 251) 100%
+  );
+  border-radius: 40px;
+  padding: 25px 35px;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+  margin: 20px;
 }
 
-/*------input and submit section-------*/
-
-.input-container {
-  position: relative;
-}
-
-.input-container input, .form button {
-  outline: none;
-  border: 2px solid #ffffff;
-  margin: 8px 0;
-  font-family: monospace;
-}
-
-.input-container input {
-  background-color: #fff;
-  padding: 6px;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  width: 250px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-}
-
-.input-mail:focus::placeholder {
-  opacity: 0;
-  transition: opacity .9s;
-}
-
-.input-pwd:focus::placeholder {
-  opacity: 0;
-  transition: opacity .9s;
-}
-
-.submit {
-  position: relative;
-  display: block;
-  padding: 8px;
-  background-color: #c0c0c0;
-  color: #ffffff;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
-  width: 100%;
-  text-transform: uppercase;
-  overflow: hidden;
-}
-
-.submit:hover {
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  border-radius: 3.9px;
-  box-shadow: 4px 5px 17px -4px #ffffff;
-  cursor: pointer;
-}
-
-.submit:hover::before {
-  -webkit-animation: sh02 0.5s 0s linear;
-  -moz-animation: sh02 0.5s 0s linear;
-  animation: sh02 .5s 0s linear;
-}
-
-.submit::before {
-  content: '';
-  display: block;
-  width: 0px;
-  height: 85%;
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  opacity: 0;
-  background: #fff;
-  box-shadow: 0 0 50px 30px #fff;
-  -webkit-transform: skewX(-20deg);
-  -moz-transform: skewX(-20deg);
-  -ms-transform: skewX(-20deg);
-  -o-transform: skewX(-20deg);
-  transform: skewX(-20deg);
-}
-
-@keyframes sh02 {
-  from {
-    opacity: 0;
-    left: 0%;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    left: 100%;
-  }
-}
-
-/*--------signup section---------*/
-
-.signup-link {
-  color: #c0c0c0;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.heading {
   text-align: center;
-  font-family: monospace;
+  font-weight: 900;
+  font-size: 30px;
+  color: rgb(16, 137, 211);
 }
 
-.signup-link a {
-  color: #fff;
+.form {
+  margin-top: 20px;
+}
+
+.form .input {
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: #cff0ff 0px 10px 10px -5px;
+  border-inline: 2px solid transparent;
+}
+
+.form .input::-moz-placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.form .input::placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.form .input:focus {
+  outline: none;
+  border-inline: 2px solid #12b1d1;
+}
+
+.form .forgot-password {
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.form .forgot-password a {
+  font-size: 11px;
+  color: #0099ff;
   text-decoration: none;
 }
 
-.up:hover {
-  text-decoration: underline;
-}
-
-
-/*--------header section-----------*/
-
-.form-title {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-family: monospace;
-  font-weight: 600;
-  text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
-  animation-duration: 1.5s;
-  overflow: hidden;
-  transition: .12s;
-}
-
-.form-title span {
-  animation: flickering 2s linear infinite both;
-}
-
-.title-2 {
+.form .login-button {
   display: block;
-  margin-top: -0.5rem;
-  font-size: 2.1rem;
-  font-weight: 800;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  -webkit-text-stroke: #fff 0.1rem;
-  letter-spacing: 0.2rem;
-  color: transparent;
-  position: relative;
-  text-shadow: 0px 0px 16px #CECECE;
-}
-
-.title-2 span::before,
-.title-2 span::after {
-  content: '—';
-}
-
-@keyframes flickering {
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  41.99% {
-    opacity: 1;
-  }
-
-  42% {
-    opacity: 0;
-  }
-
-  43% {
-    opacity: 0;
-  }
-
-  43.01% {
-    opacity: 1;
-  }
-
-  47.99% {
-    opacity: 1;
-  }
-
-  48% {
-    opacity: 0;
-  }
-
-  49% {
-    opacity: 0;
-  }
-
-  49.01% {
-    opacity: 1;
-  }
-}
-
-/*---------shooting stars-----------*/
-
-
-.bg-stars {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  z-index: -2;
-  background-size: cover;
-  animation: animateBg 50s linear infinite;
+  font-weight: bold;
+  background: linear-gradient(
+    45deg,
+    rgb(16, 137, 211) 0%,
+    rgb(18, 177, 209) 100%
+  );
+  color: white;
+  padding-block: 15px;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
+  border: none;
+  transition: all 0.2s ease-in-out;
 }
 
-@keyframes animateBg {
-  0%,100% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.2);
-  }
+.form .login-button:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
 }
 
-.star {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 4px;
-  height: 4px;
-  background: #fff;
+.form .login-button:active {
+  transform: scale(0.95);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 10px -10px;
+}
+
+.social-account-container {
+  margin-top: 25px;
+}
+
+.social-account-container .title {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  color: rgb(170, 170, 170);
+}
+
+.social-account-container .social-accounts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.social-account-container .social-accounts .social-button {
+  background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(112, 112, 112) 100%);
+  border: 5px solid white;
+  padding: 5px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(255,255,255,0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,0.1);
-  animation: animate 3s linear infinite;
+  width: 40px;
+  aspect-ratio: 1;
+  display: grid;
+  place-content: center;
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 12px 10px -8px;
+  transition: all 0.2s ease-in-out;
 }
 
-.star::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 300px;
-  height: 1px;
-  background: linear-gradient(90deg,#fff,transparent);
+.social-account-container .social-accounts .social-button .svg {
+  fill: white;
+  margin: auto;
 }
 
-@keyframes animate {
-  0% {
-    transform: rotate(315deg) translateX(0);
-    opacity: 1;
-  }
-
-  70% {
-    opacity: 1;
-  }
-
-  100% {
-    transform: rotate(315deg) translateX(-1000px);
-    opacity: 0;
-  }
+.social-account-container .social-accounts .social-button:hover {
+  transform: scale(1.2);
 }
 
-.star:nth-child(1) {
-  top: 0;
-  right: 0;
-  left: initial;
-  animation-delay: 0s;
-  animation-duration: 1s;
+.social-account-container .social-accounts .social-button:active {
+  transform: scale(0.9);
 }
 
-.star:nth-child(2) {
-  top: 0;
-  right: 100px;
-  left: initial;
-  animation-delay: 0.2s;
-  animation-duration: 3s;
+.agreement {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
 }
 
-.star:nth-child(3) {
-  top: 0;
-  right: 220px;
-  left: initial;
-  animation-delay: 2.75s;
-  animation-duration: 2.75s;
+.agreement a {
+  text-decoration: none;
+  color: #0099ff;
+  font-size: 9px;
 }
 
-.star:nth-child(4) {
-  top: 0;
-  right: -220px;
-  left: initial;
-  animation-delay: 1.6s;
-  animation-duration: 1.6s;
-}
+
   </style>
-
+  
 </head>
 <body>
   
-<form class="form">
-     <div class="form-title"><span>sign in to your</span></div>
-      <div class="title-2"><span>SPACE</span></div>
-      <div class="input-container">
-        <input class="input-mail" type="email" placeholder="Enter email">
-        <span> </span>
-      </div>
-
-      <section class="bg-stars">
-        <span class="star"></span>
-        <span class="star"></span>
-        <span class="star"></span>
-        <span class="star"></span>
-      </section>
-
-      <div class="input-container">
-        <input class="input-pwd" type="password" placeholder="Enter password">
-      </div>
-      <button type="submit" class="submit">
-        <span class="sign-text">Sign in</span>
+<div class="container"  style="display:flex; position:absolute; top:25%; left:37%;">
+  <div class="row">
+  <div class="heading">Iniciar Sesión</div>
+  <form class="form" action="<?= base_url('index.php/usuario/mostrar'); ?>">
+    <input
+      placeholder="Correo"
+      id="Correo"
+      name="Correo"
+      type="Correo"
+      class="input"
+      required=""
+    />
+    <input
+      placeholder="Contraseña"
+      id="Contraseña"
+      name="Contraseña"
+      type="Contraseña"
+      class="input"
+      required=""
+    />
+    <span class="forgot-password"><a href="<?= base_url('index.php/usuario/mostrar'); ?>">Olvide Contraseña</a></span>
+    <input value="Entrar" type="submit" class="login-button" />
+  </form>
+  <div class="social-account-container">
+    <span class="title">Iniciar sesion con</span>
+    <div class="social-accounts">
+      <a href="https://bit.ly/4a1GJ9x">
+      <button class="social-button google">
+        <svg
+          viewBox="0 0 488 512"
+          height="1em"
+          xmlns="http://www.w3.org/2000/svg"
+          class="svg"
+        >
+          <path
+            d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+          ></path>
+        </svg>
       </button>
-
-      <p class="signup-link">
-        No account?
-        <a href="" class="up">Sign up!</a>
-      </p>
-       
-   </form>
+      </a>
+      <a href="https://apple.co/3GjSeeW">
+      <button class="social-button apple">
+        <svg
+          viewBox="0 0 384 512"
+          height="1em"
+          xmlns="http://www.w3.org/2000/svg"
+          class="svg"
+        >
+          <path
+            d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"
+          ></path>
+        </svg>
+      </button>
+      </a>
+      <a href="https://twitter.com/login?lang=es">
+      <button class="social-button twitter">
+        <svg
+          viewBox="0 0 512 512"
+          height="1em"
+          xmlns="http://www.w3.org/2000/svg"
+          class="svg"
+        >
+          <path
+            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+          ></path>
+        </svg>
+      </button>
+      </a>
+    </div>
+  </div>
+  <span class="agreement"><a href="#">Políticas de Privacidad</a></span>
+  </div>
+</div>
 
 </body>
 </html>
-<!-- <a href="<?= base_url('index.php/usuario/mostrar'); ?>" class="btn btn-success">Entrar</a> -->
