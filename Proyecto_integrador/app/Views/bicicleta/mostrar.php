@@ -61,8 +61,8 @@
                                 <td>$<?= $bicicleta->Precio ?> MXN</td>
                                 <td><img src="<?= $bicicleta->Foto ?>" alt="" weight="100" height="100" ></td>
                                 <td>    
-                                    <a href="<?= base_url('index.php/mascota/delete/' . $bicicleta->idBicicleta); ?>">Eliminar</a>
-                                    <a href="<?= base_url('index.php/mascota/editar/' . $bicicleta->idBicicleta); ?>">Editar</a>
+                                    <a href="<?= base_url('index.php/bicicleta/delete/' . $bicicleta->idBicicleta); ?>">Eliminar</a>
+                                    <a href="<?= base_url('index.php/bicicleta/editar/' . $bicicleta->idBicicleta); ?>">Editar</a>
                                 </td>
                             </tr>
                     <?php endforeach ?>

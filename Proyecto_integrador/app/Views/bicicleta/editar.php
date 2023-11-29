@@ -1,47 +1,89 @@
 <div class="container">
     <div class="row">
-    <!-- <?php print_r($mascota); ?> -->
+        <?php
+        if (isset($validation)) {
+            print $validation->listErrors();
+        }
+        ?>
 
         <div class="col-8">
-            <h2>Editar Mascota</h2>
-            <form action="<?= base_url('mascota/update'); ?>" method="POST">
+            <form action="<?= base_url('/bicicleta/editar/'. $bicicleta->idBicicleta); ?>" method="POST">
                 <?= csrf_field() ?>
-                <input type="hidden" name="idMascota" value="<?= $mascota->idMascota; ?>" />
-
+                <input type="hidden" name="idBicicleta" value="<?= $bicicleta->idBicicleta ?>">
                 <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" name="nombre" id="nombre" value="<?= $mascota->nombre; ?>">
-                </div>
-
-                <div class="mb-3">
-                    <label for="especie" class="form-label">Especie</label>
-                    <input type="text" class="form-control" name="especie" id="especie" value="<?= $mascota->especie; ?>">
-                </div>
-
-                <div class="mb-3">
-                    <label for="sexo">Sexo</label>
-                    <select name="sexo" id="sexo" class="form-control">
-                        <?php if ($mascota->sexo == "Macho"): ?>
-                            <option value="macho" selected>Macho</option>
-                            <option value="hembra">Hembra</option>
-                        <?php else: ?>
-                            <option value="macho" >Macho</option>
-                            <option value="hembra" selected>Hembra</option>
-                        <?php endif ?>
+                    <label for="Marca" class="form-label" style="font-size:x-large;">Marca</label>
+                    <select class="col-12" name="Marca">
+                        <option value="<?=$bicicleta->Marca?>" default>
+                        <?php
+                            $db = \Config\Database::connect();
+                            $query = "SELECT Nombre FROM marca WHERE idMarca = $bicicleta->Marca";
+                            $resultado = $db->query($query)->getResultArray(); echo $resultado[0]["Nombre"];
+                            ?></option>
+                        <?php foreach ($marcas as $marca): ?>
+                            <option value="<?= $marca->idMarca ?>">
+                                <?= $marca->Nombre ?>
+                            </option>
+                        <?php endforeach; ?>
                     </select>
                 </div>
 
-
                 <div class="mb-3">
-                    <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
-                    <input type="text" class="form-control" name="fechaNacimiento" id="fechaNacimiento" value="<?= $mascota->fechaNacimiento; ?>">
+                    <label for="Modelo" class="form-label" style="font-size:x-large;">Modelo</label>
+                    <select class="col-12" name="Modelo">
+                    <option value="<?=$bicicleta->Modelo?>" default>
+                        <?php
+                            $db = \Config\Database::connect();
+                            $query = "SELECT Nombre FROM modelo WHERE idModelo = $bicicleta->Modelo";
+                            $resultado = $db->query($query)->getResultArray(); echo $resultado[0]["Nombre"];
+                            ?></option>
+                        <?php foreach ($modelos as $modelo): ?>
+                            <option value="<?= $modelo->idModelo ?>">
+                                <?= $modelo->Nombre ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
                 </div>
 
+                <div class="mb-3">
+                    <label for="Caracteristicas" class="form-label" style="font-size:x-large;">Características</label>
+                    <select class="col-12" name="Caracteristicas">
 
+                    <option value="<?=$bicicleta->Caracteristicas?>" default>
+                        <?php
+                            $db = \Config\Database::connect();
+                            $query = "SELECT Talla_Cuadro,Material,Colores_Disponibles,Geometrias,Peso,Limite_Peso,Garantia FROM caracteristicas WHERE idCaracteristicas = $bicicleta->Caracteristicas";
+                            $resultado = $db->query($query)->getResultArray(); echo $resultado[0]["Talla_Cuadro"] . ", " . $resultado[0]['Material']. ", " . $resultado[0]['Colores_Disponibles']. ", " .$resultado[0]['Geometrias']. ", " .$resultado[0]['Peso']. ", " . $resultado[0]['Limite_Peso']. ", " .$resultado[0]['Garantia'];
+                            ?></option>
+
+                        <?php foreach ($caracteristicas as $caracteristica): ?>
+                            <option value="<?= $caracteristica->idCaracteristicas ?>">
+                                <?= $caracteristica->Talla_Cuadro . ", " . $caracteristica->Material . ", " . $caracteristica->Colores_Disponibles . ", " . $caracteristica->Geometrias . ", " . $caracteristica->Peso . ", " . $caracteristica->Limite_Peso . ", " . $caracteristica->Garantia ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="Componentes" class="form-label" style="font-size:x-large;">Componentes</label>
+                    <select class="col-12" name="Componentes">
+                        <?php foreach ($componentes as $componente): ?>
+                            <option value="<?= $componente->idComponentes ?>">
+                                <?= $componente->Tija . ", " . $componente->Amortiguador . ", " . $componente->Llantas . ", " . $componente->Cambio_Delantero . ", " . $componente->Cambio_Trasero . ", " . $componente->Casstte . ", " . $componente->Frenos . ", " . $componente->Rotores_Frenos ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="Precio" class="form-label" style="font-size:x-large;">Precio</label>
+                    <input type="text" class="col-12" name="Precio" value="<?= $bicicleta->Precio ?>">
+                </div>
+
+                <div class="mb-3">
+                <label for="Foto" class="form-label" style="font-size:x-large;">Fotografía</label>
+                <input type="text"name="Foto" class="col-12" value="<?= $bicicleta->Foto ?>">
+                </div>
                 <div class="mb-3">
                     <input type="submit" class="btn btn-success">
                 </div>
-
 
             </form>
 

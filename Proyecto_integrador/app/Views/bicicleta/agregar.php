@@ -45,7 +45,7 @@
                     <label for="Componentes" class="form-label" style="font-size:x-large;">Componentes</label>
                     <select class="col-12" name="Componentes">
                         <?php foreach ($componentes as $componente): ?>
-                            <option value="14">
+                            <option value="<?= $componente->idComponentes ?>">
                                 <?= $componente->Tija . ", " . $componente->Amortiguador . ", " . $componente->Llantas . ", " . $componente->Cambio_Delantero . ", " . $componente->Cambio_Trasero . ", " . $componente->Casstte . ", " . $componente->Frenos . ", " . $componente->Rotores_Frenos ?>
                             </option>
                         <?php endforeach; ?>
