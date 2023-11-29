@@ -391,6 +391,7 @@
           <th>País de origen</th>
           <th>Correo</th>
           <th>Contraseña</th>
+          <th colspan="2"></th>
         </thead>
         <tbody>
           <?php foreach ($usuarios as $usuario): ?>
@@ -412,13 +413,13 @@
               </td>
               <td>
                 <a href="<?= base_url('/administrador/usuario/editar/' . $usuario->idUsuario); ?>">
-                  <img src="https://cdn-icons-png.flaticon.com/128/705/705120.png" alt="editar" class="service-img"
+                  <img src="https://cdn-icons-png.flaticon.com/128/3838/3838756.png" alt="editar" class="service-img"
                     width="60" height="60">
                 </a>
               </td>
               <td>
                 <a href="<?= base_url('/administrador/usuario/delete/' . $usuario->idUsuario); ?>">
-                  <img src="https://cdn-icons-png.flaticon.com/128/3541/3541990.png" alt="editar" class="service-img"
+                  <img src="https://cdn-icons-png.flaticon.com/128/1828/1828843.png" alt="editar" class="service-img"
                     width="60" height="60">
                 </a>
               </td>

@@ -33,6 +33,7 @@
                     <th>País de origen</th>
                     <th>País de distribución</th>
                     <th>Distribuidor</th>
+                    <th colspan="2"></th>
                 </thead>
                 <tbody>
                     <?php foreach ($marcas as $marca): ?>

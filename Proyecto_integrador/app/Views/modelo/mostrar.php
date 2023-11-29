@@ -20,9 +20,18 @@
                         <td><?=$modelo->Modalidad ?></td>
                         <td><?=$modelo->Año ?></td>
                         <td><?=$modelo->Gama ?></td>
-                        <td>    
-                            <a href="<?=base_url('/administrador/modelo/delete/'.$modelo->idModelo);?>">Eliminar</a>
-                            <a href="<?=base_url('/administrador/modelo/editar/'.$modelo->idModelo);?>">Editar</a>
+                        <td>
+                            <a href="<?=base_url('/administrador/modelo/editar/'.$modelo->idModelo);?>">
+                                <img src="https://cdn-icons-png.flaticon.com/128/3838/3838756.png" alt="editar"
+                                    class="service-img" width="40" height="40">
+                            </a>
+                        </td>
+                        <td>
+                            <a
+                            href="<?=base_url('/administrador/modelo/delete/'.$modelo->idModelo);?>">
+                                <img src="https://cdn-icons-png.flaticon.com/128/1828/1828843.png" alt="editar"
+                                    class="service-img" width="40" height="40">
+                            </a>
                         </td>
                     </tr>
                     <?php endforeach ?>

@@ -366,6 +366,7 @@
           <th>País de origen</th>
           <th>Correo</th>
           <th>Contraseña</th>
+          <th colspan="2"></th>
         </thead>
         <tbody>
           <?php foreach ($usuarios as $usuario): ?>
