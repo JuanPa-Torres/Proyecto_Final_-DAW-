@@ -1,0 +1,4 @@
+CRITICAL - 2023-11-29 04:35:17 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\spark(45): require('C:\\Users\\Mois\xC3\xA9...')
+#2 {main}

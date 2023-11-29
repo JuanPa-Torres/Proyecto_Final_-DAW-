@@ -419,3 +419,69 @@ CRITICAL - 2023-11-28 19:47:34 --> Cannot add or update a child row: a foreign k
 #12 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #13 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
 #14 {main}
+ERROR - 2023-11-28 21:23:49 --> Error connecting to the database: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+CRITICAL - 2023-11-28 21:23:49 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Modelo.php(16): CodeIgniter\BaseModel->findAll()
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Modelo->mostrar()
+#6 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Modelo))
+#7 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#10 {main}
+CRITICAL - 2023-11-28 21:44:18 -->  route cannot be found while reverse-routing.
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Common.php(832): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Marca.php(64): redirect('marca/mostrar')
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Marca->agregar()
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marca))
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#8 {main}
+CRITICAL - 2023-11-28 21:44:58 --> Undefined variable $distribuidores
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Views\marca\editar.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\Mois\xC3\xA9...', 37)
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\View\View.php(210): include('C:\\Users\\Mois\xC3\xA9...')
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Common.php(1089): CodeIgniter\View\View->render('marca/editar', Array, true)
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Marca.php(113): view('marca/editar', Array)
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Marca->editar('28')
+#6 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marca))
+#7 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#10 {main}
+CRITICAL - 2023-11-28 21:50:22 --> Undefined array key "nombre"
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Views\marca\editar.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Mois\xC3\xA9...', 40)
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\View\View.php(210): include('C:\\Users\\Mois\xC3\xA9...')
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Common.php(1089): CodeIgniter\View\View->render('marca/editar', Array, true)
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Marca.php(115): view('marca/editar', Array)
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Marca->editar('29')
+#6 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marca))
+#7 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#10 {main}
+CRITICAL - 2023-11-28 21:51:55 --> Undefined array key "idModelo"
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Modelo.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Mois\xC3\xA9...', 123)
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Modelo.php(105): App\Controllers\Modelo->update()
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Modelo->editar('20')
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Modelo))
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#7 {main}
+CRITICAL - 2023-11-28 21:52:17 --> Undefined array key "idModelo"
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Modelo.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Mois\xC3\xA9...', 123)
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\app\Controllers\Modelo.php(105): App\Controllers\Modelo->update()
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Modelo->editar('20')
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Modelo))
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#7 {main}

@@ -61,7 +61,7 @@ class Marca extends BaseController
                 . view('common/footer');
         } else {
             if ($this->insert()) {
-                return redirect('marca/mostrar');
+                return redirect('administrador/marca');
             }
         }
     }
@@ -99,17 +99,43 @@ class Marca extends BaseController
     Función que recupera una inserción del modelo de las direcciones para luego 
     editar sus campos en una vista que contiene un formulario
     */
-    public function editar($idDireccion)
+    public function editar($id)
     {
-        $direccionModel = model('DireccionModel');
-        $data['direccion'] = $direccionModel->find($idDireccion);
+        $distribuidores = model('DistribuidorModel');
+        $marca = model('MarcaModel');
+        $data['marca'] = $marca->find($id);
+        $data['distribuidores'] = $distribuidores->findAll();
 
-        return
-            view('common/head') .
-            view('common/menu') .
-            view('direccion/editar', $data) .
-            view('common/footer');
+        $validation = \Config\Services::validation();
+
+        if ((strtolower($this->request->getMethod()) === 'get')) {
+            return
+                view('common/head', $data) .
+                view('common/menu') .
+                view('marca/editar', $data) .
+                view('common/footer');
+        }
+
+        $rules = [
+            'Nombre' => 'required',
+            'Pais_Origen' => 'required',
+            'Pais_Distribuidor' => 'required',
+            'Distribuidor' => 'required'
+        ];
+
+        if (!$this->validate($rules)) {
+            return
+                view('common/head', $data) .
+                view('common/menu') .
+                view('marca/editar', ['validation' => $validation], $data) .
+                view('common/footer');
+        } else {
+            if ($this->update()) {
+                return redirect('administrador/marca');
+            }
+        }
     }
+
 
 
     /*
@@ -120,18 +146,18 @@ class Marca extends BaseController
     public function update()
     {
 
-        $direccionModel = model('DireccionModel');
+        $marca = model('MarcaModel');
 
         $data = [
-            "estado" => $_POST['estado'],
-            "ciudad" => $_POST['ciudad'],
-            "calle" => $_POST['calle'],
-            "noExterior" => $_POST['noExterior'],
-            "cp" => $_POST['cp']
+            "Nombre" => $_POST['Nombre'],
+            "Pais_Origen" => $_POST['Pais_Origen'],
+            "Logo" => $_POST['Logo'],
+            "Pais_Distribuidor" => $_POST['Pais_Distribuidor'],
+            "Distribuidor" => $_POST['Distribuidor']
         ];
 
-        $direccionModel->update($_POST['idDireccion'], $data);
-        return redirect('direccion/mostrar');
+        $marca->update($_POST['idMarca'], $data);
+        return true;
     }
 
 

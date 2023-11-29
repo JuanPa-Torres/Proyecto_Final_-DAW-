@@ -21,49 +21,48 @@ class Modelo extends BaseController
         view('common/footer');
     }
     
-    public function agregar(){
-        helper(['form','url']);
+    public function agregar()
+    {
+        helper(['form', 'url']);
 
+        $data['title'] = "Agregar Modelo";
+        $validation = \Config\Services::validation();
+        if (strtolower($this->request->getMethod()) === 'get') {
+            return view('common/head')
+                . view('common/menu')
+                . view('modelo/agregar', $data)
+                . view('common/footer');
+        }
 
-        $data['title']="Agregar Raza";   
-        $validation =  \Config\Services::validation();
-            if (strtolower($this->request->getMethod()) === 'get'){
-                return view('common/head')
-                .  view('common/menu')
-                .  view('raza/agregar',$data)
-                .  view('common/footer');
+        $rules = [
+            'Nombre' => 'required',
+            'Modalidad' => 'required',
+            'Año' => 'required',
+            'Gama' => 'required'
+        ];
+
+        if (!$this->validate($rules)) {
+            return view('common/head', $data)
+                . view('common/menu')
+                . view('modelo/agregar', ['validation' => $validation, $data])
+                . view('common/footer');
+        } else {
+            if ($this->insert()) {
+                return redirect('administrador/modelo');
             }
-
-            $rules = [
-                'nombre' => 'required|max_length[30]|min_length[3]',
-                'descripcion'=>'required',
-                'origen'=>'required'
-                
-            ];
-
-            if (! $this->validate($rules)) {
-                return view('common/head',$data)
-                .  view('common/menu')
-                .  view('raza/agregar',['validation' => $validation,$data])
-                .  view('common/footer');
-            }
-            else{
-                if($this->insert()){
-                    return redirect('raza/mostrar');
-                }
-            }
-
+        }
     }
 
-    public function insert(){
-        $razaModel = model('RazaModel');
+    public function insert()
+    {
+        $modelo = model('ModeloModel');
         $data = [
-            "nombre" => $_POST['nombre'],
-            "descripcion" => $_POST['descripcion'],
-            "origen" => $_POST['origen']
-            
+            "Nombre" => $_POST['Nombre'],
+            "Modalidad" => $_POST['Modalidad'],
+            "Año" => $_POST['Año'],
+            "Gama" => $_POST['Gama']
         ];
-        $razaModel->insert($data, false);
+        $modelo->insert($data, false);
         return true;
     }
 
@@ -73,30 +72,56 @@ class Modelo extends BaseController
         return redirect('raza/mostrar');
     }
 
-    public function editar($idRaza){
-        $razaModel = model('RazaModel');
-        $data['raza'] = $razaModel->find($idRaza);
+    public function editar($id)
+    {
+        
+        $modelo = model('ModeloModel');
+        $data['modelo'] = $modelo->find($id);
 
-        return 
-        view('common/head') .
-        view('common/menu') .
-        view('raza/editar',$data) .
-        view('common/footer');
+        $validation = \Config\Services::validation();
+
+        if ((strtolower($this->request->getMethod()) === 'get')) {
+            return
+                view('common/head', $data) .
+                view('common/menu') .
+                view('modelo/editar', $data) .
+                view('common/footer');
+        }
+
+        $rules = [
+            'Nombre' => 'required',
+            'Modalidad' => 'required',
+            'Año' => 'required',
+            'Gama' => 'required'
+        ];
+
+        if (!$this->validate($rules)) {
+            return
+                view('common/head', $data) .
+                view('common/menu') .
+                view('modelo/editar', ['validation' => $validation], $data) .
+                view('common/footer');
+        } else {
+            if ($this->update()) {
+                return redirect('administrador/modelo');
+            }
+        }
     }
 
 
-    public function update (){
-
-        $razaModel = model('RazaModel');
+    public function update()
+    {
+        $modelo = model('ModeloModel');
 
         $data = [
-            "nombre" => $_POST['nombre'],
-            "descripcion" => $_POST['descripcion'],
-            "origen" => $_POST['origen']
+            "Nombre" => $_POST['Nombre'],
+            "Modalidad" => $_POST['Modalidad'],
+            "Año" => $_POST['Año'],
+            "Gama" => $_POST['Gama']
         ];
 
-        $razaModel->update($_POST['idRaza'],$data);
-        return redirect('raza/mostrar');
+        $modelo->update($_POST['idModelo'], $data);
+        return true;
     }
 
     public function buscar(){

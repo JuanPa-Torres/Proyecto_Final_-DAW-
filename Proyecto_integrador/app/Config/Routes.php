@@ -89,7 +89,12 @@ $routes->get('/administrador/marca/buscar', 'Marca::buscar');
 //----------------------Tabla Modelo -----------------------------------------------------------------------------------------------
 $routes->get('/administrador/modelo', 'Modelo::mostrar');
 
+$routes->get('/administrador/modelo/agregar', 'Modelo::agregar');
+$routes->post('/administrador/agregar', 'Modelo::agregar');
 
+$routes->get('/administrador/modelo/editar/(:num)', 'Modelo::editar/$1');
+$routes->post('/administrador/modelo/editar/(:num)', 'Modelo::editar/$1');
+$routes->post('/administrador/modelo/update', 'Modelo::update');
 
 
 //----------------------Tabla Componentes -----------------------------------------------------------------------------------------------
