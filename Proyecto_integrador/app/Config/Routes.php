@@ -114,6 +114,13 @@ $routes->post('/administrador/componentes/update', 'Componentes::update');
 //----------------------Tabla Catacterísticas -----------------------------------------------------------------------------------------------
 $routes->get('/administrador/caracteristicas', 'Caracteristicas::mostrar');
 
+$routes->get('administrador/caracteristicas/agregar', 'Caracteristicas::agregar');
+$routes->post('administrador/caracteristicas/agregar', 'Caracteristicas::agregar');
+
+$routes->get('/administrador/caracteristicas/editar/(:num)', 'Caracteristicas::editar/$1');
+$routes->post('/administrador/caracteristicas/editar/(:num)', 'Caracteristicas::editar/$1');
+$routes->post('/administrador/caracteristicas/update', 'Caracteristicas::update');
+
 
 
 //----------------------Tabla Bicicletas -----------------------------------------------------------------------------------------------

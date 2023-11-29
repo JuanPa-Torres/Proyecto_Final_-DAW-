@@ -23,8 +23,8 @@
                         <td><?=$caracteristica->Garantia ?></td>
 
                         <td>
-                            <a href="<?=base_url('index.php/direccion/delete/'.$caracteristica->idCaracteristicas);?>">Eliminar</a>
-                            <a href="<?=base_url('index.php/direccion/editar/'.$caracteristica->idCaracteristicas);?>">Editar</a>
+                            <a href="<?=base_url('index.php/caracteristicas/delete/'.$caracteristica->idCaracteristicas);?>">Eliminar</a>
+                            <a href="<?=base_url('index.php/caracteristicas/editar/'.$caracteristica->idCaracteristicas);?>">Editar</a>
                         </td>
                     </tr>
                     <?php endforeach ?>

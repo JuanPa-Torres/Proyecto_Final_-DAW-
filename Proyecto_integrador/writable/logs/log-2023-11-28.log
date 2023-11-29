@@ -485,3 +485,10 @@ CRITICAL - 2023-11-28 21:52:17 --> Undefined array key "idModelo"
 #5 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
 #7 {main}
+CRITICAL - 2023-11-28 22:36:47 --> Call to a member function find() on null
+#0 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Caracteristicas->editar('21')
+#1 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caracteristicas))
+#2 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
+#5 {main}
