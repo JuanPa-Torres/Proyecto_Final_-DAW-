@@ -3,7 +3,7 @@
 
         <div class="col-8">
             <h2>Editar Usuarios</h2>
-            <form action="<?= base_url('usuario/update'); ?>" method="POST">
+            <form action="<?= base_url('/administrador/usuario/update'); ?>" method="POST">
                 <?= csrf_field() ?>
                 <input type="hidden" name="idUsuario" value="<?= $usuario->idUsuario ?>">
 

@@ -360,7 +360,7 @@
   <div class="row">
     <h1 align="center">Buscar usuarios</h1>
     <div class="col-12">
-      <form action="<?= base_url('index.php/usuario/buscar/'); ?>" method="GET">
+      <form action="<?= base_url('/administrador/usuario/buscar/'); ?>" method="GET">
         <div class="col-5">
           <label for="columnaBusqueda">Buscar usuario por:</label>
           <select name="columnaBusqueda" class="form-control">
@@ -411,13 +411,13 @@
                 <?= $usuario->Contraseña ?>
               </td>
               <td>
-                <a href="<?= base_url('index.php/usuario/editar/' . $usuario->idUsuario); ?>">
+                <a href="<?= base_url('/administrador/usuario/editar/' . $usuario->idUsuario); ?>">
                   <img src="https://cdn-icons-png.flaticon.com/128/705/705120.png" alt="editar" class="service-img"
                     width="60" height="60">
                 </a>
               </td>
               <td>
-                <a href="<?= base_url('index.php/usuario/delete/' . $usuario->idUsuario); ?>">
+                <a href="<?= base_url('/administrador/usuario/delete/' . $usuario->idUsuario); ?>">
                   <img src="https://cdn-icons-png.flaticon.com/128/3541/3541990.png" alt="editar" class="service-img"
                     width="60" height="60">
                 </a>

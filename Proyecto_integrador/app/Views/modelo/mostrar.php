@@ -21,8 +21,8 @@
                         <td><?=$modelo->Año ?></td>
                         <td><?=$modelo->Gama ?></td>
                         <td>    
-                            <a href="<?=base_url('index.php/modelo/delete/'.$modelo->idModelo);?>">Eliminar</a>
-                            <a href="<?=base_url('index.php/modelo/editar/'.$modelo->idModelo);?>">Editar</a>
+                            <a href="<?=base_url('/administrador/modelo/delete/'.$modelo->idModelo);?>">Eliminar</a>
+                            <a href="<?=base_url('/administrador/modelo/editar/'.$modelo->idModelo);?>">Editar</a>
                         </td>
                     </tr>
                     <?php endforeach ?>

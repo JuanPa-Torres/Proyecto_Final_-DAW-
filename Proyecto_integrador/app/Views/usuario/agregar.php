@@ -7,7 +7,7 @@
         ?>
 
         <div class="col-8">
-            <form action="<?= base_url('/usuario/agregar'); ?>" method="POST">
+            <form action="<?= base_url('/administrador/usuario/agregar'); ?>" method="POST">
                 <?= csrf_field() ?>
                 <div class="mb-3">
                     <label for="Nombre" class="form-label">Nombre(s)</label>

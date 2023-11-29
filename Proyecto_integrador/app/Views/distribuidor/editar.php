@@ -7,7 +7,7 @@
         ?>
 
         <div class="col-8">
-            <form action="<?= base_url('distribuidor/editar/'.$distribuidor->idDistribuidor); ?>" method="POST">
+            <form action="<?= base_url('/administrador/distribuidor/editar/'.$distribuidor->idDistribuidor); ?>" method="POST">
                 <?= csrf_field() ?>
                 <input type="hidden" name="idDistribuidor" value="<?= $distribuidor->idDistribuidor; ?>" />
                 <div class="mb-3">

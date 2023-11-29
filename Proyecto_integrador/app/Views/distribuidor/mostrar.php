@@ -30,14 +30,14 @@
                                 <?= $distribuidor->Correo ?>
                             </td>
                             <td>
-                                <a href="<?= base_url('index.php/distribuidor/editar/' . $distribuidor->idDistribuidor); ?>">
+                                <a href="<?= base_url('/administrador/distribuidor/editar/' . $distribuidor->idDistribuidor); ?>">
                                     <img src="https://cdn-icons-png.flaticon.com/128/3838/3838756.png" alt="editar"
                                         class="service-img" width="40" height="40">
                                 </a>
                             </td>
                             <td>
                                 <a
-                                    href="<?= base_url('index.php/distribuidor/delete/' . $distribuidor->idDistribuidor); ?>">
+                                    href="<?= base_url('/administrador/distribuidor/delete/' . $distribuidor->idDistribuidor); ?>">
                                     <img src="https://cdn-icons-png.flaticon.com/128/1828/1828843.png" alt="editar"
                                         class="service-img" width="40" height="40">
                                 </a>

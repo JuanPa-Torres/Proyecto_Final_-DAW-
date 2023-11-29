@@ -7,7 +7,7 @@
      ?>
        
         <div class="col-8">
-            <form action="<?= base_url('componentes/editar/' . $componentes->idComponentes); ?>" method="POST">
+            <form action="<?= base_url('/administrador/componentes/editar/' . $componentes->idComponentes); ?>" method="POST">
             <?= csrf_field() ?>
             <input type="hidden" name="idComponentes" value="<?= $componentes->idComponentes ?>">
                 <div class="mb-3">

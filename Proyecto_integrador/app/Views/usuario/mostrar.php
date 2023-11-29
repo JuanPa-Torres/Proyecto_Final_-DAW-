@@ -386,13 +386,13 @@
                 <?= $usuario->Contraseña ?>
               </td>
               <td>
-                <a href="<?= base_url('index.php/usuario/editar/' . $usuario->idUsuario); ?>">
+                <a href="<?= base_url('/administrador/usuario/editar/' . $usuario->idUsuario); ?>">
                   <img src="https://cdn-icons-png.flaticon.com/128/3838/3838756.png" alt="editar" class="service-img"
                     width="40" height="40">
                 </a>
               </td>
               <td>
-                <a href="<?= base_url('index.php/usuario/delete/' . $usuario->idUsuario); ?>">
+                <a href="<?= base_url('/administrador/usuario/delete/' . $usuario->idUsuario); ?>">
                   <img src="https://cdn-icons-png.flaticon.com/128/1828/1828843.png" alt="editar" class="service-img"
                     width="40" height="40">
                 </a>

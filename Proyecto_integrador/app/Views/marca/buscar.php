@@ -2,7 +2,7 @@
     <div class="row">
         <h1 align="center">Buscar marca</h1>
         <div class="col-12">
-            <form action="<?= base_url('index.php/marca/buscar/'); ?>" method="GET">
+            <form action="<?= base_url('/administrador/marca/buscar/'); ?>" method="GET">
                 <div class="col-5">
                     <label for="columnaBusqueda">Buscar marca por:</label>
                     <select name="columnaBusqueda" class="form-control">
@@ -56,13 +56,13 @@
                                 <?= $marca->Distribuidor ?>
                             </td>
                             <td>
-                                <a href="<?= base_url('index.php/marca/editar/' . $marca->idMarca); ?>">
+                                <a href="<?= base_url('/administrador/marca/editar/' . $marca->idMarca); ?>">
                                     <img src="https://cdn-icons-png.flaticon.com/128/3838/3838756.png" alt="editar"
                                         class="service-img" width="40" height="40">
                                 </a>
                             </td>
                             <td>
-                                <a href="<?= base_url('index.php/marca/delete/' . $marca->idMarca); ?>">
+                                <a href="<?= base_url('/administrador/marca/delete/' . $marca->idMarca); ?>">
                                     <img src="https://cdn-icons-png.flaticon.com/128/1828/1828843.png" alt="editar"
                                         class="service-img" width="40" height="40">
                                 </a>

@@ -7,7 +7,7 @@
      ?>
        
         <div class="col-8">
-            <form action="<?= base_url('modelo/editar/'.$modelo->idModelo); ?>" method="POST">
+            <form action="<?= base_url('/administrador/modelo/editar/'.$modelo->idModelo); ?>" method="POST">
             <?= csrf_field() ?>
             <input type="hidden" value="<?= $modelo->idModelo ?>" name="idModelo">
                 <div class="mb-3">

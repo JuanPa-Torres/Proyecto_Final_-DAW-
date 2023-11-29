@@ -7,7 +7,7 @@
         ?>
 
         <div class="col-8">
-            <form action="<?= base_url('/bicicleta/agregar'); ?>" method="POST">
+            <form action="<?= base_url('/administrador/bicicletas/agregar'); ?>" method="POST">
                 <?= csrf_field() ?>
                 <div class="mb-3">
                     <label for="Marca" class="form-label" style="font-size:x-large;">Marca</label>
@@ -57,8 +57,8 @@
                 </div>
 
                 <div class="mb-3">
-                <label for="Foto" class="form-label" style="font-size:x-large;">Fotografía</label>
-                <input type="text"name="Foto" class="col-12">
+                    <label for="Foto" class="form-label" style="font-size:x-large;">Fotografía</label>
+                    <input type="text" name="Foto" class="col-12">
                 </div>
                 <div class="mb-3">
                     <input type="submit" class="btn btn-success">

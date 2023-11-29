@@ -7,7 +7,7 @@
         ?>
 
         <div class="col-8">
-            <form action="<?= base_url('/bicicleta/editar/'. $bicicleta->idBicicleta); ?>" method="POST">
+            <form action="<?= base_url('/administrador/bicicletas/editar/'. $bicicleta->idBicicleta); ?>" method="POST">
                 <?= csrf_field() ?>
                 <input type="hidden" name="idBicicleta" value="<?= $bicicleta->idBicicleta ?>">
                 <div class="mb-3">

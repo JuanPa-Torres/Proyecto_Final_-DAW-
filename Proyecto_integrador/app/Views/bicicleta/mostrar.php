@@ -60,10 +60,19 @@
 
                                 <td>$<?= $bicicleta->Precio ?> MXN</td>
                                 <td><img src="<?= $bicicleta->Foto ?>" alt="" weight="100" height="100" ></td>
-                                <td>    
-                                    <a href="<?= base_url('index.php/bicicleta/delete/' . $bicicleta->idBicicleta); ?>">Eliminar</a>
-                                    <a href="<?= base_url('index.php/bicicleta/editar/' . $bicicleta->idBicicleta); ?>">Editar</a>
+                                <td>
+                                    <a href="<?= base_url('index.php/administrador/bicicletas/editar/' . $bicicleta->idBicicleta); ?>">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/3838/3838756.png" alt="editar" class="service-img"
+                                        width="40" height="40">
+                                    </a>
                                 </td>
+                                <td>
+                                    <a href="<?= base_url('index.php/administrador/bicicletas/delete/' . $bicicleta->idBicicleta); ?>">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/1828/1828843.png" alt="editar" class="service-img"
+                                        width="40" height="40">
+                                    </a>
+                                </td>
+                                
                             </tr>
                     <?php endforeach ?>
                 </tbody>

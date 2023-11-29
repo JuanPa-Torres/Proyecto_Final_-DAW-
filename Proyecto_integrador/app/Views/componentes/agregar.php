@@ -7,7 +7,7 @@
      ?>
        
         <div class="col-8">
-            <form action="<?= base_url('componentes/agregar'); ?>" method="POST">
+            <form action="<?= base_url('/administrador/componentes/agregar'); ?>" method="POST">
             <?= csrf_field() ?>
                 <div class="mb-3">
                     <label for="Tija" class="form-label">Tija</label>

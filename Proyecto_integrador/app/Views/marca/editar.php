@@ -7,7 +7,7 @@
         ?>
 
         <div class="col-8">
-            <form action="<?= base_url('/marca/editar/' . $marca->idMarca); ?>" method="POST">
+            <form action="<?= base_url('/administrador/marca/editar/' . $marca->idMarca); ?>" method="POST">
                 <?= csrf_field() ?>
                 <input type="hidden" value="<?=  $marca->idMarca ?>" name="idMarca">
                 <div class="mb-3">

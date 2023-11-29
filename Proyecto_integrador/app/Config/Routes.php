@@ -90,7 +90,7 @@ $routes->get('/administrador/marca/buscar', 'Marca::buscar');
 $routes->get('/administrador/modelo', 'Modelo::mostrar');
 
 $routes->get('/administrador/modelo/agregar', 'Modelo::agregar');
-$routes->post('/administrador/agregar', 'Modelo::agregar');
+$routes->post('/administrador/modelo/agregar', 'Modelo::agregar');
 
 $routes->get('/administrador/modelo/editar/(:num)', 'Modelo::editar/$1');
 $routes->post('/administrador/modelo/editar/(:num)', 'Modelo::editar/$1');
@@ -105,7 +105,7 @@ $routes->get('/administrador/modelo/buscar', 'Modelo::buscar');
 $routes->get('/administrador/componentes', 'Componentes::mostrar');
 
 $routes->get('/administrador/componentes/agregar', 'Componentes::agregar');
-$routes->post('/administrador/agregar', 'Componentes::agregar');
+$routes->post('/administrador/componentes/agregar', 'Componentes::agregar');
 
 $routes->get('/administrador/componentes/editar/(:num)', 'Componentes::editar/$1');
 $routes->post('/administrador/componentes/editar/(:num)', 'Componentes::editar/$1');
@@ -120,8 +120,8 @@ $routes->get('/administrador/componentes/buscar', 'Componentes::buscar');
 //----------------------Tabla Catacterísticas -----------------------------------------------------------------------------------------------
 $routes->get('/administrador/caracteristicas', 'Caracteristicas::mostrar');
 
-$routes->get('administrador/caracteristicas/agregar', 'Caracteristicas::agregar');
-$routes->post('administrador/caracteristicas/agregar', 'Caracteristicas::agregar');
+$routes->get('/administrador/caracteristicas/agregar', 'Caracteristicas::agregar');
+$routes->post('/administrador/caracteristicas/agregar', 'Caracteristicas::agregar');
 
 $routes->get('/administrador/caracteristicas/editar/(:num)', 'Caracteristicas::editar/$1');
 $routes->post('/administrador/caracteristicas/editar/(:num)', 'Caracteristicas::editar/$1');

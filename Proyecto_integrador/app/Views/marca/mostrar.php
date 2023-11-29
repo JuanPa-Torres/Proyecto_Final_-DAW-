@@ -33,13 +33,13 @@
                                 <?= $marca->Distribuidor ?>
                             </td>
                             <td>
-                                <a href="<?= base_url('index.php/marca/editar/' . $marca->idMarca); ?>">
+                                <a href="<?= base_url('/administrador/marca/editar/' . $marca->idMarca); ?>">
                                     <img src="https://cdn-icons-png.flaticon.com/128/3838/3838756.png" alt="editar"
                                         class="service-img" width="40" height="40">
                                 </a>
                             </td>
                             <td>
-                                <a href="<?= base_url('index.php/marca/delete/' . $marca->idMarca); ?>">
+                                <a href="<?= base_url('/administrador/marca/delete/' . $marca->idMarca); ?>">
                                     <img src="https://cdn-icons-png.flaticon.com/128/1828/1828843.png" alt="editar"
                                         class="service-img" width="40" height="40">
                                 </a>

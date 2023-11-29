@@ -2,7 +2,7 @@
     <div class="row">
         <h1 align="center">Buscar distribuidores</h1>
         <div class="col-12">
-            <form action="<?= base_url('index.php/distribuidor/buscar/'); ?>" method="GET">
+            <form action="<?= base_url('/administrador/distribuidor/buscar/'); ?>" method="GET">
                 <div class="col-5">
                     <label for="columnaBusqueda">Buscar distribuidor por:</label>
                     <select name="columnaBusqueda" class="form-control">
@@ -51,16 +51,15 @@
                             </td>
 
                             <td>
-                                <a href="<?= base_url('index.php/distribuidor/editar/' . $distribuidor->idDistribuidor); ?>">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/3838/3838756.png" alt="editar"
-                                        class="service-img" width="40" height="40">
+                                <a  href="<?= base_url('/administrador/distribuidor/editar/' . $distribuidor->idDistribuidor); ?>">
+                                <img src="https://cdn-icons-png.flaticon.com/128/3838/3838756.png" alt="editar" class="service-img"
+                                    width="40" height="40">
                                 </a>
                             </td>
                             <td>
-                                <a
-                                    href="<?= base_url('index.php/distribuidor/delete/' . $distribuidor->idDistribuidor); ?>">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/1828/1828843.png" alt="editar"
-                                        class="service-img" width="40" height="40">
+                                <a href="<?= base_url('/administrador/distribuidor/delete/' . $distribuidor->idDistribuidor); ?>">
+                                <img src="https://cdn-icons-png.flaticon.com/128/1828/1828843.png" alt="editar" class="service-img"
+                                    width="40" height="40">
                                 </a>
                             </td>
                         </tr>

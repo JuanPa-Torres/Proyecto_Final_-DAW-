@@ -54,10 +54,16 @@
                             <td><?= $caracteristica->Garantia ?></td>
 
                             <td>
-                                <a
-                                    href="<?= base_url('index.php/caracteristicas/delete/' . $caracteristica->idCaracteristicas); ?>">Eliminar</a>
-                                <a
-                                    href="<?= base_url('index.php/caracteristicas/editar/' . $caracteristica->idCaracteristicas); ?>">Editar</a>
+                                <a  href="<?= base_url('index.php/caracteristicas/editar/' . $caracteristica->idCaracteristicas); ?>">
+                                <img src="https://cdn-icons-png.flaticon.com/128/3838/3838756.png" alt="editar" class="service-img"
+                                    width="40" height="40">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="<?= base_url('index.php/caracteristicas/delete/' . $caracteristica->idCaracteristicas); ?>">
+                                <img src="https://cdn-icons-png.flaticon.com/128/1828/1828843.png" alt="editar" class="service-img"
+                                    width="40" height="40">
+                                </a>
                             </td>
                         </tr>
                     <?php endforeach ?>
