@@ -35,7 +35,8 @@
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">
-                            Talla "<?= $caracteristica->Talla_Cuadro ?>" con geometría "
+                            Talla "
+                            <?= $caracteristica->Talla_Cuadro ?>" con geometría "
                             <?= $caracteristica->Geometrias ?>"
                         </h5>
                         <p class="card-text"><strong>Material: </strong>

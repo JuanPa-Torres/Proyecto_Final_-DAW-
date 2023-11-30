@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h2>Bicicletas</h2>
+            <h2>Mostrar bicicletas</h2>
             <table class=" table table-bordered-stripped border-primary">
                 <thead>
                     <th>ID</th>

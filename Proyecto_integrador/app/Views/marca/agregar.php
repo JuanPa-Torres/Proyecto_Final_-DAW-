@@ -7,6 +7,8 @@
         ?>
 
         <div class="col-8">
+            <h2>Agregar Marca</h2>
+
             <form action="<?= base_url('/administrador/marca/agregar'); ?>" method="POST">
                 <?= csrf_field() ?>
                 <div class="mb-3">

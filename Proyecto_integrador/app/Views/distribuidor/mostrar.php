@@ -1,9 +1,10 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h2>Distribuidores</h2>
+            <h2>Mostrar Distribuidores</h2>
 
-            <button type="button" class="btn btn-success" onclick="location.href='/administrador/distribuidor/agregar'">Agregar</button>
+            <button type="button" class="btn btn-success"
+                onclick="location.href='/administrador/distribuidor/agregar'">Agregar</button>
 
 
             <table class=" table table-bordered-stripped border-primary">
@@ -30,7 +31,8 @@
                                 <?= $distribuidor->Correo ?>
                             </td>
                             <td>
-                                <a href="<?= base_url('/administrador/distribuidor/editar/' . $distribuidor->idDistribuidor); ?>">
+                                <a
+                                    href="<?= base_url('/administrador/distribuidor/editar/' . $distribuidor->idDistribuidor); ?>">
                                     <img src="https://cdn-icons-png.flaticon.com/128/3838/3838756.png" alt="editar"
                                         class="service-img" width="40" height="40">
                                 </a>

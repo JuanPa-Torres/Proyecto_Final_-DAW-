@@ -7,6 +7,8 @@
         ?>
 
         <div class="col-8">
+            <h2>Agregar bicicleta</h2>
+
             <form action="<?= base_url('/administrador/bicicletas/agregar'); ?>" method="POST">
                 <?= csrf_field() ?>
                 <div class="mb-3">

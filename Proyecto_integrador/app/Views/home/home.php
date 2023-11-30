@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+ 
+
     .container {
       max-width: 350px;
       background: #f8f9fd;
@@ -155,9 +157,13 @@
 <body>
 
   <div class="container" style="display:flex; position:absolute; top:25%; left:37%;">
-    <div class="row">
+    <div class="row ">
       <div class="heading">Iniciar Sesión</div>
       <form class="form" action="<?= base_url('/'); ?>" method="POST">
+      <div class="d-flex flex-row justify-content-center alig-items-center">
+
+      <img src="<?= base_url('logo.png')?>" height="200">
+      </div>
       <?= csrf_field() ?>
         <input placeholder="Correo" name="Correo_Elec" type="Correo" class="input" required="" />
         <input placeholder="Contraseña" name="Contraseña" type="Password" class="input" required="" />

@@ -12,7 +12,7 @@ class MarcaModel extends Model
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
     protected $useSoftDeletes   = true;
-    protected $protectFields    = true;
+    protected $protectFields    = false;
     protected $allowedFields    = ['Nombre','Pais_Origen','Logo','Pais_Distribuidor','Distribuidor'];
 
     // Dates

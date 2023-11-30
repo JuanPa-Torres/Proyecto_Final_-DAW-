@@ -1,22 +1,24 @@
 <div class="container">
     <div class="row">
-    <?php 
-        if(isset($validation)){
-                print $validation->listErrors();
+        <?php
+        if (isset($validation)) {
+            print $validation->listErrors();
         }
-     ?>
-       
+        ?>
+
         <div class="col-8">
+            <h2>Agregar Modelo</h2>
+
             <form action="<?= base_url('/administrador/modelo/agregar'); ?>" method="POST">
-            <?= csrf_field() ?>
+                <?= csrf_field() ?>
                 <div class="mb-3">
                     <label for="Nombre" class="form-label">Nombre</label>
                     <input type="text" class="form-control" name="Nombre">
                 </div>
-                
+
                 <div class="mb-3">
                     <label for="Modalidad" class="form-label">Modalidad</label>
-                    <input type="text" class="form-control" name="Modalidad" >
+                    <input type="text" class="form-control" name="Modalidad">
                 </div>
 
                 <div class="mb-3">
@@ -26,7 +28,7 @@
 
                 <div class="mb-3">
                     <label for="Gama" class="form-label">Gama</label>
-                    <input type="text" class="form-control" name="Gama" >
+                    <input type="text" class="form-control" name="Gama">
                 </div>
 
                 <div class="mb-3">

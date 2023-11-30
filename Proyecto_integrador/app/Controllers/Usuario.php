@@ -90,7 +90,7 @@ class Usuario extends BaseController
             "Contraseña" => $_POST['Contraseña'],
             "Perfil" => ($_POST['Perfil'])
         ];
-        $usuarioModel->insert($data, false);
+        $usuarioModel->insert($data);
         return true;
     }
 

@@ -7,6 +7,8 @@
         ?>
 
         <div class="col-8">
+            <h2>Agregar Usuario</h2>
+
             <form action="<?= base_url('/administrador/usuario/agregar'); ?>" method="POST">
                 <?= csrf_field() ?>
                 <div class="mb-3">
@@ -26,7 +28,7 @@
 
                 <div class="mb-3">
                     <label for="Correo_Elec" class="form-label">Correo electrónico</label>
-                    <input type="text" class="form-control" name="Correo_Elec">
+                    <input type="email" class="form-control" name="Correo_Elec" id="Correo_Elec">
                 </div>
 
                 <div class="mb-3">
@@ -50,5 +52,3 @@
         <div class="col-3"></div>
     </div>
 </div>
-
- 

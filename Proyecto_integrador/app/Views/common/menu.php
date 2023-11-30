@@ -1,6 +1,6 @@
 <?php $session = \Config\Services::session(); ?>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="<?= base_url('/administrador') ?>">World of Bike🗺️</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -145,7 +145,7 @@
         </li>
         <li>
           <form action="<?= base_url('/logout'); ?>" method="GET">
-          <button type="button" class="btn btn-danger" onclick="location.href='/logout'">Cerrar Sesión</button>
+            <button type="button" class="btn btn-danger" onclick="location.href='/logout'">Cerrar Sesión</button>
           </form>
         </li>
     </div>

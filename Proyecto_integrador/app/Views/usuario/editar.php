@@ -2,7 +2,7 @@
     <div class="row">
 
         <div class="col-8">
-            <h2>Editar Usuarios</h2>
+            <h2>Editar Usuario</h2>
             <form action="<?= base_url('/administrador/usuario/update'); ?>" method="POST">
                 <?= csrf_field() ?>
                 <input type="hidden" name="idUsuario" value="<?= $usuario->idUsuario ?>">
@@ -42,7 +42,8 @@
                     <div class="mb-3">
                         <select name="Perfil" class="form-control">
                             <option value="1" <?php if ($usuario->Perfil == "1")
-                                echo 'selected'; ?>>Administrador</option>
+                                echo 'selected'; ?>>Administrador
+                            </option>
                             <option value="2" <?php if ($usuario->Perfil == "2")
                                 echo 'selected'; ?>> Cliente</option>
                         </select>

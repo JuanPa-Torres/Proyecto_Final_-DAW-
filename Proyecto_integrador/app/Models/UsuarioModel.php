@@ -12,7 +12,7 @@ class UsuarioModel extends Model
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
     protected $useSoftDeletes   = true;
-    protected $protectFields    = true;
+    protected $protectFields    = false;
     protected $allowedFields    = ['Nombre', 'Apell_Paterno', 'Pais', 'Correo_Elec,', 'Contraseña', 'Perfil'];
 
     // Dates

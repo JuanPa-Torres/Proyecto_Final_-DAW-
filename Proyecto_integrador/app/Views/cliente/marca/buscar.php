@@ -39,12 +39,13 @@
                         <p class="card-text"><strong>País de distribución: </strong>
                             <?= $marca->Pais_Distribuidor ?>
                         </p>
-                        <?php foreach ($distribuidores as $distribuidor): if($distribuidor->idDistribuidor == $marca->Distribuidor):?>
+                        <?php foreach ($distribuidores as $distribuidor):
+                            if ($distribuidor->idDistribuidor == $marca->Distribuidor): ?>
 
-                        <p class="card-text"><strong>Distribuidor: </strong>
-                            <?= $distribuidor->Nombre ?>
-                        </p>
-                        <?php endif;endforeach ?>
+                                <p class="card-text"><strong>Distribuidor: </strong>
+                                    <?= $distribuidor->Nombre ?>
+                                </p>
+                            <?php endif; endforeach ?>
 
                     </div>
                 </div>
