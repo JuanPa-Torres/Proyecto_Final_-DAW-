@@ -102,7 +102,7 @@ class Usuario extends BaseController
     {
         $usuarioModel = model('UsuarioModel');
         $usuarioModel->delete($idUsuario);
-        return redirect('usuario/mostrar');
+        return redirect('administrador/usuario');
     }
 
     /*
@@ -146,7 +146,7 @@ class Usuario extends BaseController
         ];
 
         $usuarioModel->update($_POST['idUsuario'], $data);
-        return redirect('usuario/mostrar');
+        return redirect('administrador/usuario');
     }
 
 

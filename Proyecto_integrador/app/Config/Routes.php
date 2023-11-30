@@ -46,8 +46,9 @@ $routes->get('/administrador/usuario', 'Usuario::mostrar');
 //----------
 $routes->get('/administrador/usuario/agregar', 'Usuario::agregar');
 $routes->post('/administrador/usuario/agregar', 'Usuario::agregar');
+$routes->post('/administrador/usuario/editar/(:num)', 'Usuario::editar/$1');
 //----------
-$routes->get('/usuario/editar/(:num)', 'Usuario::editar/$1');
+$routes->get('/administrador/usuario/editar/(:num)', 'Usuario::editar/$1');
 $routes->get('/administrador/usuario/delete/(:num)', 'Usuario::delete/$1');
 $routes->post('/administrador/usuario/insert', 'Usuario::insert');
 $routes->post('/administrador/usuario/update', 'Usuario::update');
