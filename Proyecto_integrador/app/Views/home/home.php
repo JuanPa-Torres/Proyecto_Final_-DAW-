@@ -156,7 +156,7 @@
 
 <body>
 
-  <div class="container" style="display:flex; position:absolute; top:25%; left:37%;">
+  <div class="container" style="display:flex; position:absolute; top:10%; left:37%;">
     <div class="row ">
       <div class="heading">Iniciar Sesión</div>
       <form class="form" action="<?= base_url('/'); ?>" method="POST">

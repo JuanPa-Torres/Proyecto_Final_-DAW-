@@ -1,2 +1,0 @@
-# Amikos_
-ayudaaaaaaaaaaa¡¡
