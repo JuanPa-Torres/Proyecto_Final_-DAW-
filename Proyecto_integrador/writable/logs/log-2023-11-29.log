@@ -345,3 +345,27 @@ CRITICAL - 2023-11-29 12:05:12 --> Attempt to read property "idComponentes" on n
 #8 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 C:\Users\Moisés David\Desktop\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Mois\xC3\xA9...')
 #10 {main}
+CRITICAL - 2023-11-29 18:21:04 --> Undefined variable $caracteristica
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Views\cliente\componentes\buscar.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 51)
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Common.php(1089): CodeIgniter\View\View->render('cliente/compone...', Array, true)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Controllers\Cliente.php(182): view('cliente/compone...', Array)
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Cliente->buscarComponentes()
+#6 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#7 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-11-29 18:44:39 --> Undefined property: stdClass::$id
+#0 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Views\cliente\marca\buscar.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Common.php(1089): CodeIgniter\View\View->render('cliente/marca/b...', Array, true)
+#4 C:\xampp\htdocs\Amikos_\Proyecto_integrador\app\Controllers\Cliente.php(275): view('cliente/marca/b...', Array)
+#5 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(832): App\Controllers\Cliente->buscarMarca()
+#6 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#7 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Amikos_\Proyecto_integrador\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Amikos_\Proyecto_integrador\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

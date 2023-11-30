@@ -36,6 +36,8 @@ $routes->get('/administrador', 'Home::Administrador');
 $routes->get('/cliente', 'Home::Cliente');
 
 
+
+
 //----------------------Tabla Usuario -----------------------------------------------------------------------------------------------
 
 $routes->get('/administrador/usuario', 'Usuario::mostrar');
@@ -153,6 +155,16 @@ $routes->get('/administrador/bicicletas/buscar', 'Bicicleta::buscar');
 
 
 
+
+
+
+
+//----------------------Vistas para el cliente -----------------------------------------------------------------------------------------------
+$routes->get('/cliente/bicicletas', 'Cliente::buscarBicicleta');
+$routes->get('/cliente/bicicletas/caracteristicas', 'Cliente::buscarCaracteristicas');
+$routes->get('/cliente/bicicletas/componentes', 'Cliente::buscarComponentes');
+$routes->get('/cliente/bicicletas/marca', 'Cliente::buscarMarca');
+$routes->get('/cliente/bicicletas/modelo', 'Cliente::buscarModelo');
 
 
 
