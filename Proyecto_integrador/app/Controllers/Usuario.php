@@ -40,6 +40,11 @@ class Usuario extends BaseController
     */
     public function agregar()
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+
         $data['title'] = "Agregar Usuario";
         $validation = \Config\Services::validation();
         if (strtolower($this->request->getMethod()) === 'get') {
@@ -106,6 +111,11 @@ class Usuario extends BaseController
     */
     public function editar($idUsuario)
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+
         $usuarioModel = model('UsuarioModel');
         $data['usuario'] = $usuarioModel->find($idUsuario);
 
@@ -114,11 +124,6 @@ class Usuario extends BaseController
             view('common/menu') .
             view('usuario/editar', $data) .
             view('common/footer');
-    }
-
-    public function estadistica()
-    {
-
     }
 
     /*
@@ -151,6 +156,11 @@ class Usuario extends BaseController
     */
     public function buscar()
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+
         $usuarioModel = model('UsuarioModel');
         if (isset($_GET['columnaBusqueda']) && isset($_GET['elementoBusqueda'])) {
             $columnaBusqueda = $_GET['columnaBusqueda'];

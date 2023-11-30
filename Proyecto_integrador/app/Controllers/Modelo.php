@@ -13,6 +13,10 @@ class Modelo extends BaseController
     }
 
     public function mostrar(){
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
         $modeloModel = model('ModeloModel');
         $data['modelos'] = $modeloModel->findAll();
         return 
@@ -24,6 +28,11 @@ class Modelo extends BaseController
     
     public function agregar()
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+
         helper(['form', 'url']);
 
         $data['title'] = "Agregar Modelo";
@@ -75,7 +84,11 @@ class Modelo extends BaseController
 
     public function editar($id)
     {
-        
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+
         $modelo = model('ModeloModel');
         $data['modelo'] = $modelo->find($id);
 
@@ -127,7 +140,11 @@ class Modelo extends BaseController
 
 
     public function buscar(){
-
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         $modeloModel = model('ModeloModel');
 
         if(isset($_GET['Campo']) && isset($_GET['Valor'])){

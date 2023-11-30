@@ -14,6 +14,12 @@ class Bicicleta extends BaseController
 
     public function mostrar()
     {
+        
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         $bicicletaModel = model('BicicletaModel');
         $data['bicicletas'] = $bicicletaModel->findAll();
 
@@ -38,6 +44,11 @@ class Bicicleta extends BaseController
 
     public function agregar()
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         helper(['form', 'url']);
 
         $marca = model('MarcaModel');
@@ -103,6 +114,11 @@ class Bicicleta extends BaseController
     public function editar($id)
     {
         
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         $modelo = model('ModeloModel');
         $componentes = model('ComponentesModel');
         $caracteristicas = model('CaracteristicasModel');
@@ -165,6 +181,11 @@ class Bicicleta extends BaseController
 
     public function buscar()
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         $bicicletaModel = model('BicicletaModel');
         $marcaModel = model('MarcaModel');
         $modeloModel = model('ModeloModel');
