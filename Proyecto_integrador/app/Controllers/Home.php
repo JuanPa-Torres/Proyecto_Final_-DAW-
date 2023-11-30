@@ -6,9 +6,9 @@ $session = \Config\Services::session();
 
 class Home extends BaseController
 {
+    //Función para dirigir al inicio de sesión y crear la sesión
     public function index()
     {
-
         $validation = \Config\Services::validation();
         if (strtolower($this->request->getMethod()) === 'get') {
             return view('common/head') .
@@ -16,6 +16,7 @@ class Home extends BaseController
                 view('common/footer');
         }
 
+        //Reglas de validación del formulario del inicio de sesión
         $rules = [
             'Correo_Elec' => 'required',
             'Contraseña' => 'required'
@@ -30,12 +31,14 @@ class Home extends BaseController
             $email = $_POST['Correo_Elec'];
             $password = $_POST['Contraseña'];
             $usuarios = model('UsuarioModel');
+            //Se busca el usuario
             $data['usuario'] = $usuarios->where('Correo_Elec', $email)
                 ->where('Contraseña', $password)
                 ->findAll();
 
-            if (count($data['usuario']) > 0) {
 
+            if (count($data['usuario']) > 0) {
+                //Si se encuentra el usuario, se crea su sesión y se redirige a la siguiente vista
                 $session = session();
 
                 $newdata = [
@@ -61,6 +64,7 @@ class Home extends BaseController
         }
     }
 
+    //Vista que aparece si la sesión es de administrador
     public function Administrador()
     {
         return view('common/head') .
@@ -69,7 +73,7 @@ class Home extends BaseController
             view('common/footer');
     }
 
-
+    //Vista que aparece si la sesión es de cliente
     public function Cliente()
     {
         return view('common/head') .
@@ -78,7 +82,8 @@ class Home extends BaseController
             view('common/footer');
     }
 
-    public function CerrarSesion(){
+    public function CerrarSesion()
+    {
         $session = \Config\Services::session();
         $session->destroy();
 

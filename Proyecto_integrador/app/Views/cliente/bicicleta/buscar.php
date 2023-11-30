@@ -35,7 +35,7 @@
             <div class="col-3 mb-3">
 
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="<?= $bicicleta->Foto ?>" alt="" weight="200" height="200">
+                    <img class="card-img-top" src="<?= $bicicleta->Foto ?>" alt="" weight="150" height="200">
                     <div class="card-body">
                         <p class="card-text"><strong>Marca:</strong>
                             <?php foreach ($marcas as $marca):

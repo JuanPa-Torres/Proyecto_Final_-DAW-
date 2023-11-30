@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+
 $session = \Config\Services::session();
 
 class Componentes extends BaseController
@@ -12,13 +13,15 @@ class Componentes extends BaseController
         //
     }
 
+
+    //Se recuperan los datos para mostrar los componentes de las bicicletas
     public function mostrar()
     {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
-        
+
         $componentesModel = model('ComponentesModel');
         $data['componentes'] = $componentesModel->findAll();
         return
@@ -28,13 +31,14 @@ class Componentes extends BaseController
             view('common/footer');
     }
 
+    //Para añadir nuevos componentes a la vista de componentes en los registros
     public function agregar()
     {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
-        
+
         helper(['form', 'url']);
 
         $data['title'] = "Agregar Componentes";
@@ -72,6 +76,9 @@ class Componentes extends BaseController
         }
     }
 
+
+
+    //Se añaden los componentes de la función anterior a la tabla de todas los componentes de bicicletas
     public function insert()
     {
         $componentes = model('ComponentesModel');
@@ -93,6 +100,7 @@ class Componentes extends BaseController
         return true;
     }
 
+    //Se elimina un grupo de componentes de bicicletas a partir de su id
     public function delete($idComponente)
     {
         $componentes = model('ComponentesModel');
@@ -100,13 +108,15 @@ class Componentes extends BaseController
         return redirect('administrador/componentes');
     }
 
+    //Se edita un grupo de componentes de bicicletas a partir de su id
+
     public function editar($id)
     {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
-        
+
         $componentes = model('ComponentesModel');
         $data['componentes'] = $componentes->find($id);
 
@@ -148,6 +158,7 @@ class Componentes extends BaseController
     }
 
 
+    //Se actualiza un grupo de componentes de bicicletas
     public function update()
     {
         $componentes = model('ComponentesModel');
@@ -170,58 +181,60 @@ class Componentes extends BaseController
         return true;
     }
 
-    public function buscar(){
+
+    //Se busca un grupo de componentes en especial que cumplan con los campos de un formulario de componentes
+    public function buscar()
+    {
 
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
-        
+
         $componentes = model('ComponentesModel');
 
-        if(isset($_GET['Campo']) && isset($_GET['Valor'])){
-        $campo =$_GET['Campo']; 
-        $valor =$_GET['Valor'];
-        
-        
-        if($campo == 'Casstte'){
-            $data['componentes']=$componentes->like('Casstte',$valor)
-            ->findAll();
-        }
+        if (isset($_GET['Campo']) && isset($_GET['Valor'])) {
+            $campo = $_GET['Campo'];
+            $valor = $_GET['Valor'];
 
-        if($campo == 'Bielas'){
-            $data['componentes']=$componentes->like('Bielas',$valor)
-            ->findAll();
-        }
 
-        if($campo == 'Cambio'){
-            $data['componentes']=$componentes->like('Cambio_Delantero',$valor)
-            ->orlike('Cambio_Trasero',$valor)
-            ->findAll();
-        }
+            if ($campo == 'Casstte') {
+                $data['componentes'] = $componentes->like('Casstte', $valor)
+                    ->findAll();
+            }
 
-        if($campo == 'Ruedas'){
-            $data['componentes']=$componentes->like('Ruedas_Delanteras',$valor)
-            ->orlike('Ruedas_Traseras',$valor)
-            ->findAll();
-        }
+            if ($campo == 'Bielas') {
+                $data['componentes'] = $componentes->like('Bielas', $valor)
+                    ->findAll();
+            }
 
-        if($campo == 'Todo'){
-            $data ['componentes']=$componentes->findAll();
-        }
+            if ($campo == 'Cambio') {
+                $data['componentes'] = $componentes->like('Cambio_Delantero', $valor)
+                    ->orlike('Cambio_Trasero', $valor)
+                    ->findAll();
+            }
 
-       
-    }
-    else{
-        $campo = "";
-        $valor = "";
-        $data ['componentes']=$componentes->findAll();
-        
-    }
-        return 
-        view('common/head') .
-        view('common/menu') .
-        view('componentes/buscar',$data) .
-        view('common/footer');
+            if ($campo == 'Ruedas') {
+                $data['componentes'] = $componentes->like('Ruedas_Delanteras', $valor)
+                    ->orlike('Ruedas_Traseras', $valor)
+                    ->findAll();
+            }
+
+            if ($campo == 'Todo') {
+                $data['componentes'] = $componentes->findAll();
+            }
+
+
+        } else {
+            $campo = "";
+            $valor = "";
+            $data['componentes'] = $componentes->findAll();
+
+        }
+        return
+            view('common/head') .
+            view('common/menu') .
+            view('componentes/buscar', $data) .
+            view('common/footer');
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+
 $session = \Config\Services::session();
 
 class Cliente extends BaseController
@@ -13,13 +14,14 @@ class Cliente extends BaseController
     }
 
 
+    //Función para ver todas las bicicletas, buscando alguna en especial
     public function buscarBicicleta()
     {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
-        
+
         $bicicletaModel = model('BicicletaModel');
         $marcaModel = model('MarcaModel');
         $modeloModel = model('ModeloModel');
@@ -91,175 +93,182 @@ class Cliente extends BaseController
             view('common/footer');
     }
 
-    public function buscarCaracteristicas(){
+
+    //Función para ver todas las características de las bicicletas, buscando alguna en especial
+    public function buscarCaracteristicas()
+    {
 
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
-        
+
         $caracteristicasModel = model('CaracteristicasModel');
 
-        if(isset($_GET['Campo']) && isset($_GET['Valor'])){
-        $campo =$_GET['Campo']; 
-        $valor =$_GET['Valor'];
-        
-        
-        if($campo == 'Material'){
-            $data['caracteristicas']=$caracteristicasModel->like('Material',$valor)
-            ->findAll();
-        }
+        if (isset($_GET['Campo']) && isset($_GET['Valor'])) {
+            $campo = $_GET['Campo'];
+            $valor = $_GET['Valor'];
 
-        if($campo == 'Limite_Peso'){
-            $data['caracteristicas']=$caracteristicasModel->like('Limite_Peso',$valor)
-            ->findAll();
-        }
 
-        if($campo == 'Talla_Cuadro'){
-            $data['caracteristicas']=$caracteristicasModel->like('Talla_Cuadro',$valor)
-            ->findAll();
-        }
+            if ($campo == 'Material') {
+                $data['caracteristicas'] = $caracteristicasModel->like('Material', $valor)
+                    ->findAll();
+            }
 
-        if($campo == 'Geometrias'){
-            $data['caracteristicas']=$caracteristicasModel->like('Geometrias',$valor)
-            ->findAll();
-        }
+            if ($campo == 'Limite_Peso') {
+                $data['caracteristicas'] = $caracteristicasModel->like('Limite_Peso', $valor)
+                    ->findAll();
+            }
 
-        if($campo == 'Todo'){
-            $data ['caracteristicas']=$caracteristicasModel->findAll();
-        }
+            if ($campo == 'Talla_Cuadro') {
+                $data['caracteristicas'] = $caracteristicasModel->like('Talla_Cuadro', $valor)
+                    ->findAll();
+            }
 
-       
+            if ($campo == 'Geometrias') {
+                $data['caracteristicas'] = $caracteristicasModel->like('Geometrias', $valor)
+                    ->findAll();
+            }
+
+            if ($campo == 'Todo') {
+                $data['caracteristicas'] = $caracteristicasModel->findAll();
+            }
+
+
+        } else {
+            $campo = "";
+            $valor = "";
+            $data['caracteristicas'] = $caracteristicasModel->findAll();
+
+        }
+        return
+            view('common/head') .
+            view('common/menu') .
+            view('cliente/caracteristicas/buscar', $data) .
+            view('common/footer');
     }
-    else{
-        $campo = "";
-        $valor = "";
-        $data ['caracteristicas']=$caracteristicasModel->findAll();
-        
-    }
-        return 
-        view('common/head') .
-        view('common/menu') .
-        view('cliente/caracteristicas/buscar',$data) .
-        view('common/footer');
-    }
 
-    public function buscarComponentes(){
+
+    //Función para ver todos los componentes de las bicicletas, buscando algunos en especial
+    public function buscarComponentes()
+    {
 
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
-        
+
         $componentes = model('ComponentesModel');
 
-        if(isset($_GET['Campo']) && isset($_GET['Valor'])){
-        $campo =$_GET['Campo']; 
-        $valor =$_GET['Valor'];
-        
-        
-        if($campo == 'Casstte'){
-            $data['componentes']=$componentes->like('Casstte',$valor)
-            ->findAll();
-        }
+        if (isset($_GET['Campo']) && isset($_GET['Valor'])) {
+            $campo = $_GET['Campo'];
+            $valor = $_GET['Valor'];
 
-        if($campo == 'Bielas'){
-            $data['componentes']=$componentes->like('Bielas',$valor)
-            ->findAll();
-        }
 
-        if($campo == 'Cambio'){
-            $data['componentes']=$componentes->like('Cambio_Delantero',$valor)
-            ->orlike('Cambio_Trasero',$valor)
-            ->findAll();
-        }
+            if ($campo == 'Casstte') {
+                $data['componentes'] = $componentes->like('Casstte', $valor)
+                    ->findAll();
+            }
 
-        if($campo == 'Ruedas'){
-            $data['componentes']=$componentes->like('Ruedas_Delanteras',$valor)
-            ->orlike('Ruedas_Traseras',$valor)
-            ->findAll();
-        }
+            if ($campo == 'Bielas') {
+                $data['componentes'] = $componentes->like('Bielas', $valor)
+                    ->findAll();
+            }
 
-        if($campo == 'Todo'){
-            $data ['componentes']=$componentes->findAll();
-        }
+            if ($campo == 'Cambio') {
+                $data['componentes'] = $componentes->like('Cambio_Delantero', $valor)
+                    ->orlike('Cambio_Trasero', $valor)
+                    ->findAll();
+            }
 
-       
+            if ($campo == 'Ruedas') {
+                $data['componentes'] = $componentes->like('Ruedas_Delanteras', $valor)
+                    ->orlike('Ruedas_Traseras', $valor)
+                    ->findAll();
+            }
+
+            if ($campo == 'Todo') {
+                $data['componentes'] = $componentes->findAll();
+            }
+
+
+        } else {
+            $campo = "";
+            $valor = "";
+            $data['componentes'] = $componentes->findAll();
+
+        }
+        return
+            view('common/head') .
+            view('common/menu') .
+            view('cliente/componentes/buscar', $data) .
+            view('common/footer');
     }
-    else{
-        $campo = "";
-        $valor = "";
-        $data ['componentes']=$componentes->findAll();
-        
-    }
-        return 
-        view('common/head') .
-        view('common/menu') .
-        view('cliente/componentes/buscar',$data) .
-        view('common/footer');
-    }
 
-    public function buscarModelo(){
+
+    //Función para ver todos los modelos de bicicletas, buscando alguno en especial
+    public function buscarModelo()
+    {
 
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
-        
+
         $modeloModel = model('ModeloModel');
 
-        if(isset($_GET['Campo']) && isset($_GET['Valor'])){
-        $campo =$_GET['Campo']; 
-        $valor =$_GET['Valor'];
-        
-        
-        if($campo == 'Nombre'){
-            $data['modelos']=$modeloModel->like('Nombre',$valor)
-            ->findAll();
-        }
+        if (isset($_GET['Campo']) && isset($_GET['Valor'])) {
+            $campo = $_GET['Campo'];
+            $valor = $_GET['Valor'];
 
-        if($campo == 'Gama'){
-            $data['modelos']=$modeloModel->like('Gama',$valor)
-            ->findAll();
-        }
 
-        if($campo == 'Año'){
-            $data['modelos']=$modeloModel->like('Año',$valor)
-            ->findAll();
-        }
+            if ($campo == 'Nombre') {
+                $data['modelos'] = $modeloModel->like('Nombre', $valor)
+                    ->findAll();
+            }
 
-        if($campo == 'Modalidad'){
-            $data['modelos']=$modeloModel->like('Modalidad',$valor)
-            ->findAll();
-        }
+            if ($campo == 'Gama') {
+                $data['modelos'] = $modeloModel->like('Gama', $valor)
+                    ->findAll();
+            }
 
-        if($campo == 'Todo'){
-            $data ['modelos']=$modeloModel->findAll();
-        }
+            if ($campo == 'Año') {
+                $data['modelos'] = $modeloModel->like('Año', $valor)
+                    ->findAll();
+            }
 
-       
+            if ($campo == 'Modalidad') {
+                $data['modelos'] = $modeloModel->like('Modalidad', $valor)
+                    ->findAll();
+            }
+
+            if ($campo == 'Todo') {
+                $data['modelos'] = $modeloModel->findAll();
+            }
+
+
+        } else {
+            $campo = "";
+            $valor = "";
+            $data['modelos'] = $modeloModel->findAll();
+
+        }
+        return
+            view('common/head') .
+            view('common/menu') .
+            view('cliente/modelo/buscar', $data) .
+            view('common/footer');
     }
-    else{
-        $campo = "";
-        $valor = "";
-        $data ['modelos']=$modeloModel->findAll();
-        
-    }
-        return 
-        view('common/head') .
-        view('common/menu') .
-        view('cliente/modelo/buscar',$data) .
-        view('common/footer');
-    }
 
 
+    //Función para ver todas las marcas de bicicletas, buscando alguna en especial
     public function buscarMarca()
     {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
-        
+
         $marcaModel = model('MarcaModel');
         $distribuidorModel = model('DistribuidorModel');
 

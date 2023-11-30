@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+
 $session = \Config\Services::session();
 
 class Modelo extends BaseController
@@ -12,29 +13,34 @@ class Modelo extends BaseController
         //
     }
 
-    public function mostrar(){
+    //Se recuperan los datos para mostrar los modelos de bicicletas
+    public function mostrar()
+    {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
         $modeloModel = model('ModeloModel');
         $data['modelos'] = $modeloModel->findAll();
-        return 
-        view('common/head') .
-        view('common/menu') .
-        view('modelo/mostrar',$data) .
-        view('common/footer');
+        return
+            view('common/head') .
+            view('common/menu') .
+            view('modelo/mostrar', $data) .
+            view('common/footer');
     }
-    
+
+    //Para añadir un nuevo modelo de bicicleta en los registros
     public function agregar()
     {
+        //Se valida si ya se inición la sesión
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
 
         helper(['form', 'url']);
 
+        //Se incluye la validación de los formularios
         $data['title'] = "Agregar Modelo";
         $validation = \Config\Services::validation();
         if (strtolower($this->request->getMethod()) === 'get') {
@@ -51,6 +57,7 @@ class Modelo extends BaseController
             'Gama' => 'required'
         ];
 
+        //Si pasa las reglas se manda a la vista de las bicicletas
         if (!$this->validate($rules)) {
             return view('common/head', $data)
                 . view('common/menu')
@@ -63,6 +70,7 @@ class Modelo extends BaseController
         }
     }
 
+    //Se añade el modelo de la bicicleta de la función anterior a la tabla de todos los modelos
     public function insert()
     {
         $modelo = model('ModeloModel');
@@ -76,22 +84,28 @@ class Modelo extends BaseController
         return true;
     }
 
-    public function delete($idModelo){
+    //Se elimina el modelo a partir de su id
+    public function delete($idModelo)
+    {
         $modelo = model('ModeloModel');
         $modelo->delete($idModelo);
         return redirect('administrador/modelo');
     }
 
+    //Se edita el modelo a partir de su id
     public function editar($id)
     {
+        //Se verifica que se iniciara sesión
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
 
+        //Se cargan los modelos
         $modelo = model('ModeloModel');
         $data['modelo'] = $modelo->find($id);
 
+        //Se validan los formularios
         $validation = \Config\Services::validation();
 
         if ((strtolower($this->request->getMethod()) === 'get')) {
@@ -109,6 +123,7 @@ class Modelo extends BaseController
             'Gama' => 'required'
         ];
 
+        //Se redirige a la vista que muetsra los modelos de bicicletas
         if (!$this->validate($rules)) {
             return
                 view('common/head', $data) .
@@ -122,11 +137,12 @@ class Modelo extends BaseController
         }
     }
 
-
+    //Se actualizan los modelos de las bicicletas con los datos del formulario anterior
     public function update()
     {
         $modelo = model('ModeloModel');
 
+        //Se recuperan los datos 
         $data = [
             "Nombre" => $_POST['Nombre'],
             "Modalidad" => $_POST['Modalidad'],
@@ -138,56 +154,57 @@ class Modelo extends BaseController
         return true;
     }
 
-
-    public function buscar(){
+    //Se busca un modelo de bicicleta entre todos los que se tienen
+    public function buscar()
+    {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
-        
+
         $modeloModel = model('ModeloModel');
 
-        if(isset($_GET['Campo']) && isset($_GET['Valor'])){
-        $campo =$_GET['Campo']; 
-        $valor =$_GET['Valor'];
-        
-        
-        if($campo == 'Nombre'){
-            $data['modelos']=$modeloModel->like('Nombre',$valor)
-            ->findAll();
-        }
+        //Se verifica si se mandaron datos en el formulario de búsqueda
+        if (isset($_GET['Campo']) && isset($_GET['Valor'])) {
+            $campo = $_GET['Campo'];
+            $valor = $_GET['Valor'];
 
-        if($campo == 'Gama'){
-            $data['modelos']=$modeloModel->like('Gama',$valor)
-            ->findAll();
-        }
 
-        if($campo == 'Año'){
-            $data['modelos']=$modeloModel->like('Año',$valor)
-            ->findAll();
-        }
+            if ($campo == 'Nombre') {
+                $data['modelos'] = $modeloModel->like('Nombre', $valor)
+                    ->findAll();
+            }
 
-        if($campo == 'Modalidad'){
-            $data['modelos']=$modeloModel->like('Modalidad',$valor)
-            ->findAll();
-        }
+            if ($campo == 'Gama') {
+                $data['modelos'] = $modeloModel->like('Gama', $valor)
+                    ->findAll();
+            }
 
-        if($campo == 'Todo'){
-            $data ['modelos']=$modeloModel->findAll();
-        }
+            if ($campo == 'Año') {
+                $data['modelos'] = $modeloModel->like('Año', $valor)
+                    ->findAll();
+            }
 
-       
-    }
-    else{
-        $campo = "";
-        $valor = "";
-        $data ['modelos']=$modeloModel->findAll();
-        
-    }
-        return 
-        view('common/head') .
-        view('common/menu') .
-        view('modelo/buscar',$data) .
-        view('common/footer');
+            if ($campo == 'Modalidad') {
+                $data['modelos'] = $modeloModel->like('Modalidad', $valor)
+                    ->findAll();
+            }
+
+            if ($campo == 'Todo') {
+                $data['modelos'] = $modeloModel->findAll();
+            }
+
+
+        } else {
+            $campo = "";
+            $valor = "";
+            $data['modelos'] = $modeloModel->findAll();
+
+        }
+        return
+            view('common/head') .
+            view('common/menu') .
+            view('modelo/buscar', $data) .
+            view('common/footer');
     }
 }

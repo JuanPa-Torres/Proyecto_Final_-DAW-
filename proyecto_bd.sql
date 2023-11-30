@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-11-2023 a las 22:34:32
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Tiempo de generación: 30-11-2023 a las 03:53:45
+-- Versión del servidor: 10.4.27-MariaDB
+-- Versión de PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,7 +20,9 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `proyecto_bd`
 --
+
 -- --------------------------------------------------------
+
 --
 -- Estructura de tabla para la tabla `bicicleta`
 --
@@ -43,26 +45,26 @@ CREATE TABLE `bicicleta` (
 --
 
 INSERT INTO `bicicleta` (`idBicicleta`, `Marca`, `Modelo`, `Componentes`, `Caracteristicas`, `Precio`, `Foto`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 1, 1, 1, 1, 1000, 'https://i.imgur.com/x500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(2, 2, 2, 2, 2, 2000, 'https://i.imgur.com/y500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(3, 3, 3, 3, 3, 3000, 'https://i.imgur.com/z500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(4, 4, 4, 4, 4, 4000, 'https://i.imgur.com/a500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(5, 5, 5, 5, 5, 5000, 'https://i.imgur.com/b500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(6, 6, 6, 6, 6, 6000, 'https://i.imgur.com/c500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(7, 7, 7, 7, 7, 7000, 'https://i.imgur.com/d500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(8, 8, 8, 8, 8, 8000, 'https://i.imgur.com/e500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(9, 9, 9, 9, 9, 9000, 'https://i.imgur.com/f500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(10, 10, 10, 10, 10, 10000, 'https://i.imgur.com/g500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(11, 11, 11, 11, 11, 11000, 'https://i.imgur.com/h500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(12, 12, 12, 12, 12, 12000, 'https://i.imgur.com/i500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(13, 13, 13, 13, 13, 13000, 'https://i.imgur.com/j500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(14, 14, 14, 4, 14, 14000, 'https://i.imgur.com/k500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(15, 15, 15, 5, 15, 15000, 'https://i.imgur.com/l500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(16, 16, 16, 6, 16, 16000, 'https://i.imgur.com/m500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(17, 17, 17, 7, 17, 17000, 'https://i.imgur.com/n500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(18, 18, 18, 8, 18, 18000, 'https://i.imgur.com/o500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(19, 19, 19, 9, 19, 19000, 'https://i.imgur.com/p500000.png', '2023-10-08 00:00:00', NULL, NULL),
-(20, 20, 20, 2, 20, 20000, 'https://i.imgur.com/q500000.png', '2023-10-08 00:00:00', NULL, NULL);
+(1, 1, 1, 1, 1, 1000, 'https://s3.eu-west-1.amazonaws.com/trafach-bikes.com/shop/trek-emonda-sl-6-pro-di2-rojo_18343_450.jpg', '2023-10-08 00:00:00', NULL, NULL),
+(2, 2, 2, 2, 2, 2000, 'https://assets.specialized.com/i/specialized/6836?$scom-pdp-product-image$&fmt=auto', '2023-10-08 00:00:00', NULL, NULL),
+(3, 3, 3, 3, 3, 3000, 'https://images.internetstores.de/products//782251/02/27b0fb/Cannondale_SuperSix_EVO_Di2_Ultegra_acid_red[600x600].jpg?forceSize=true&forceAspectRatio=true&forceAlign=center', '2023-10-08 00:00:00', NULL, NULL),
+(4, 4, 4, 4, 4, 4000, 'https://wecycle.mx/wp-content/uploads/2022/08/GIANT_tcr_2018.jpg', '2023-10-08 00:00:00', NULL, NULL),
+(5, 5, 5, 5, 5, 5000, 'https://ciclospecial.com/wp-content/uploads/2020/10/Bicicleta-de-Ruta-Carretera-Scott-Addict-30-2022-Rojo-Negro-Ciclospecial.jpg', '2023-10-08 00:00:00', NULL, NULL),
+(6, 6, 6, 6, 6, 6000, 'https://bicisportsaubanell.com/1048/orbea-avant-h50.jpg', '2023-10-08 00:00:00', NULL, NULL),
+(7, 7, 7, 7, 7, 7000, 'https://media.alltricks.com/large/219891961e7c271cf01d0.05500421.jpg', '2023-10-08 00:00:00', NULL, NULL),
+(8, 8, 8, 8, 8, 8000, 'https://www.ciclonorte.mx/wp-content/uploads/2021/04/redgreymerida-300x300.png', '2023-10-08 00:00:00', NULL, NULL),
+(9, 9, 9, 9, 9, 9000, 'https://cicloscorredor.com/31384-large_default/bicicleta-kross-vento-dsc-50-28-2022.jpg', '2023-10-08 00:00:00', NULL, NULL),
+(10, 10, 10, 10, 10, 10000, 'https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwff2829c5/images/full/full_2023_/2023/full_2023_3957_aeroad-cf-sl-8-disc_P07_P5.png', '2023-10-08 00:00:00', NULL, NULL),
+(11, 11, 11, 11, 11, 11000, 'https://newbikes.es/wp-content/uploads/2023/10/05720_0_20231023161324-500x350.jpg', '2023-10-08 00:00:00', NULL, NULL),
+(12, 12, 12, 12, 12, 12000, 'https://www.bikester.es/on/demandware.static/-/Library-Sites-bikester/default/dwca14fc94/cat-img/cat-img-bes/cube-peloton.jpg', '2023-10-08 00:00:00', NULL, NULL),
+(13, 13, 13, 13, 13, 13000, 'https://i5.walmartimages.com.mx/mg/gm/1p/images/product-images/img_large/00750636390393-1l.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF', '2023-10-08 00:00:00', NULL, NULL),
+(14, 14, 14, 4, 14, 14000, 'https://planetmountainbike.com/wp-content/uploads/2014/12/Santa-Cruz-V10-2015-680x427.jpg', '2023-10-08 00:00:00', NULL, NULL),
+(15, 15, 15, 5, 15, 15000, 'https://www.catbikeshop.net/5916-home_default/bicicleta-santa-cruz-hightower--c-kit-s.jpg', '2023-10-08 00:00:00', NULL, NULL),
+(16, 16, 16, 6, 16, 16000, 'https://pranabike.com/wp-content/uploads/firebird-3-600.jpg', '2023-10-08 00:00:00', NULL, NULL),
+(17, 17, 17, 7, 17, 17000, 'https://www.swisscycles.com/wp-content/uploads/2022/10/1665610805_2023-Canfield-Balance-enduro-mountain-bike5.jpg', '2023-10-08 00:00:00', NULL, NULL),
+(18, 18, 18, 8, 18, 18000, 'https://ltmracing.com/26063-home_default/bicicleta-ibis--ripley-vs-carbon--slx-white.jpg', '2023-10-08 00:00:00', NULL, NULL),
+(19, 19, 19, 9, 19, 19000, 'https://monzokobikes.cl/14779-large_default/norco-fluid-fs-2-negrocharcoal-aro-24.jpg', '2023-10-08 00:00:00', NULL, NULL),
+(20, 20, 20, 2, 20, 20000, 'https://m.media-amazon.com/images/I/61AkF-PAxBS._AC_UF894,1000_QL80_.jpg', '2023-10-08 00:00:00', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -237,10 +239,10 @@ INSERT INTO `marca` (`idMarca`, `Nombre`, `Pais_Origen`, `Logo`, `Pais_Distribui
 (14, 'Santa Cruz', 'Estados Unidos', 'https://getlogovector.com/wp-content/uploads/2020/09/santa-cruz-bicycles-logo-vector.png', 'México', 14, NULL, NULL, NULL),
 (15, 'Yeti', 'Estados Unidos', 'https://cdn11.bigcommerce.com/s-h4smy34w/product_images/uploaded_images/yeti-cycles-logo.png', 'México', 15, NULL, NULL, NULL),
 (16, 'Pivot', 'Estados Unidos', 'https://theloamwolf.com/wp-content/uploads/2020/04/pivot_04_black-250x250.jpg', 'México', 16, NULL, NULL, '0000-00-00 00:00:00'),
-(17, 'Canfield', 'Estados Unidos', NULL, 'México', 17, NULL, NULL, NULL),
-(18, 'Ibis', 'Estados Unidos', NULL, 'México', 18, NULL, NULL, NULL),
-(19, 'Norco', 'Canadá', NULL, 'México', 19, NULL, NULL, NULL),
-(20, 'Rocky Mountain', 'Canadá', NULL, 'México', 20, NULL, NULL, NULL),
+(17, 'Canfield', 'Estados Unidos', 'https://i.shgcdn.com/daff8a21-2dd8-4769-8216-9c4279cfdbfc/-/format/auto/-/preview/3000x3000/-/quality/lighter/', 'México', 17, NULL, NULL, NULL),
+(18, 'Ibis', 'Estados Unidos', 'https://cdn.shopify.com/s/files/1/0904/4132/files/ibis-23-logo-top.jpg?v=1663972480', 'México', 18, NULL, NULL, NULL),
+(19, 'Norco', 'Canadá', 'https://www.sefiles.net/merchant/2283/images/site/norco-logo.jpg', 'México', 19, NULL, NULL, NULL),
+(20, 'Rocky Mountain', 'Canadá', 'https://cdn.worldvectorlogo.com/logos/rocky-mountain.svg', 'México', 20, NULL, NULL, NULL),
 (27, 'paquitoooo', 'itaila', 'https://cdn.shopify.com/s/files/1/0685/3887/files/SCOTTLOGO_480x480.jpg?v=1628707794', 'japon', 1, NULL, NULL, '2023-11-16 12:45:07');
 
 -- --------------------------------------------------------
@@ -495,12 +497,3 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-
-select * from modelo;
-
-select * from bicicleta;
-
-select * from componentes;
-
-select * from caracteristicas;

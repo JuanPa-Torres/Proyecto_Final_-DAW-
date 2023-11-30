@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+
 $session = \Config\Services::session();
 
 class Distribuidor extends BaseController
@@ -16,11 +17,11 @@ class Distribuidor extends BaseController
     directamente de la tabla "distribuidores" de la base de datos.
     Los datos se mandan a la vista de "mostrar" en la carpeta "distribuidor" para tratarlos
     en tablas
-    */ 
+    */
     public function mostrar()
     {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
 
@@ -42,7 +43,7 @@ class Distribuidor extends BaseController
     public function agregar()
     {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
 
@@ -75,10 +76,10 @@ class Distribuidor extends BaseController
         }
     }
 
-     /*
-    Esta función realiza la inserción que se solicita en la función de agregar de 
-    este controlador
-    */
+    /*
+   Esta función realiza la inserción que se solicita en la función de agregar de 
+   este controlador
+   */
     public function insert()
     {
         $distribuidor = model('DistribuidorModel');
@@ -111,7 +112,7 @@ class Distribuidor extends BaseController
     public function editar($id)
     {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
 
@@ -173,10 +174,10 @@ class Distribuidor extends BaseController
     public function buscar()
     {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
-        
+
         $distribuidorModel = model('DistribuidorModel');
         if (isset($_GET['columnaBusqueda']) && isset($_GET['elementoBusqueda'])) {
             $columnaBusqueda = $_GET['columnaBusqueda'];

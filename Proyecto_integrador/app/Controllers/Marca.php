@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+
 $session = \Config\Services::session();
 
 class Marca extends BaseController
@@ -20,7 +21,7 @@ class Marca extends BaseController
     public function mostrar()
     {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
 
@@ -42,7 +43,7 @@ class Marca extends BaseController
     public function agregar()
     {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
         helper(['form', 'url']);
@@ -112,7 +113,7 @@ class Marca extends BaseController
     public function editar($id)
     {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
 
@@ -183,10 +184,10 @@ class Marca extends BaseController
     public function buscar()
     {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
-        
+
         $marcaModel = model('MarcaModel');
         if (isset($_GET['columnaBusqueda']) && isset($_GET['elementoBusqueda'])) {
             $columnaBusqueda = $_GET['columnaBusqueda'];

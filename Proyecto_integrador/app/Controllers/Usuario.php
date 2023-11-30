@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+
 $session = \Config\Services::session();
 class Usuario extends BaseController
 {
@@ -19,7 +20,7 @@ class Usuario extends BaseController
     public function mostrar()
     {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
 
@@ -41,7 +42,7 @@ class Usuario extends BaseController
     public function agregar()
     {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
 
@@ -92,7 +93,7 @@ class Usuario extends BaseController
         $usuarioModel->insert($data, false);
         return true;
     }
-    
+
     /*
     Esta función elimina el registro que se desea, según el id del
     usuario que se quiera.
@@ -112,7 +113,7 @@ class Usuario extends BaseController
     public function editar($idUsuario)
     {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
 
@@ -157,7 +158,7 @@ class Usuario extends BaseController
     public function buscar()
     {
         $session = session();
-        if($session->get('logged_in')!=TRUE){
+        if ($session->get('logged_in') != TRUE) {
             return redirect('/');
         }
 
