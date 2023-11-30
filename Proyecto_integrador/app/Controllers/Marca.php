@@ -19,6 +19,11 @@ class Marca extends BaseController
     */
     public function mostrar()
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+
         $marcaModel = model('MarcaModel');
         $data['marcas'] = $marcaModel->findAll();
         return
@@ -36,6 +41,10 @@ class Marca extends BaseController
     */
     public function agregar()
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
         helper(['form', 'url']);
         $distribuidor = model('DistribuidorModel');
         $data['distribuidores'] = $distribuidor->findAll();
@@ -102,6 +111,11 @@ class Marca extends BaseController
     */
     public function editar($id)
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+
         $distribuidores = model('DistribuidorModel');
         $marca = model('MarcaModel');
         $data['marca'] = $marca->find($id);
@@ -168,6 +182,11 @@ class Marca extends BaseController
     */
     public function buscar()
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         $marcaModel = model('MarcaModel');
         if (isset($_GET['columnaBusqueda']) && isset($_GET['elementoBusqueda'])) {
             $columnaBusqueda = $_GET['columnaBusqueda'];

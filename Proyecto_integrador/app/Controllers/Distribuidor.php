@@ -19,6 +19,11 @@ class Distribuidor extends BaseController
     */ 
     public function mostrar()
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+
         $distribuidorModel = model('DistribuidorModel');
         $data['distribuidores'] = $distribuidorModel->findAll();
         return
@@ -36,6 +41,11 @@ class Distribuidor extends BaseController
     */
     public function agregar()
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+
         helper(['form', 'url']);
         $data['title'] = "Agregar distribuidor";
         $validation = \Config\Services::validation();
@@ -100,6 +110,11 @@ class Distribuidor extends BaseController
     */
     public function editar($id)
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+
         $distribuidor = model('DistribuidorModel');
         $data['distribuidor'] = $distribuidor->find($id);
 
@@ -157,6 +172,11 @@ class Distribuidor extends BaseController
     */
     public function buscar()
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         $distribuidorModel = model('DistribuidorModel');
         if (isset($_GET['columnaBusqueda']) && isset($_GET['elementoBusqueda'])) {
             $columnaBusqueda = $_GET['columnaBusqueda'];

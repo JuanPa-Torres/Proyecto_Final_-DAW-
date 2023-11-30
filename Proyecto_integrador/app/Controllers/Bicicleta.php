@@ -241,7 +241,6 @@ class Bicicleta extends BaseController
                 $data['caracteristicas'] = $caracteristicasModel->findAll();
             }
             
-
         } else {
             $campo =
             $valor =

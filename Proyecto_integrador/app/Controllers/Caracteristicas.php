@@ -13,6 +13,12 @@ class Caracteristicas extends BaseController
     }
 
     public function mostrar(){
+
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         $caracteristicasModel = model('CaracteristicasModel');
         $data['caracteristicas'] = $caracteristicasModel->findAll();
         return 
@@ -22,6 +28,12 @@ class Caracteristicas extends BaseController
         view('common/footer');
     }
     public function agregar(){
+        
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         helper(['form','url']);
 
 
@@ -82,6 +94,11 @@ class Caracteristicas extends BaseController
     public function editar($id)
     {
         
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         $caracteristicas = model('CaracteristicasModel');
         $data['caracteristicas'] = $caracteristicas->find($id);
 
@@ -139,6 +156,11 @@ class Caracteristicas extends BaseController
 
     public function buscar(){
 
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         $caracteristicasModel = model('CaracteristicasModel');
 
         if(isset($_GET['Campo']) && isset($_GET['Valor'])){

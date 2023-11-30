@@ -15,6 +15,11 @@ class Cliente extends BaseController
 
     public function buscarBicicleta()
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         $bicicletaModel = model('BicicletaModel');
         $marcaModel = model('MarcaModel');
         $modeloModel = model('ModeloModel');
@@ -88,6 +93,11 @@ class Cliente extends BaseController
 
     public function buscarCaracteristicas(){
 
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         $caracteristicasModel = model('CaracteristicasModel');
 
         if(isset($_GET['Campo']) && isset($_GET['Valor'])){
@@ -136,6 +146,11 @@ class Cliente extends BaseController
 
     public function buscarComponentes(){
 
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         $componentes = model('ComponentesModel');
 
         if(isset($_GET['Campo']) && isset($_GET['Valor'])){
@@ -186,6 +201,11 @@ class Cliente extends BaseController
 
     public function buscarModelo(){
 
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         $modeloModel = model('ModeloModel');
 
         if(isset($_GET['Campo']) && isset($_GET['Valor'])){
@@ -235,6 +255,11 @@ class Cliente extends BaseController
 
     public function buscarMarca()
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         $marcaModel = model('MarcaModel');
         $distribuidorModel = model('DistribuidorModel');
 

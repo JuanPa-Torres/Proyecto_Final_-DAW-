@@ -14,6 +14,11 @@ class Componentes extends BaseController
 
     public function mostrar()
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         $componentesModel = model('ComponentesModel');
         $data['componentes'] = $componentesModel->findAll();
         return
@@ -25,6 +30,11 @@ class Componentes extends BaseController
 
     public function agregar()
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         helper(['form', 'url']);
 
         $data['title'] = "Agregar Componentes";
@@ -92,6 +102,11 @@ class Componentes extends BaseController
 
     public function editar($id)
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         $componentes = model('ComponentesModel');
         $data['componentes'] = $componentes->find($id);
 
@@ -157,6 +172,11 @@ class Componentes extends BaseController
 
     public function buscar(){
 
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+        
         $componentes = model('ComponentesModel');
 
         if(isset($_GET['Campo']) && isset($_GET['Valor'])){
