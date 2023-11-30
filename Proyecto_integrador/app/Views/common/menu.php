@@ -29,7 +29,6 @@
             <li><a class="dropdown-item" href="<?= base_url('administrador/distribuidor/agregar') ?>">Agregar distribuidor ➕</a></li>
             <li><a class="dropdown-item" href="<?= base_url('administrador/distribuidor'); ?>">Mostrar distribuidores 👁️</a></li>
             <li><a class="dropdown-item" href="<?= base_url('administrador/distribuidor/buscar'); ?>">Buscar distribuidores 🔍</a></li>
-
           </ul>
         </li>
 
@@ -41,8 +40,11 @@
             <li><a class="dropdown-item" href="<?= base_url('administrador/bicicletas/agregar') ?>">Agregar bicicletas ➕</a></li>
             <li><a class="dropdown-item" href="<?= base_url('administrador/bicicletas'); ?>">Mostrar bicicletas 👁️</a></li>
             <li><a class="dropdown-item" href="<?= base_url('administrador/bicicletas/buscar'); ?>">Buscar bicicletas 🔍</a></li>
-
           </ul>
+          <a class="nav-link " href="<?= base_url('cliente/bicicletas') ?>"
+                role="button">
+                Bicicletas 🚲
+              </a>
         </li>
 
         <li class="nav-item dropdown">
@@ -53,8 +55,11 @@
             <li><a class="dropdown-item" href="<?= base_url('administrador/caracteristicas/agregar') ?>">Agregar caracteristicas ➕</a></li>
             <li><a class="dropdown-item" href="<?= base_url('administrador/caracteristicas'); ?>">Mostrar caracteristicas 👁️</a></li>
             <li><a class="dropdown-item" href="<?= base_url('administrador/caracteristicas/buscar'); ?>">Buscar caracteristicas 🔍</a></li>
-
           </ul>
+          <a class="nav-link " href="<?= base_url('cliente/bicicletas/caracteristicas') ?>"
+                role="button">
+                Características 📋
+              </a>
         </li>
 
         <li class="nav-item dropdown">
@@ -66,6 +71,10 @@
             <li><a class="dropdown-item" href="<?= base_url('administrador/marca'); ?>">Mostrar marca 👁️</a></li>
             <li><a class="dropdown-item" href="<?= base_url('administrador/marca/buscar'); ?>">Buscar marca 🔍</a></li>
           </ul>
+          <a class="nav-link " href="<?= base_url('cliente/bicicletas/marca') ?>"
+                role="button">
+                Marcas ™
+              </a>
         </li>
 
         <li class="nav-item dropdown">
@@ -76,8 +85,11 @@
             <li><a class="dropdown-item" href="<?= base_url('administrador/modelo/agregar') ?>">Agregar modelo ➕</a></li>
             <li><a class="dropdown-item" href="<?= base_url('administrador/modelo'); ?>">Mostrar modelo 👁️</a></li>
             <li><a class="dropdown-item" href="<?= base_url('administrador/modelo/buscar'); ?>">Buscar modelo 🔍</a></li>
-
           </ul>
+          <a class="nav-link " href="<?= base_url('cliente/bicicletas/modelo') ?>"
+                role="button">
+                Modelos 🗃
+              </a>
         </li>
 
         <li class="nav-item dropdown">
@@ -88,8 +100,11 @@
             <li><a class="dropdown-item" href="<?= base_url('administrador/componentes/agregar') ?>">Agregar componentes ➕</a></li>
             <li><a class="dropdown-item" href="<?= base_url('administrador/componentes'); ?>">Mostrar componentes 👁️</a></li>
             <li><a class="dropdown-item" href="<?= base_url('administrador/componentes/buscar'); ?>">Buscar componentes 🔍</a></li>
-
           </ul>
+          <a class="nav-link " href="<?= base_url('cliente/bicicletas/componentes') ?>"
+                role="button">
+                Componentes ⚙
+              </a>
         </li>
     </div>
   </div>
