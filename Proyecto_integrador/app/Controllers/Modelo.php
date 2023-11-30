@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+$session = \Config\Services::session();
 
 class Modelo extends BaseController
 {

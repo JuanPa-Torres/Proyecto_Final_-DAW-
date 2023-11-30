@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-
+$session = \Config\Services::session();
 class Usuario extends BaseController
 {
     public function index()
@@ -18,6 +18,11 @@ class Usuario extends BaseController
     */
     public function mostrar()
     {
+        $session = session();
+        if($session->get('logged_in')!=TRUE){
+            return redirect('/');
+        }
+
         $usuarioModel = model('UsuarioModel');
         $data['usuarios'] = $usuarioModel->findAll();
         return
@@ -82,7 +87,7 @@ class Usuario extends BaseController
         $usuarioModel->insert($data, false);
         return true;
     }
-
+    
     /*
     Esta función elimina el registro que se desea, según el id del
     usuario que se quiera.

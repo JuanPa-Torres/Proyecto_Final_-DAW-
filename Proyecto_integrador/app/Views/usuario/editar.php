@@ -39,11 +39,17 @@
 
                 <div class="mb-3">
                     <label for="Perfil" class="form-label">Tipo de perfil</label>
-                    <input type="number" class="form-control" name="Perfil" id="Perfil"
-                        value="<?= $usuario->Perfil; ?>" required>
+                    <select name="Perfil" id="Perfil" class="form-control">
+                        <option value="1">Administrador</option>
+                        <option value="2">Cliente</option>
+                    </select>
+                    <div class="mb-3">
+                    <select name="Perfil" class="form-control">
+                        <option value="1" <?php if($usuario->Perfil=="1") echo 'selected'; ?>>Administrador</option>
+                        <option value="2"<?php if($usuario->Perfil=="2") echo 'selected'; ?>> Cliente</option>
+                    </select>
                 </div>
-
-
+                </div>
 
                 <div class="mb-3">
                     <input type="submit" class="btn btn-success">
